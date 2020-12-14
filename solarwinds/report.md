@@ -1,9 +1,9 @@
-**SolarWinds-Core-v2019.4.5220-Hotfix5.msp (md5 02af7cec58b9a5da1c542b5a32151ba1)**
+SolarWinds-Core-v2019.4.5220-Hotfix5.msp (md5 02af7cec58b9a5da1c542b5a32151ba1)
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/md5file.png)
 
 
-**SolarWinds-Core-v2019.4.5220-Hotfix5.msp metadata**
+SolarWinds-Core-v2019.4.5220-Hotfix5.msp metadata
 
 ```
 File: Composite Document File V2 Document, Little Endian 
@@ -23,12 +23,12 @@ Revision Number: {079A74C5-95D0-446E-86F7-B8EAF0A29654}119.4.20161.5220;{079A74C
 Number of Pages: 200, Number of Characters: 152174623
 ```
 
-**SolarWinds-Core-v2019.4.5220-Hotfix5.msp extracted files**
+SolarWinds-Core-v2019.4.5220-Hotfix5.msp extracted files
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/extracted.png)
 
 
-**SolarWinds-Core-v2019.4.5220-Hotfix5.msp extracted files md5**
+SolarWinds-Core-v2019.4.5220-Hotfix5.msp extracted files md5
 
 ```
 34e9e373b21e8d8f0051f8c88e10008d  BigintOverflowFix.sql
@@ -74,22 +74,22 @@ a56b277160c716b1454e8fa3a7322393  TruncateFirstAndLastPartitions.sql
 ```
 
 
-**SolarWinds.Orion.Core.BusinessLayer.dll metadata**
+SolarWinds.Orion.Core.BusinessLayer.dll metadata
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/businesslayermeta.png)
 
 
-**SolarWinds.Orion.Core.BusinessLayer.dll function**
+SolarWinds.Orion.Core.BusinessLayer.dll function
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/function.png)
 
 
-**SolarWinds.Orion.Core.BusinessLayer.dll variables**
+SolarWinds.Orion.Core.BusinessLayer.dll variables
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/vars.png)
 
 
-**SolarWinds.Orion.Core.BusinessLayer.dll variables decoded**
+SolarWinds.Orion.Core.BusinessLayer.dll variables decoded
 
 ```
 SywrLstNzskvTdFLzs8FAA== avsvmcloud.com
@@ -101,12 +101,12 @@ Ky3WTU0sLtE1AgA= us-east-2
 ```
 
 
-**SolarWinds.Orion.Core.BusinessLayer.dll c2**
+SolarWinds.Orion.Core.BusinessLayer.dll c2
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/c2.png)
 
 
-**SolarWinds.Orion.Core.BusinessLayer.dll c2 structure**
+SolarWinds.Orion.Core.BusinessLayer.dll c2 structure
 
 ```csharp
 private enum JobEngine
