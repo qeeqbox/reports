@@ -1,9 +1,9 @@
-SolarWinds-Core-v2019.4.5220-Hotfix5.msp (md5 02af7cec58b9a5da1c542b5a32151ba1)
+SolarWinds-Core-v2019.4.5220-Hotfix5.msp - md5 02af7cec58b9a5da1c542b5a32151ba1
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/md5file.png)
 
 
-SolarWinds-Core-v2019.4.5220-Hotfix5.msp metadata
+SolarWinds-Core-v2019.4.5220-Hotfix5.msp - metadata
 
 ```
 File: Composite Document File V2 Document, Little Endian 
@@ -23,12 +23,12 @@ Revision Number: {079A74C5-95D0-446E-86F7-B8EAF0A29654}119.4.20161.5220;{079A74C
 Number of Pages: 200, Number of Characters: 152174623
 ```
 
-SolarWinds-Core-v2019.4.5220-Hotfix5.msp extracted files
+SolarWinds-Core-v2019.4.5220-Hotfix5.msp - extracted files
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/extracted.png)
 
 
-SolarWinds-Core-v2019.4.5220-Hotfix5.msp extracted files md5
+SolarWinds-Core-v2019.4.5220-Hotfix5.msp - extracted files md5
 
 ```
 34e9e373b21e8d8f0051f8c88e10008d  BigintOverflowFix.sql
@@ -74,22 +74,22 @@ a56b277160c716b1454e8fa3a7322393  TruncateFirstAndLastPartitions.sql
 ```
 
 
-SolarWinds.Orion.Core.BusinessLayer.dll metadata
+SolarWinds.Orion.Core.BusinessLayer.dll - metadata
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/businesslayermeta.png)
 
 
-SolarWinds.Orion.Core.BusinessLayer.dll function
+SolarWinds.Orion.Core.BusinessLayer.dll - function
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/function.png)
 
 
-SolarWinds.Orion.Core.BusinessLayer.dll variables
+SolarWinds.Orion.Core.BusinessLayer.dll - variables
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/vars.png)
 
 
-SolarWinds.Orion.Core.BusinessLayer.dll variables decoded
+SolarWinds.Orion.Core.BusinessLayer.dll - variables decoded
 
 ```
 SywrLstNzskvTdFLzs8FAA== avsvmcloud.com
@@ -101,12 +101,12 @@ Ky3WTU0sLtE1AgA= us-east-2
 ```
 
 
-SolarWinds.Orion.Core.BusinessLayer.dll c2
+SolarWinds.Orion.Core.BusinessLayer.dll - c2
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/c2.png)
 
 
-SolarWinds.Orion.Core.BusinessLayer.dll c2 structure
+SolarWinds.Orion.Core.BusinessLayer.dll - c2 structure
 
 ```csharp
 private enum JobEngine
@@ -133,7 +133,7 @@ private enum JobEngine
 }
 ```
 
-SetTime (Set delay for http helper)
+SetTime - Set delay for http helper
 
 ```csharp
 public static void SetTime(string[] args, out int delay)
@@ -143,7 +143,7 @@ public static void SetTime(string[] args, out int delay)
 ```
 
 
-CollectSystemDescription (get host info)
+CollectSystemDescription - get host info
 
 ```csharp
 public static void CollectSystemDescription(string info, out string result)
@@ -172,7 +172,7 @@ public static void CollectSystemDescription(string info, out string result)
 ```
 
 
-UploadSystemDescription (Perform http request)
+UploadSystemDescription - Perform http request
 
 ```csharp
 public static void UploadSystemDescription(string[] args, out string result, IWebProxy proxy)
@@ -298,7 +298,7 @@ public static void UploadSystemDescription(string[] args, out string result, IWe
 ```
 
 
-RunTask (Start a process)
+RunTask - Start a process
 
 ```csharp
 public static int RunTask(string[] args, string cl, out string result)
@@ -325,7 +325,7 @@ public static int RunTask(string[] args, string cl, out string result)
 ```
 
 
-GetProcessByDescription (get processes info)
+GetProcessByDescription - get processes info
 
 ```csharp
 public static void GetProcessByDescription(string[] args, out string result)
@@ -369,7 +369,7 @@ public static void GetProcessByDescription(string[] args, out string result)
 ```
 
 
-KillTask (Kill a task by PID)
+KillTask - Kill a task by PID
 
 ```csharp
 public static void KillTask(string[] args)
@@ -379,7 +379,7 @@ public static void KillTask(string[] args)
 ```
 
 
-GetFileSystemEntries (Get files and folders by path)
+GetFileSystemEntries - Get files and folders by path
 
 ```csharp
 public static void GetFileSystemEntries(string[] args, out string result)
@@ -395,7 +395,7 @@ public static void GetFileSystemEntries(string[] args, out string result)
 ```
 
 
-WriteFile (Write to file)
+WriteFile - Write to file
 
 ```csharp
 public static void WriteFile(string[] args)
@@ -426,7 +426,7 @@ public static void WriteFile(string[] args)
 ```
 
 
-FileExists (Check if file exists)
+FileExists - Check if file exists
 
 ```csharp
 public static void FileExists(string[] args, out string result)
@@ -438,7 +438,7 @@ public static void FileExists(string[] args, out string result)
 ```
 
 
-DeleteFile (delete file by path)
+DeleteFile - delete file by path
 
 ```csharp
 public static void DeleteFile(string[] args)
@@ -448,7 +448,7 @@ public static void DeleteFile(string[] args)
 ```
 
 
-ReadRegistryValue (get a registry value)
+ReadRegistryValue - get a registry value
 
 ```csharp
 public static int ReadRegistryValue(string[] args, out string result)
@@ -463,7 +463,7 @@ public static int ReadRegistryValue(string[] args, out string result)
 ```
 
 
-SetRegistryValue (modfiy a registry value)
+SetRegistryValue - modfiy a registry value
 
 ```csharp
 public static int SetRegistryValue(string[] args)
@@ -479,7 +479,7 @@ public static int SetRegistryValue(string[] args)
 ```
 
 
-SetRegistryValue (delete a registry value)
+SetRegistryValue - delete a registry value
 
 ```csharp
 public static void DeleteRegistryValue(string[] args)
@@ -489,7 +489,7 @@ public static void DeleteRegistryValue(string[] args)
 ```
 
 
-GetRegistrySubKeyAndValueNames (get all registry keys and values)
+GetRegistrySubKeyAndValueNames - get all registry keys and values
 
 ```csharp
 public static void GetRegistrySubKeyAndValueNames(string[] args, out string result)
