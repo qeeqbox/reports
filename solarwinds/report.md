@@ -573,3 +573,6 @@ REF
 - https://www.fireeye.com/blog/products-and-services/2020/12/fireeye-shares-details-of-recent-cyber-attack-actions-to-protect-community.html
 - https://www.zdnet.com/article/microsoft-fireeye-confirm-solarwinds-supply-chain-attack/
 - https://cyber.dhs.gov/ed/21-01/
+
+Fils:
+- SolarWinds.Orion.Core.BusinessLayer.dll.zip pass: infected
