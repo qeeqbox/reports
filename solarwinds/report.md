@@ -103,7 +103,7 @@ Ky3WTU0sLtE1AgA= us-east-2
 
 **SolarWinds.Orion.Core.BusinessLayer.dll c2**
 
-![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/vars.png)
+![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/c2.png)
 
 
 **SolarWinds.Orion.Core.BusinessLayer.dll c2 structure**
