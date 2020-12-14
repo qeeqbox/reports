@@ -2,25 +2,37 @@ SolarWinds-Core-v2019.4.5220-Hotfix5.msp - md5 02af7cec58b9a5da1c542b5a32151ba1
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/md5file.png)
 
+SolarWinds-Core-v2019.4.5220-Hotfix5.msp - info
+
+```
+Name 		solarwinds-core-v2019.4.5220-hotfix5.msp
+md5 		02af7cec58b9a5da1c542b5a32151ba1
+sha1 		1b476f58ca366b54f34d714ffce3fd73cc30db1a
+sha256 		d0d626deb3f9484e649294a8dfa814c5568f846d5aa02d4cdad5d041a29d5600
+ssdeep 		3145728:yMbnCpAK7nuv7xYiq0bC4zheqeRHuCieBVZNP7WJOQeXt+9riYBaeIBjSxTusL:yMbCp7uf3GnqfCVrNPgLrW4GoxSG
+size 		204.88MB
+bytes 		214831104
+mime 		application/vnd.ms-msi
+extension 	application/octet-stream
+Entropy 	7.9988851973414095 (Minimum: 0.0, Maximum: 8.0)
+```
 
 SolarWinds-Core-v2019.4.5220-Hotfix5.msp - metadata
 
 ```
-File: Composite Document File V2 Document, Little Endian 
-Os: Windows, Version 6.2, 
-Code page: 1252, 
-Title: Installation Database, 
-Subject: SolarWinds Orion Core Services 2019.4, 
-Author: SolarWinds Worldwide, LLC., 
-Keywords: Installer,
-Comments: This installer database contains the logic and data required to install SolarWinds Orion Core Services 2019.4.
-Create Time/Date: Tue Mar 24 11:55:04 2020,
-Name of Creating Application: Windows Installer XML Toolset (3.9.1208.0),
-Security: 4,
-Template: Intel;1033,
-Last Saved By: Intel;1033,
-Revision Number: {079A74C5-95D0-446E-86F7-B8EAF0A29654}119.4.20161.5220;{079A74C5-95D0-446E-86F7-B8EAF0A29654}119.4.20161.5220;{DA36F8E2-99FC-44DF-B011-09F6B063B0F7},
-Number of Pages: 200, Number of Characters: 152174623
+codepage 		0
+title 			Update for SolarWinds Orion Core Services 2019.4 (Hotfix5)
+subject 		Update for SolarWinds Orion Core Services 2019.4 (Hotfix5)
+author 			SolarWinds Worldwide, LLC.
+comments 		Update for SolarWinds Orion Core Services 2019.4 (Hotfix5)
+template 		{079A74C5-95D0-446E-86F7-B8EAF0A29654}
+last_saved_by 		:RTM.1;:#RTM.1
+revision_number 	{8413ED57-01DD-48F7-B521-B6C5DE1A54DF}
+create_time 		2020-03-24 10:56:48
+last_saved_time 	2020-03-24 10:56:48
+num_words 		5
+creating_application 	Windows Installer XML Toolset (3.9.1208.0)
+security 		4
 ```
 
 SolarWinds-Core-v2019.4.5220-Hotfix5.msp - extracted files
