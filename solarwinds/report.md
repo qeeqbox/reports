@@ -1,25 +1,4 @@
-	Idle,
-	Exit,
-	SetTime,
-	CollectSystemDescription,
-	UploadSystemDescription,
-	RunTask,
-	GetProcessByDescription,
-	KillTask,
-	GetFileSystemEntries,
-	WriteFile,
-	FileExists,
-	DeleteFile,
-	GetFileHash,
-	ReadRegistryValue,
-	SetRegistryValue,
-	DeleteRegistryValue,
-	GetRegistrySubKeyAndValueNames,
-	Reboot,
-	None
-
-
-	SolarWinds-Core-v2019.4.5220-Hotfix5.msp - md5 02af7cec58b9a5da1c542b5a32151ba1
+SolarWinds-Core-v2019.4.5220-Hotfix5.msp - md5 02af7cec58b9a5da1c542b5a32151ba1
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/md5file.png)
 
@@ -119,6 +98,21 @@ bytes 		1011032
 mime 		application/x-dosexec
 extension 	application/x-msdos-program
 Entropy 	5.582826996737918 (Minimum: 0.0, Maximum: 8.0)
+```
+
+SolarWinds.Orion.Core.BusinessLayer.dll - signed
+
+```
+CommonName 		Solarwinds Worldwide, LLC
+OrganizationalUnit 	None
+Organization 		Solarwinds Worldwide, LLC
+Locality 		Austin
+StateOrProvinceName 	None
+CountryName 		US
+Start 			Jan 21 00:00:00 2020 GMT
+Ends 			Jan 20 23:59:59 2023 GMT
+SerialNumber 		21150566861557194870231784728595120365
+SerialNumberMD5 	08e35543d6110ed11fdf558bb093d401
 ```
 
 SolarWinds.Orion.Core.BusinessLayer.dll - metadata
@@ -553,12 +547,27 @@ b91ce2fa41029f6955bff20079468448
 ```
 
 ```
-.appsync-api.eu-west-1.avsvmcloud.com
-.appsync-api.eu-west-1.avsvmcloud.com 
-.appsync-api.eu-west-1.avsvmcloud.com
-.appsync-api.us-west-2.avsvmcloud.com
-.appsync-api.us-west-2.avsvmcloud.com
-.appsync-api.us-east-2.avsvmcloud.com
+avsvmcloud[.]com
+.appsync-api.eu-west-1.avsvmcloud[.]com
+.appsync-api.eu-west-1.avsvmcloud[.]com 
+.appsync-api.eu-west-1.avsvmcloud[.]com
+.appsync-api.us-west-2.avsvmcloud[.]com
+.appsync-api.us-west-2.avsvmcloud[.]com
+.appsync-api.us-east-2.avsvmcloud[.]com
+freescanonline[.]com
+deftsecurity[.]com
+thedoccloud[.]com
+incomeupdate[.]com
+websitetheme[.]com
+zupertech[.]com
+highdatabase[.]com
+panhardware[.]com
+databasegalore[.]com
+5.252.177.25
+5.252.177.21
+204.188.205.176
+51.89.125.18
+167.114.213.199
 ```
 
 REF
