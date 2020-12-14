@@ -1,4 +1,25 @@
-SolarWinds-Core-v2019.4.5220-Hotfix5.msp - md5 02af7cec58b9a5da1c542b5a32151ba1
+	Idle,
+	Exit,
+	SetTime,
+	CollectSystemDescription,
+	UploadSystemDescription,
+	RunTask,
+	GetProcessByDescription,
+	KillTask,
+	GetFileSystemEntries,
+	WriteFile,
+	FileExists,
+	DeleteFile,
+	GetFileHash,
+	ReadRegistryValue,
+	SetRegistryValue,
+	DeleteRegistryValue,
+	GetRegistrySubKeyAndValueNames,
+	Reboot,
+	None
+
+
+	SolarWinds-Core-v2019.4.5220-Hotfix5.msp - md5 02af7cec58b9a5da1c542b5a32151ba1
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/md5file.png)
 
@@ -159,7 +180,7 @@ private enum JobEngine
 }
 ```
 
-SetTime - Set delay for http helper
+SetTime - set delay for http helper
 
 ```csharp
 public static void SetTime(string[] args, out int delay)
@@ -169,7 +190,7 @@ public static void SetTime(string[] args, out int delay)
 ```
 
 
-CollectSystemDescription - get host info
+CollectSystemDescription - get host info - T1082 System Information Discovery & T1016 System Network Configuration Discovery
 
 ```csharp
 public static void CollectSystemDescription(string info, out string result)
@@ -198,7 +219,7 @@ public static void CollectSystemDescription(string info, out string result)
 ```
 
 
-UploadSystemDescription - Perform http request
+UploadSystemDescription - perform http request - T1071.001 Web Protocols
 
 ```csharp
 public static void UploadSystemDescription(string[] args, out string result, IWebProxy proxy)
@@ -324,7 +345,7 @@ public static void UploadSystemDescription(string[] args, out string result, IWe
 ```
 
 
-RunTask - Start a process
+RunTask - start a process - T1569.002 Service Execution
 
 ```csharp
 public static int RunTask(string[] args, string cl, out string result)
@@ -351,7 +372,7 @@ public static int RunTask(string[] args, string cl, out string result)
 ```
 
 
-GetProcessByDescription - get processes info
+GetProcessByDescription - get processes info - T1057 Process Discovery
 
 ```csharp
 public static void GetProcessByDescription(string[] args, out string result)
@@ -395,7 +416,7 @@ public static void GetProcessByDescription(string[] args, out string result)
 ```
 
 
-KillTask - Kill a task by PID
+KillTask - kill a task by PID - T1489 Service Stop
 
 ```csharp
 public static void KillTask(string[] args)
@@ -405,7 +426,7 @@ public static void KillTask(string[] args)
 ```
 
 
-GetFileSystemEntries - Get files and folders by path
+GetFileSystemEntries - get files and folders by path - T1083 File and Directory Discovery
 
 ```csharp
 public static void GetFileSystemEntries(string[] args, out string result)
@@ -421,7 +442,7 @@ public static void GetFileSystemEntries(string[] args, out string result)
 ```
 
 
-WriteFile - Write to file
+WriteFile - write to file - T1105 Ingress Tool Transfer
 
 ```csharp
 public static void WriteFile(string[] args)
@@ -452,7 +473,7 @@ public static void WriteFile(string[] args)
 ```
 
 
-FileExists - Check if file exists
+FileExists - check if file exists - T1083 File and Directory Discovery
 
 ```csharp
 public static void FileExists(string[] args, out string result)
@@ -464,7 +485,7 @@ public static void FileExists(string[] args, out string result)
 ```
 
 
-DeleteFile - delete file by path
+DeleteFile - delete file by path - T1070.004 File Deletion
 
 ```csharp
 public static void DeleteFile(string[] args)
@@ -474,7 +495,7 @@ public static void DeleteFile(string[] args)
 ```
 
 
-ReadRegistryValue - get a registry value
+ReadRegistryValue - get a registry value - T1012 Query Registry
 
 ```csharp
 public static int ReadRegistryValue(string[] args, out string result)
@@ -489,7 +510,7 @@ public static int ReadRegistryValue(string[] args, out string result)
 ```
 
 
-SetRegistryValue - modfiy a registry value
+SetRegistryValue - modfiy a registry value - T1112 Modify Registry
 
 ```csharp
 public static int SetRegistryValue(string[] args)
@@ -505,7 +526,7 @@ public static int SetRegistryValue(string[] args)
 ```
 
 
-SetRegistryValue - delete a registry value
+SetRegistryValue - delete a registry value - T1112 Modify Registry
 
 ```csharp
 public static void DeleteRegistryValue(string[] args)
@@ -515,7 +536,7 @@ public static void DeleteRegistryValue(string[] args)
 ```
 
 
-GetRegistrySubKeyAndValueNames - get all registry keys and values
+GetRegistrySubKeyAndValueNames - get all registry keys and values - T1012 Query Registry
 
 ```csharp
 public static void GetRegistrySubKeyAndValueNames(string[] args, out string result)
@@ -523,7 +544,6 @@ public static void GetRegistrySubKeyAndValueNames(string[] args, out string resu
 	result = OrionImprovementBusinessLayer.RegistryHelper.GetSubKeyAndValueNames(args[0]);
 }
 ```
-
 
 IOC
 
