@@ -1,7 +1,7 @@
 SolarWinds-Core-v2019.4.5220-Hotfix5.msp - md5 02af7cec58b9a5da1c542b5a32151ba1
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/md5file.png)
-
+<br /><br />
 SolarWinds-Core-v2019.4.5220-Hotfix5.msp - info
 
 ```
@@ -16,7 +16,7 @@ mime 		application/vnd.ms-msi
 extension 	application/octet-stream
 Entropy 	7.9988851973414095 (Minimum: 0.0, Maximum: 8.0)
 ```
-
+<br /><br />
 SolarWinds-Core-v2019.4.5220-Hotfix5.msp - metadata
 
 ```
@@ -34,12 +34,11 @@ num_words 		5
 creating_application 	Windows Installer XML Toolset (3.9.1208.0)
 security 		4
 ```
-
+<br /><br />
 SolarWinds-Core-v2019.4.5220-Hotfix5.msp - extracted files
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/extracted.png)
-
-
+<br /><br />
 SolarWinds-Core-v2019.4.5220-Hotfix5.msp - extracted files md5
 
 ```
@@ -84,7 +83,7 @@ be8fb541d3c916b4d91f59f331a62d41  SolarWinds.Orion.Swis.PubSub.dll
 c1c201388736053e9a883867dd5aba79  Toolset_2019.4_Patch.zip
 a56b277160c716b1454e8fa3a7322393  TruncateFirstAndLastPartitions.sql
 ```
-
+<br /><br />
 SolarWinds.Orion.Core.BusinessLayer.dll - info
 
 ```
@@ -99,7 +98,7 @@ mime 		application/x-dosexec
 extension 	application/x-msdos-program
 Entropy 	5.582826996737918 (Minimum: 0.0, Maximum: 8.0)
 ```
-
+<br /><br />
 SolarWinds.Orion.Core.BusinessLayer.dll - signed
 
 ```
@@ -114,22 +113,19 @@ Ends 			Jan 20 23:59:59 2023 GMT
 SerialNumber 		21150566861557194870231784728595120365
 SerialNumberMD5 	08e35543d6110ed11fdf558bb093d401
 ```
-
+<br /><br />
 SolarWinds.Orion.Core.BusinessLayer.dll - metadata
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/businesslayermeta.png)
-
-
+<br /><br />
 SolarWinds.Orion.Core.BusinessLayer.dll - function
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/function.png)
-
-
+<br /><br />
 SolarWinds.Orion.Core.BusinessLayer.dll - variables
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/vars.png)
-
-
+<br /><br />
 SolarWinds.Orion.Core.BusinessLayer.dll - variables decoded
 
 ```
@@ -140,13 +136,11 @@ Ky3WLU8tLtE1AgA= us-west-2
 Ky3WTU0sLtE1BAA= us-east-1
 Ky3WTU0sLtE1AgA= us-east-2
 ```
-
-
+<br /><br />
 SolarWinds.Orion.Core.BusinessLayer.dll - c2
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/c2.png)
-
-
+<br /><br />
 SolarWinds.Orion.Core.BusinessLayer.dll - c2 structure
 
 ```csharp
@@ -182,8 +176,7 @@ public static void SetTime(string[] args, out int delay)
 	delay = int.Parse(args[0]);
 }
 ```
-
-
+<br /><br />
 Get host info - T1082 System Information Discovery & T1016 System Network Configuration Discovery
 
 ```csharp
@@ -211,8 +204,7 @@ public static void CollectSystemDescription(string info, out string result)
 	result += OrionImprovementBusinessLayer.GetNetworkAdapterConfiguration();
 }
 ```
-
-
+<br /><br />
 Perform http request - T1071.001 Web Protocols
 
 ```csharp
@@ -337,8 +329,7 @@ public static void UploadSystemDescription(string[] args, out string result, IWe
 	}
 }
 ```
-
-
+<br /><br />
 Start a process - T1569.002 Service Execution
 
 ```csharp
@@ -364,8 +355,7 @@ public static int RunTask(string[] args, string cl, out string result)
 }
 
 ```
-
-
+<br /><br />
 Get processes info - T1057 Process Discovery
 
 ```csharp
@@ -408,8 +398,7 @@ public static void GetProcessByDescription(string[] args, out string result)
 	}
 }
 ```
-
-
+<br /><br />
 Kill a task by PID - T1489 Service Stop
 
 ```csharp
@@ -418,8 +407,7 @@ public static void KillTask(string[] args)
 	Process.GetProcessById(int.Parse(args[0])).Kill();
 }
 ```
-
-
+<br /><br />
 Get files and folders by path - T1083 File and Directory Discovery
 
 ```csharp
@@ -434,8 +422,7 @@ public static void GetFileSystemEntries(string[] args, out string result)
 	result = string.Join("\n", value2) + "\n\n" + string.Join(" \n", value);
 }
 ```
-
-
+<br /><br />
 Write to file - T1105 Ingress Tool Transfer
 
 ```csharp
@@ -465,8 +452,7 @@ public static void WriteFile(string[] args)
 }
 
 ```
-
-
+<br /><br />
 Check if file exists - T1083 File and Directory Discovery
 
 ```csharp
@@ -477,8 +463,7 @@ public static void FileExists(string[] args, out string result)
 }
 
 ```
-
-
+<br /><br />
 Delete file by path - T1070.004 File Deletion
 
 ```csharp
@@ -487,8 +472,7 @@ public static void DeleteFile(string[] args)
 	File.Delete(Environment.ExpandEnvironmentVariables(args[0]));
 }
 ```
-
-
+<br /><br />
 Get a registry value - T1012 Query Registry
 
 ```csharp
@@ -502,8 +486,7 @@ public static int ReadRegistryValue(string[] args, out string result)
 	return 1;
 }
 ```
-
-
+<br /><br />
 Modfiy a registry value - T1112 Modify Registry
 
 ```csharp
@@ -518,8 +501,7 @@ public static int SetRegistryValue(string[] args)
 	return 0;
 }
 ```
-
-
+<br /><br />
 Delete a registry value - T1112 Modify Registry
 
 ```csharp
@@ -528,8 +510,7 @@ public static void DeleteRegistryValue(string[] args)
 	OrionImprovementBusinessLayer.RegistryHelper.DeleteValue(args[0], args[1]);
 }
 ```
-
-
+<br /><br />
 Get all registry keys and values - T1012 Query Registry
 
 ```csharp
