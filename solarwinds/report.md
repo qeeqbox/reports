@@ -1,4 +1,4 @@
-##Solarwinds Supply Chain Attack##
+##Solarwinds Supply Chain Attack
 
 SolarWinds-Core-v2019.4.5220-Hotfix5.msp - md5 02af7cec58b9a5da1c542b5a32151ba1
 
