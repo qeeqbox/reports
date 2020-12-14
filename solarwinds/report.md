@@ -512,3 +512,8 @@ b91ce2fa41029f6955bff20079468448
 .appsync-api.us-west-2.avsvmcloud.com
 .appsync-api.us-east-2.avsvmcloud.com
 ```
+
+REF
+- https://www.solarwinds.com/security/security-statement
+- https://www.fireeye.com/blog/products-and-services/2020/12/fireeye-shares-details-of-recent-cyber-attack-actions-to-protect-community.html
+- https://www.zdnet.com/article/microsoft-fireeye-confirm-solarwinds-supply-chain-attack/
