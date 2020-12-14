@@ -1,6 +1,6 @@
 **SolarWinds-Core-v2019.4.5220-Hotfix5.msp (md5 02af7cec58b9a5da1c542b5a32151ba1)**
 
-![](https://raw.githubusercontent.com/qeeqbox/research/solarwinds/main/files/md5file.png)
+![](https://raw.githubusercontent.com/qeeqbox/reports/solarwinds/main/files/md5file.png)
 
 **SolarWinds-Core-v2019.4.5220-Hotfix5.msp metadata**
 
@@ -24,7 +24,7 @@ Number of Pages: 200, Number of Characters: 152174623
 
 **SolarWinds-Core-v2019.4.5220-Hotfix5.msp extracted files**
 
-![](https://raw.githubusercontent.com/qeeqbox/research/solarwinds/main/files/extracted.png)
+![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/extracted.png)
 
 **SolarWinds-Core-v2019.4.5220-Hotfix5.msp extracted files md5**
 
@@ -73,15 +73,15 @@ a56b277160c716b1454e8fa3a7322393  TruncateFirstAndLastPartitions.sql
 
 **SolarWinds.Orion.Core.BusinessLayer.dll metadata**
 
-![](https://raw.githubusercontent.com/qeeqbox/research/solarwinds/main/files/businesslayermeta.png)
+![](https://raw.githubusercontent.com/qeeqbox/reports/solarwinds/main/files/businesslayermeta.png)
 
 **SolarWinds.Orion.Core.BusinessLayer.dll function**
 
-![](https://raw.githubusercontent.com/qeeqbox/research/solarwinds/main/files/function.png)
+![](https://raw.githubusercontent.com/qeeqbox/reports/solarwinds/main/files/function.png)
 
 **SolarWinds.Orion.Core.BusinessLayer.dll variables**
 
-![](https://raw.githubusercontent.com/qeeqbox/research/solarwinds/main/files/vars.png)
+![](https://raw.githubusercontent.com/qeeqbox/reports/solarwinds/main/files/vars.png)
 
 **SolarWinds.Orion.Core.BusinessLayer.dll variables decoded**
 
@@ -96,7 +96,7 @@ Ky3WTU0sLtE1AgA= us-east-2
 
 **SolarWinds.Orion.Core.BusinessLayer.dll c2**
 
-![](https://raw.githubusercontent.com/qeeqbox/research/solarwinds/main/files/vars.png)
+![](https://raw.githubusercontent.com/qeeqbox/reports/solarwinds/main/files/vars.png)
 
 **SolarWinds.Orion.Core.BusinessLayer.dll c2 structure**
 
