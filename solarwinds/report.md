@@ -85,12 +85,6 @@ c1c201388736053e9a883867dd5aba79  Toolset_2019.4_Patch.zip
 a56b277160c716b1454e8fa3a7322393  TruncateFirstAndLastPartitions.sql
 ```
 
-
-SolarWinds.Orion.Core.BusinessLayer.dll - metadata
-
-![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/businesslayermeta.png)
-
-
 SolarWinds.Orion.Core.BusinessLayer.dll - info
 
 ```
@@ -105,6 +99,10 @@ mime 		application/x-dosexec
 extension 	application/x-msdos-program
 Entropy 	5.582826996737918 (Minimum: 0.0, Maximum: 8.0)
 ```
+
+SolarWinds.Orion.Core.BusinessLayer.dll - metadata
+
+![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/businesslayermeta.png)
 
 
 SolarWinds.Orion.Core.BusinessLayer.dll - function
