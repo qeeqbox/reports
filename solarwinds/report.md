@@ -79,6 +79,22 @@ SolarWinds.Orion.Core.BusinessLayer.dll - metadata
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/businesslayermeta.png)
 
 
+SolarWinds.Orion.Core.BusinessLayer.dll - info
+
+```
+Name 		solarwinds.orion.core.businesslayer.dll
+md5 		b91ce2fa41029f6955bff20079468448
+sha1 		76640508b1e7759e548771a5359eaed353bf1eec
+sha256 		32519b85c0b422e4656de6e6c41878e95fd95026267daab4215ee59c107d6c77
+ssdeep 		12288:Zx7m/z9aEBzvnvLtYAi6uLlYQ69BBpIvF1tjpH7BKi+0A8vca9owQ:6aEBTvRBi6uL6dIvDtjpH9+0A8vca9oD
+size 		987.34KB
+bytes 		1011032
+mime 		application/x-dosexec
+extension 	application/x-msdos-program
+Entropy 	5.582826996737918 (Minimum: 0.0, Maximum: 8.0)
+```
+
+
 SolarWinds.Orion.Core.BusinessLayer.dll - function
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/function.png)
