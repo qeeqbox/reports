@@ -190,7 +190,7 @@ public static void SetTime(string[] args, out int delay)
 ```
 
 
-CollectSystemDescription - get host info - T1082 System Information Discovery & T1016 System Network Configuration Discovery
+Get host info - T1082 System Information Discovery & T1016 System Network Configuration Discovery
 
 ```csharp
 public static void CollectSystemDescription(string info, out string result)
@@ -219,7 +219,7 @@ public static void CollectSystemDescription(string info, out string result)
 ```
 
 
-UploadSystemDescription - perform http request - T1071.001 Web Protocols
+Perform http request - T1071.001 Web Protocols
 
 ```csharp
 public static void UploadSystemDescription(string[] args, out string result, IWebProxy proxy)
@@ -345,7 +345,7 @@ public static void UploadSystemDescription(string[] args, out string result, IWe
 ```
 
 
-RunTask - start a process - T1569.002 Service Execution
+Start a process - T1569.002 Service Execution
 
 ```csharp
 public static int RunTask(string[] args, string cl, out string result)
@@ -372,7 +372,7 @@ public static int RunTask(string[] args, string cl, out string result)
 ```
 
 
-GetProcessByDescription - get processes info - T1057 Process Discovery
+Get processes info - T1057 Process Discovery
 
 ```csharp
 public static void GetProcessByDescription(string[] args, out string result)
@@ -416,7 +416,7 @@ public static void GetProcessByDescription(string[] args, out string result)
 ```
 
 
-KillTask - kill a task by PID - T1489 Service Stop
+Kill a task by PID - T1489 Service Stop
 
 ```csharp
 public static void KillTask(string[] args)
@@ -426,7 +426,7 @@ public static void KillTask(string[] args)
 ```
 
 
-GetFileSystemEntries - get files and folders by path - T1083 File and Directory Discovery
+Get files and folders by path - T1083 File and Directory Discovery
 
 ```csharp
 public static void GetFileSystemEntries(string[] args, out string result)
@@ -442,7 +442,7 @@ public static void GetFileSystemEntries(string[] args, out string result)
 ```
 
 
-WriteFile - write to file - T1105 Ingress Tool Transfer
+Write to file - T1105 Ingress Tool Transfer
 
 ```csharp
 public static void WriteFile(string[] args)
@@ -473,7 +473,7 @@ public static void WriteFile(string[] args)
 ```
 
 
-FileExists - check if file exists - T1083 File and Directory Discovery
+Check if file exists - T1083 File and Directory Discovery
 
 ```csharp
 public static void FileExists(string[] args, out string result)
@@ -485,7 +485,7 @@ public static void FileExists(string[] args, out string result)
 ```
 
 
-DeleteFile - delete file by path - T1070.004 File Deletion
+Delete file by path - T1070.004 File Deletion
 
 ```csharp
 public static void DeleteFile(string[] args)
@@ -495,7 +495,7 @@ public static void DeleteFile(string[] args)
 ```
 
 
-ReadRegistryValue - get a registry value - T1012 Query Registry
+Get a registry value - T1012 Query Registry
 
 ```csharp
 public static int ReadRegistryValue(string[] args, out string result)
@@ -510,7 +510,7 @@ public static int ReadRegistryValue(string[] args, out string result)
 ```
 
 
-SetRegistryValue - modfiy a registry value - T1112 Modify Registry
+Modfiy a registry value - T1112 Modify Registry
 
 ```csharp
 public static int SetRegistryValue(string[] args)
@@ -526,7 +526,7 @@ public static int SetRegistryValue(string[] args)
 ```
 
 
-SetRegistryValue - delete a registry value - T1112 Modify Registry
+Delete a registry value - T1112 Modify Registry
 
 ```csharp
 public static void DeleteRegistryValue(string[] args)
@@ -536,7 +536,7 @@ public static void DeleteRegistryValue(string[] args)
 ```
 
 
-GetRegistrySubKeyAndValueNames - get all registry keys and values - T1012 Query Registry
+Get all registry keys and values - T1012 Query Registry
 
 ```csharp
 public static void GetRegistrySubKeyAndValueNames(string[] args, out string result)
