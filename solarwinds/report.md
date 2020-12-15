@@ -111,7 +111,7 @@ extension 	application/x-msdos-program
 Entropy 	5.582826996737918 (Minimum: 0.0, Maximum: 8.0)
 ```
 <br /><br />
-SolarWinds.Orion.Core.BusinessLayer.dll - signed
+SolarWinds.Orion.Core.BusinessLayer.dll - signed - T1553.002 Code Signing
 
 ```
 CommonName 		Solarwinds Worldwide, LLC
