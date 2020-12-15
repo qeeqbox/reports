@@ -138,15 +138,27 @@ SolarWinds.Orion.Core.BusinessLayer.dll - variables - T1027 Obfuscated Files or 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/vars.png)
 
 <br /><br />
-SolarWinds.Orion.Core.BusinessLayer.dll - variables decoded
+SolarWinds.Orion.Core.BusinessLayer.dll - Pyhton Decoder (base64 + zlib)
 
 ```
-SywrLstNzskvTdFLzs8FAA== avsvmcloud.com
-SywoKK7MS9ZNLMgEAA== appsync-api
-Sy3VLU8tLtE1BAA= eu-west-1
-Ky3WLU8tLtE1AgA= us-west-2
-Ky3WTU0sLtE1BAA= us-east-1
-Ky3WTU0sLtE1AgA= us-east-2
+from base64 import b64decode
+from zlib import decompress
+
+def decode(string):
+    return decompress(b64decode(string),-15)
+
+for x in ['CyjKT04tLvZ0AQA=','SywrLstNzskvTdFLzs8FAA==','SywoKK7MS9ZNLMgEAA==','Sy3VLU8tLtE1BAA=','Ky3WLU8tLtE1AgA=','Ky3WTU0sLtE1BAA=','Ky3WTU0sLtE1AgA=']:
+	print(x," -> ", decode(x).decode('utf-8'))
+
+```
+```
+CyjKT04tLvZ0AQA=  ->  ProcessID
+SywrLstNzskvTdFLzs8FAA==  ->  avsvmcloud.com
+SywoKK7MS9ZNLMgEAA==  ->  appsync-api
+Sy3VLU8tLtE1BAA=  ->  eu-west-1
+Ky3WLU8tLtE1AgA=  ->  us-west-2
+Ky3WTU0sLtE1BAA=  ->  us-east-1
+Ky3WTU0sLtE1AgA=  ->  us-east-2
 ```
 <br /><br />
 SolarWinds.Orion.Core.BusinessLayer.dll - c2
