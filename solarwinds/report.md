@@ -1,11 +1,9 @@
 <p align="center"> <img src="https://raw.githubusercontent.com/qeeqbox/APT-Malware-Reports-Set-1//master/readme/reportslogo.png"></p>
 
-#
-
-### Solarwinds Supply Chain Attack (This report still in progress)
+## Solarwinds Supply Chain Attack
 Adversaries gained access to numerous public and private organizations by trojanized SolarWinds Orion software applications updates **(This attack is large, bad and very concerning)**
 
-#
+## Analysis
 SolarWinds-Core-v2019.4.5220-Hotfix5.msp - md5 02af7cec58b9a5da1c542b5a32151ba1
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/md5file.png)
@@ -650,7 +648,7 @@ private static void Update()
 }
 ```
 
-IOC
+## IoCs
 
 ```
 02af7cec58b9a5da1c542b5a32151ba1
@@ -689,12 +687,13 @@ databasegalore[.]com
 167.114.213.199
 ```
 
-REF
+## References
+
 - https://www.solarwinds.com/security/security-statement
 - https://github.com/fireeye/sunburst_countermeasures
 - https://www.fireeye.com/blog/products-and-services/2020/12/fireeye-shares-details-of-recent-cyber-attack-actions-to-protect-community.html
 - https://www.zdnet.com/article/microsoft-fireeye-confirm-solarwinds-supply-chain-attack/
 - https://cyber.dhs.gov/ed/21-01/
 
-Files:
+## Files
 - SolarWinds.Orion.Core.BusinessLayer.dll.zip pass: infected
