@@ -182,7 +182,7 @@ private enum JobEngine
 }
 ```
 <br /><br />
-SetTime - set delay for http helper
+Set delay for http helper
 
 ```csharp
 public static void SetTime(string[] args, out int delay)
