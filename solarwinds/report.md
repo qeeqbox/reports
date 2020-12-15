@@ -147,12 +147,10 @@ from zlib import decompress
 def decode(string):
     return decompress(b64decode(string),-15)
 
-for x in ['CyjKT04tLvZ0AQA=','SywrLstNzskvTdFLzs8FAA==','SywoKK7MS9ZNLMgEAA==','Sy3VLU8tLtE1BAA=','Ky3WLU8tLtE1AgA=','Ky3WTU0sLtE1BAA=','Ky3WTU0sLtE1AgA=']:
+for x in ['SywrLstNzskvTdFLzs8FAA==','SywoKK7MS9ZNLMgEAA==','Sy3VLU8tLtE1BAA=','Ky3WLU8tLtE1AgA=','Ky3WTU0sLtE1BAA=','Ky3WTU0sLtE1AgA=']:
 	print(x," -> ", decode(x).decode('utf-8'))
-
 ```
 ```
-CyjKT04tLvZ0AQA=  ->  ProcessID
 SywrLstNzskvTdFLzs8FAA==  ->  avsvmcloud.com
 SywoKK7MS9ZNLMgEAA==  ->  appsync-api
 Sy3VLU8tLtE1BAA=  ->  eu-west-1
