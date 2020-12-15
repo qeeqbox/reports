@@ -128,7 +128,7 @@ SolarWinds.Orion.Core.BusinessLayer.dll - function
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/function.png)
 
 <br /><br />
-SolarWinds.Orion.Core.BusinessLayer.dll - variables
+SolarWinds.Orion.Core.BusinessLayer.dll - variables - T1027 Obfuscated Files or Information
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/vars.png)
 
