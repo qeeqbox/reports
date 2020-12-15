@@ -701,5 +701,7 @@ databasegalore[.]com
 - SolarWinds.Orion.Core.BusinessLayer.dll.zip pass: infected
 
 ## Mapped Attacks Refs
-<img src="https://raw.githubusercontent.com/qeeqbox/mitre-visualizer/main/readme/intro.png" style="max-width:768px"/>
+<br /><br />
 [https://tools.qeeqbox.com/mitre-visualizer.html](https://tools.qeeqbox.com/mitre-visualizer.html)
+
+<img src="https://raw.githubusercontent.com/qeeqbox/mitre-visualizer/main/readme/intro.png" style="max-width:768px"/>
