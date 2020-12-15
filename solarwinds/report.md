@@ -3,7 +3,7 @@
 #
 
 ### Solarwinds Supply Chain Attack (This report still in progress)
-Adversaries trojanized SolarWinds Orion software applications updates, which allowed them to gain access to numerous public and private organizations.
+Adversaries gained access to numerous public and private organizations by trojanized SolarWinds Orion software applications updates
 
 <br /><br />
 SolarWinds-Core-v2019.4.5220-Hotfix5.msp - md5 02af7cec58b9a5da1c542b5a32151ba1
