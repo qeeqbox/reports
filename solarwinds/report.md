@@ -698,5 +698,5 @@ REF
 - https://www.zdnet.com/article/microsoft-fireeye-confirm-solarwinds-supply-chain-attack/
 - https://cyber.dhs.gov/ed/21-01/
 
-Fils:
+Files:
 - SolarWinds.Orion.Core.BusinessLayer.dll.zip pass: infected
