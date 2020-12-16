@@ -156,7 +156,7 @@ Ky3WTU0sLtE1BAA=  ->  us-east-1
 Ky3WTU0sLtE1AgA=  ->  us-east-2
 ```
 <br /><br />
-SolarWinds.Orion.Core.BusinessLayer.dll - c2 - T1564 Command and Control
+SolarWinds.Orion.Core.BusinessLayer.dll - c2 - TA0011 Command and Control
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/c2.png)
 
