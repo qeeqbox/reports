@@ -350,6 +350,30 @@ public static void UploadSystemDescription(string[] args, out string result, IWe
 }
 ```
 <br /><br />
+UploadSystemDescription - Pyhton fnv 64 hash logic
+```python
+def encrypt_fnv_64(string):
+    hval = 14695981039346656037
+    for letter in string:
+        hval = hval ^ ord(letter)
+        hval = (hval * 1099511628211) % (2 ** 64)
+    return hval ^ 6605813339339102567
+```
+
+```
+7574774749059321801  	->  user-agent
+9007106680104765185  	->  referer
+6116246686670134098  	->  content-type
+16066522799090129502  	->  date
+14226582801651130532  	->  close
+2734787258623754862  	->  accept
+11266044540366291518  	->  connection
+8873858923435176895  	->  expect
+13852439084267373191  	->  keep-alive
+1475579823244607677  	->  100-continue
+```
+
+<br /><br />
 Start a process - T1569.002 Service Execution
 
 ```csharp
