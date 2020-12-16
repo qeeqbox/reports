@@ -350,7 +350,7 @@ public static void UploadSystemDescription(string[] args, out string result, IWe
 }
 ```
 <br /><br />
-UploadSystemDescription - Pyhton fnv 64 hash logic
+UploadSystemDescription - Python fnv 64 hash logic
 ```python
 def encrypt_fnv_64(string):
     hval = 14695981039346656037
