@@ -374,7 +374,7 @@ def encrypt_fnv_64(string):
 ```
 
 <br /><br />
-Start a process - T1569.002 Service Execution
+Start a process
 
 ```csharp
 public static int RunTask(string[] args, string cl, out string result)
