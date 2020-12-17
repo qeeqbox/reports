@@ -683,11 +683,6 @@ private static void Update()
 ## Domain Lookup
 ```
 {
-    "status": 1,
-    "domain_name": "avsvmcloud.com",
-    "query_time": "2020-12-14 14:35:51",
-    "whois_server": "whois.godaddy.com",
-    "domain_registered": "yes",
     "create_date": "2018-07-25",
     "update_date": "2020-10-08",
     "expiry_date": "2023-07-25",
@@ -700,32 +695,6 @@ private static void Update()
         "phone_number": "+1.4806242505"
     },
     "registrant_contact": {
-        "full_name": "Registration Private",
-        "company_name": "Domains By Proxy, LLC",
-        "mailing_address": "DomainsByProxy.com 14455 N. Hayden Road",
-        "city_name": "Scottsdale",
-        "state_name": "Arizona",
-        "zip_code": "85260",
-        "country_name": "United States",
-        "country_code": "US",
-        "email_address": "avsvmcloud.com@domainsbyproxy.com",
-        "phone_number": "+1.4806242599",
-        "fax_number": "+1.4806242598"
-    },
-    "administrative_contact": {
-        "full_name": "Registration Private",
-        "company_name": "Domains By Proxy, LLC",
-        "mailing_address": "DomainsByProxy.com 14455 N. Hayden Road",
-        "city_name": "Scottsdale",
-        "state_name": "Arizona",
-        "zip_code": "85260",
-        "country_name": "United States",
-        "country_code": "US",
-        "email_address": "avsvmcloud.com@domainsbyproxy.com",
-        "phone_number": "+1.4806242599",
-        "fax_number": "+1.4806242598"
-    },
-    "technical_contact": {
         "full_name": "Registration Private",
         "company_name": "Domains By Proxy, LLC",
         "mailing_address": "DomainsByProxy.com 14455 N. Hayden Road",
