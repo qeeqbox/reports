@@ -443,7 +443,7 @@ public static void GetProcessByDescription(string[] args, out string result)
 }
 ```
 <br /><br />
-Kill a task by PID - T1489 Service Stop
+Kill a task by PID - T1543.003 Create or Modify System Process: Windows Service
 
 ```csharp
 public static void KillTask(string[] args)
