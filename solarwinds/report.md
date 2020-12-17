@@ -188,7 +188,7 @@ private enum JobEngine
 }
 ```
 <br /><br />
-Set delay for http helper
+Set delay for http helper - T1587.001 Virtualization/Sandbox Evasion
 
 ```csharp
 public static void SetTime(string[] args, out int delay)
