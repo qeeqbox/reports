@@ -680,6 +680,144 @@ private static void Update()
 }
 ```
 
+## Domain Lookup
+```
+{
+	"records": [
+		{
+			"domainName": "avsvmcloud.com",
+			"domainType": "added",
+			"createdDateISO8601": "2018-07-25T11:38:29+00:00",
+			"updatedDateISO8601": "2020-12-14T18:30:58+00:00",
+			"expiresDateISO8601": "2023-07-25T11:38:29+00:00",
+			"createdDateRaw": "2018-07-25 11:38:29 UTC",
+			"updatedDateRaw": "2020-12-14 18:30:58 UTC",
+			"expiresDateRaw": "2023-07-25 11:38:29 UTC",
+			"audit": {
+				"createdDate": "2020-12-17T02:54:46+00:00",
+				"updatedDate": "2020-12-17T02:54:46+00:00"
+			},
+			"nameServers": [
+				"PDNS09.DOMAINCONTROL.COM",
+				"PDNS10.DOMAINCONTROL.COM"
+			],
+			"whoisServer": "whois.godaddy.com",
+			"registrarName": "GoDaddy.com, LLC",
+			"status": [
+				"clientDeleteProhibited",
+				"clientRenewProhibited",
+				"clientTransferProhibited",
+				"clientUpdateProhibited"
+			],
+			"cleanText": "Domain Name: avsvmcloud.com\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar URL: http://www.godaddy.com\nUpdated Date: 2020-10-08T13:58:35Z\nCreation Date: 2018-07-25T11:38:29Z\nRegistrar Registration Expiration Date: 2023-07-25T11:38:29Z\nRegistrar: GoDaddy.com, LLC\nRegistrar IANA ID: 146\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: +1.4806242505\nDomain Status: clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited http://www.icann.org/epp#clientUpdateProhibited\nDomain Status: clientRenewProhibited http://www.icann.org/epp#clientRenewProhibited\nDomain Status: clientDeleteProhibited http://www.icann.org/epp#clientDeleteProhibited\nRegistrant Name: Registration Private\nRegistrant Organization: Domains By Proxy, LLC\nRegistrant Street: DomainsByProxy.com\nRegistrant Street: 14455 N. Hayden Road\nRegistrant City: Scottsdale\nRegistrant State/Province: Arizona\nRegistrant Postal Code: 85260\nRegistrant Country: US\nRegistrant Phone: +1.4806242599\nRegistrant Fax: +1.4806242598\nRegistrant Email: avsvmcloud.com@domainsbyproxy.com\nAdmin Name: Registration Private\nAdmin Organization: Domains By Proxy, LLC\nAdmin Street: DomainsByProxy.com\nAdmin Street: 14455 N. Hayden Road\nAdmin City: Scottsdale\nAdmin State/Province: Arizona\nAdmin Postal Code: 85260\nAdmin Country: US\nAdmin Phone: +1.4806242599\nAdmin Fax: +1.4806242598\nAdmin Email: avsvmcloud.com@domainsbyproxy.com\nTech Name: Registration Private\nTech Organization: Domains By Proxy, LLC\nTech Street: DomainsByProxy.com\nTech Street: 14455 N. Hayden Road\nTech City: Scottsdale\nTech State/Province: Arizona\nTech Postal Code: 85260\nTech Country: US\nTech Phone: +1.4806242599\nTech Fax: +1.4806242598\nTech Email: avsvmcloud.com@domainsbyproxy.com\nName Server: PDNS09.DOMAINCONTROL.COM\nName Server: PDNS10.DOMAINCONTROL.COM\n",
+			"rawText": "Domain Name: avsvmcloud.com\nRegistry Domain ID: 2289718834_DOMAIN_COM-VRSN\nRegistrar WHOIS Server: whois.godaddy.com\nRegistrar URL: http://www.godaddy.com\nUpdated Date: 2020-10-08T13:58:35Z\nCreation Date: 2018-07-25T11:38:29Z\nRegistrar Registration Expiration Date: 2023-07-25T11:38:29Z\nRegistrar: GoDaddy.com, LLC\nRegistrar IANA ID: 146\nRegistrar Abuse Contact Email: abuse@godaddy.com\nRegistrar Abuse Contact Phone: +1.4806242505\nDomain Status: clientTransferProhibited http://www.icann.org/epp#clientTransferProhibited\nDomain Status: clientUpdateProhibited http://www.icann.org/epp#clientUpdateProhibited\nDomain Status: clientRenewProhibited http://www.icann.org/epp#clientRenewProhibited\nDomain Status: clientDeleteProhibited http://www.icann.org/epp#clientDeleteProhibited\nRegistry Registrant ID: Not Available From Registry\nRegistrant Name: Registration Private\nRegistrant Organization: Domains By Proxy, LLC\nRegistrant Street: DomainsByProxy.com\nRegistrant Street: 14455 N. Hayden Road\nRegistrant City: Scottsdale\nRegistrant State/Province: Arizona\nRegistrant Postal Code: 85260\nRegistrant Country: US\nRegistrant Phone: +1.4806242599\nRegistrant Phone Ext: \nRegistrant Fax: +1.4806242598\nRegistrant Fax Ext: \nRegistrant Email: avsvmcloud.com@domainsbyproxy.com\nRegistry Admin ID: Not Available From Registry\nAdmin Name: Registration Private\nAdmin Organization: Domains By Proxy, LLC\nAdmin Street: DomainsByProxy.com\nAdmin Street: 14455 N. Hayden Road\nAdmin City: Scottsdale\nAdmin State/Province: Arizona\nAdmin Postal Code: 85260\nAdmin Country: US\nAdmin Phone: +1.4806242599\nAdmin Phone Ext: \nAdmin Fax: +1.4806242598\nAdmin Fax Ext: \nAdmin Email: avsvmcloud.com@domainsbyproxy.com\nRegistry Tech ID: Not Available From Registry\nTech Name: Registration Private\nTech Organization: Domains By Proxy, LLC\nTech Street: DomainsByProxy.com\nTech Street: 14455 N. Hayden Road\nTech City: Scottsdale\nTech State/Province: Arizona\nTech Postal Code: 85260\nTech Country: US\nTech Phone: +1.4806242599\nTech Phone Ext: \nTech Fax: +1.4806242598\nTech Fax Ext: \nTech Email: avsvmcloud.com@domainsbyproxy.com\nName Server: PDNS09.DOMAINCONTROL.COM\nName Server: PDNS10.DOMAINCONTROL.COM\nDNSSEC: unsigned\nURL of the ICANN WHOIS Data Problem Reporting System: http://wdprs.internic.net/\n>>> Last update of WHOIS database: 2020-12-17T02:00:00Z <<<\n\nFor more information on Whois status codes, please visit https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en\n\nTERMS OF USE: The data contained in this registrar's Whois database, while believed by the \nregistrar to be reliable, is provided \"as is\" with no guarantee or warranties regarding its\naccuracy. This information is provided for the sole purpose of assisting you in obtaining \ninformation about domain name registration records. Any use of this data for any other purpose \nis expressly forbidden without the prior written permission of this registrar. By submitting \nan inquiry, you agree to these terms and limitations of warranty. In particular, you agree not \nto use this data to allow, enable, or otherwise support the dissemination or collection of this \ndata, in part or in its entirety, for any purpose, such as transmission by e-mail, telephone, \npostal mail, facsimile or other means of mass unsolicited, commercial advertising or solicitations \nof any kind, including spam. You further agree not to use this data to enable high volume, automated \nor robotic electronic processes designed to collect or compile this data for any purpose, including \nmining this data for your own personal or commercial purposes. Failure to comply with these terms \nmay result in termination of access to the Whois database. These terms may be subject to modification \nat any time without notice.",
+			"registrantContact": {
+				"name": "Registration Private",
+				"organization": "Domains By Proxy, LLC",
+				"street": "DomainsByProxy.com\n14455 N. Hayden Road",
+				"city": "Scottsdale",
+				"state": "Arizona",
+				"postalCode": "85260",
+				"country": "UNITED STATES",
+				"email": "avsvmcloud.com@domainsbyproxy.com",
+				"telephone": "14806242599",
+				"telephoneExt": null,
+				"fax": "14806242598",
+				"faxExt": null,
+				"rawText": "Registrant Name: Registration Private\nRegistrant Organization: Domains By Proxy, LLC\nRegistrant Street: DomainsByProxy.com\nRegistrant Street: 14455 N. Hayden Road\nRegistrant City: Scottsdale\nRegistrant State/Province: Arizona\nRegistrant Postal Code: 85260\nRegistrant Country: US\nRegistrant Phone: +1.4806242599\nRegistrant Fax: +1.4806242598\nRegistrant Email: avsvmcloud.com@domainsbyproxy.com"
+			},
+			"administrativeContact": {
+				"name": "Registration Private",
+				"organization": "Domains By Proxy, LLC",
+				"street": "DomainsByProxy.com\n14455 N. Hayden Road",
+				"city": "Scottsdale",
+				"state": "Arizona",
+				"postalCode": "85260",
+				"country": "UNITED STATES",
+				"email": "avsvmcloud.com@domainsbyproxy.com",
+				"telephone": null,
+				"telephoneExt": null,
+				"fax": "14806242598",
+				"faxExt": null,
+				"rawText": "Admin Name: Registration Private\nAdmin Organization: Domains By Proxy, LLC\nAdmin Street: DomainsByProxy.com\nAdmin Street: 14455 N. Hayden Road\nAdmin City: Scottsdale\nAdmin State/Province: Arizona\nAdmin Postal Code: 85260\nAdmin Country: US\nAdmin Phone: +1.4806242599\nAdmin Fax: +1.4806242598\nAdmin Email: avsvmcloud.com@domainsbyproxy.com"
+			},
+			"technicalContact": {
+				"name": "Registration Private",
+				"organization": "Domains By Proxy, LLC",
+				"street": "DomainsByProxy.com\n14455 N. Hayden Road",
+				"city": "Scottsdale",
+				"state": "Arizona",
+				"postalCode": "85260",
+				"country": "UNITED STATES",
+				"email": "avsvmcloud.com@domainsbyproxy.com",
+				"telephone": null,
+				"telephoneExt": null,
+				"fax": "14806242598",
+				"faxExt": null,
+				"rawText": "Tech Name: Registration Private\nTech Organization: Domains By Proxy, LLC\nTech Street: DomainsByProxy.com\nTech Street: 14455 N. Hayden Road\nTech City: Scottsdale\nTech State/Province: Arizona\nTech Postal Code: 85260\nTech Country: US\nTech Phone: +1.4806242599\nTech Fax: +1.4806242598\nTech Email: avsvmcloud.com@domainsbyproxy.com"
+			},
+			"billingContact": {
+				"name": null,
+				"organization": null,
+				"street": "",
+				"city": null,
+				"state": null,
+				"postalCode": null,
+				"country": null,
+				"email": null,
+				"telephone": null,
+				"telephoneExt": null,
+				"fax": null,
+				"faxExt": null,
+				"rawText": ""
+			},
+			"zoneContact": {
+				"name": null,
+				"organization": null,
+				"street": "",
+				"city": null,
+				"state": null,
+				"postalCode": null,
+				"country": null,
+				"email": null,
+				"telephone": null,
+				"telephoneExt": null,
+				"fax": null,
+				"faxExt": null,
+				"rawText": ""
+			}
+		},
+		{
+			"updatedDate": "2020-10-08T14:04:38+00:00",
+		},
+		{
+			"updatedDate": "2020-02-26T12:04:03+00:00",
+		},
+		{
+			"updatedDate": "2020-02-26T12:04:02+00:00",
+		},
+		{
+			"updatedDate": "2019-12-06T11:00:21+00:00",
+		},
+		{
+			"updatedDate": "2019-12-06T09:31:53+00:00",
+		},
+		{
+			"updatedDate": "2019-07-19T12:38:53+00:00",
+		},
+		{
+			"updatedDate": "2018-07-25T11:38:29+00:00",
+		},
+		{
+			"updatedDate": "2018-07-25T11:38:29+00:00",
+		},
+		{
+			"updatedDate": "2018-07-25T11:38:29+00:00",
+		}
+	]
+}
+```
+
 ## IoCs
 
 ```
