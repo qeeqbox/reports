@@ -125,7 +125,7 @@ SolarWinds.Orion.Core.BusinessLayer.dll - metadata
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/businesslayermeta.png)
 
 <br /><br />
-SolarWinds.Orion.Core.BusinessLayer.dll - function
+SolarWinds.Orion.Core.BusinessLayer.dll - function - T1587.001 Develop Capabilities: Malware
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/function.png)
 
