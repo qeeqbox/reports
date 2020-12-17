@@ -374,7 +374,7 @@ def encrypt_fnv_64(string):
 ```
 
 <br /><br />
-Start a process - T1543.003 Create or Modify System Process: Windows Service 
+Start a process -  T1569.002 Service Execution & T1543.003 Create or Modify System Process 
 
 ```csharp
 public static int RunTask(string[] args, string cl, out string result)
@@ -443,7 +443,7 @@ public static void GetProcessByDescription(string[] args, out string result)
 }
 ```
 <br /><br />
-Kill a task by PID - T1543.003 Create or Modify System Process: Windows Service
+Kill a task by PID - T1489 Service Stop & T1543.003 Create or Modify System Process
 
 ```csharp
 public static void KillTask(string[] args)
