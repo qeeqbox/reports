@@ -683,44 +683,9 @@ private static void Update()
 ## Domain Lookup
 ```
 {
-    "create_date": "2018-07-25",
-    "update_date": "2020-10-08",
-    "expiry_date": "2023-07-25",
-    "domain_registrar": {
-        "iana_id": 146,
-        "registrar_name": "GoDaddy.com, LLC",
-        "whois_server": "whois.godaddy.com",
-        "website_url": "http://www.godaddy.com",
-        "email_address": "abuse@godaddy.com",
-        "phone_number": "+1.4806242505"
-    },
-    "registrant_contact": {
-        "full_name": "Registration Private",
-        "company_name": "Domains By Proxy, LLC",
-        "mailing_address": "DomainsByProxy.com 14455 N. Hayden Road",
-        "city_name": "Scottsdale",
-        "state_name": "Arizona",
-        "zip_code": "85260",
-        "country_name": "United States",
-        "country_code": "US",
-        "email_address": "avsvmcloud.com@domainsbyproxy.com",
-        "phone_number": "+1.4806242599",
-        "fax_number": "+1.4806242598"
-    },
-    "name_servers": [
-        "a1-139.avsvmcloud.com",
-        "a11-64.avsvmcloud.com",
-        "a20-65.avsvmcloud.com",
-        "a26-67.avsvmcloud.com",
-        "a4-65.avsvmcloud.com",
-        "a6-66.avsvmcloud.com"
-    ],
-    "domain_status": [
-        "clientDeleteProhibited",
-        "clientRenewProhibited",
-        "clientTransferProhibited",
-        "clientUpdateProhibited"
-    ]
+Registered: July 25, 2018  [2 years old]
+Updated: October 08, 2020  [2 months ago]
+Expiry: July 25, 2023  [2 years left]
 }
 ```
 
