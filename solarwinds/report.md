@@ -680,13 +680,33 @@ private static void Update()
 }
 ```
 
+<br /><br />
+Decrypt DGA python script
+```python
+def decrypt_string(s):
+	try:
+		secert = list("rq3gsalt6u1iyfzop572d49bnx8cvmkewhj")
+		secert_ext = "0_-."
+		secert_len = len(secert)
+		result = ""
+		i = 0
+		while i < (len(s)):
+			if s[i] != '0':
+				result += secert[(secert.index(s[i]) + secert_len - 4) % secert_len];
+			else:
+				result += secert_ext[secert.index(s[i + 1]) % 4]
+				i+=1
+			i+=1
+		return result
+	except:
+		return "Error"
+```
+
 ## Domain Lookup
 ```
-{
 Registered: July 25, 2018  [2 years old]
 Updated: October 08, 2020  [2 months ago]
 Expiry: July 25, 2023  [2 years left]
-}
 ```
 
 ## IoCs
@@ -921,6 +941,8 @@ MzA0MjYxNTO3sExMSk5JTUvPyMzKzsnNyy8oLCouKS0rr6is0o3XAwA=  ->  0123456789abcdefgh
 0403AAA=  ->  -_0
 C04NzigtSckvzwsoyizLzElNTwUA  ->  SeShutdownPrivilege
 ```
+
+
 
 ## Possible victims after decrypting dga (Tangled list)
 
