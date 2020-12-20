@@ -922,7 +922,7 @@ MzA0MjYxNTO3sExMSk5JTUvPyMzKzsnNyy8oLCouKS0rr6is0o3XAwA=  ->  0123456789abcdefgh
 C04NzigtSckvzwsoyizLzElNTwUA  ->  SeShutdownPrivilege
 ```
 
-## Possible victims (Tangled list)
+## Possible victims (Tangled list from pdns)
 ```
 xsmbiyplzysm5f.gh
 mtk.lo
