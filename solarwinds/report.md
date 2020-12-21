@@ -681,7 +681,38 @@ private static void Update()
 ```
 
 <br /><br />
-Decrypt DGA python script
+DGA Encryption logic
+```csharp
+private static string Base64Encode(byte[] bytes, bool rt)
+{
+	string text = OrionImprovementBusinessLayer.ZipHelper.Unzip("K8gwSs1MyzfOMy0tSTfMskixNCksKkvKzTYoTswxN0sGAA==");
+	string text2 = "";
+	uint num = 0U;
+	int i = 0;
+	foreach (byte b in bytes)
+	{
+		num |= (uint)((uint)b << i);
+		for (i += 8; i >= 5; i -= 5)
+		{
+			text2 += text[(int)(num & 31U)].ToString();
+			num >>= 5;
+		}
+	}
+	if (i > 0)
+	{
+		if (rt)
+		{
+			num |= (uint)((uint)new Random().Next() << i);
+		}
+		text2 += text[(int)(num & 31U)].ToString();
+	}
+	return text2;
+}
+
+```
+
+<br /><br />
+Decrypt DGA - Python script
 ```python
 def decrypt_string(s):
 	try:
