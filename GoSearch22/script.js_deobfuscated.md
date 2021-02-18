@@ -19,7 +19,7 @@ Entropy 	4.903695597744525 (Minimum: 0.0, Maximum: 8.0)
 <br /><br />
 gosearch22.script.js - T1027 Obfuscated Files or Information
 
-```
+```bash
 $ tail '/home/m2u9z1x0v8k3/Desktop/Decode_gosearch_script/script.js' 
         } else {
             if (a0b('0x169', 'Lv[Q') === a0b('0x106', 'uAqz')) {
@@ -35,7 +35,7 @@ $ tail '/home/m2u9z1x0v8k3/Desktop/Decode_gosearch_script/script.js'
 <br /><br />
 gosearch22.script.js - nodejs de-obfuscated (base64, decodeURIComponent, and RC4)
 
-```
+```js
 global.atob = require("atob");
 
 function decode_base64_to_utf8(text) {
