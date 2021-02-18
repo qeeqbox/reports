@@ -1579,7 +1579,7 @@ addEventListener(eventName, function(canCreateDiscussions) {
   /** @type {string} */
   obj["iuuTY"] = "mRWft";
   /**
-   * @param {?} x_or_y
+   * @param {?} x_or_y 5142
    * @param {?} y
    * @return {?}
    */
@@ -2032,7 +2032,7 @@ function d(n) {
     return x_or_y === y;
   };
   /**
-   * @param {?} x_or_y
+   * @param {?} x_or_y 5142
    * @param {?} y
    * @return {?}
    */
