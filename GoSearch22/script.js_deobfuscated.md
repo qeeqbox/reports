@@ -1,5 +1,5 @@
 ## GoSearch22
-My attempts to decrypt the script.js file, this file is heavely obfuscated but one of my custom build JS sandboxes de-obfuscated some it. Then, contuined to  de-obfuscated with jsnice etc..
+Some attempts to decrypt the script.js file, this file is heavely obfuscated but one of my custom build JS sandboxes de-obfuscated some it (I also used jsnice to for more de-obfuscation)..
 
 <br /><br />
 gosearch22.script.js - info
