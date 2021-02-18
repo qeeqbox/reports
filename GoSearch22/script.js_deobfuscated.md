@@ -1,4 +1,4 @@
-## GoSearch
+## GoSearch22
 My attempts to decrypt the script.js file, this file is heavely obfuscated but one of my custom build JS sandboxes de-obfuscated some it. Then, contuined to  de-obfuscated with jsnice etc..
 
 <br /><br />
