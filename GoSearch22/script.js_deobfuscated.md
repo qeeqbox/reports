@@ -17,16 +17,32 @@ extension 	application/javascript
 Entropy 	4.903695597744525 (Minimum: 0.0, Maximum: 8.0)
 ```
 <br /><br />
-gosearch22.script.js - T1027 Obfuscated Files or Information
+gosearch22.script.js (before) - T1027 Obfuscated Files or Information
 
 ```bash
-$ tail '/home/m2u9z1x0v8k3/Desktop/Decode_gosearch_script/script.js' 
+$ tail 'script.js'
         } else {
             if (a0b('0x169', 'Lv[Q') === a0b('0x106', 'uAqz')) {
                 f6['bDFeq'](f7, 0x0);
             } else {
                 var fM = document[a0b('0x210', 'j]sZ')];
                 fM && f6[a0b('0x76', '2PcE')](f6[a0b('0x21', 'TrXZ')], fM[a0b('0xf3', 'BKpl')][a0b('0x97', 'uAqz')]) && window[a0b('0xd', 'tvLM')][a0b('0x1e3', '[egw')](location[a0b('0x1bc', 'TpDR')]);
+            }
+        }
+    } catch (fN) {}
+}
+```
+<br /><br />
+gosearch22.script.js (after) - T1027 Obfuscated Files or Information
+
+```bash
+tail 'script.js' 
+                options.bDFeq(update, 0);
+            } else {
+                var body = document.body;
+                if (body && options.VJQoM(options.UAcwT, body.style.display)) {
+                    window.location.replace(location.href);
+                }
             }
         }
     } catch (fN) {}
