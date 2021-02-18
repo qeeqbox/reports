@@ -1,7 +1,77 @@
-Reference & original writeup: https://objective-see.com/blog/blog_0x62.html.   
-Deobfuscated by QBJSSandbox (My Custom JS Sandbox) + jsnice (Not perfect, still needs more to Deobfuscate)
+## GoSearch
+My attempts to decrypt the script.js file, this file is heavely obfuscated but one of my custom build JS sandboxes de-obfuscated some it. Then, contuined to  de-obfuscated with jsnice etc..
 
-Attempt (1)
+<br /><br />
+gosearch22.script.js - info
+
+```
+Name 		gosearch22.script.js
+md5 		3f620ad553f8865171ccd6ea62c50e09
+sha1 		0cddadea7ee54b01942cc5749d2fcfac5c2db1cd
+sha256 		a92fbee594b60927af3382d0f180af77862f2382d1a06a8d1cebf5052b03ea7c
+ssdeep 		768:hBOCqcZVNQNO3NCOjzXygpyGB+hMnCMzPknvHjsKUbP18Ub:hwC1QN4kkCgvBXCMzPjbPvb
+size 		58.81KB
+bytes 		60225
+mime 		text/plain
+extension 	application/javascript
+Entropy 	4.903695597744525 (Minimum: 0.0, Maximum: 8.0)
+```
+<br /><br />
+gosearch22.script.js - T1027 Obfuscated Files or Information
+
+```
+$ tail '/home/m2u9z1x0v8k3/Desktop/Decode_gosearch_script/script.js' 
+        } else {
+            if (a0b('0x169', 'Lv[Q') === a0b('0x106', 'uAqz')) {
+                f6['bDFeq'](f7, 0x0);
+            } else {
+                var fM = document[a0b('0x210', 'j]sZ')];
+                fM && f6[a0b('0x76', '2PcE')](f6[a0b('0x21', 'TrXZ')], fM[a0b('0xf3', 'BKpl')][a0b('0x97', 'uAqz')]) && window[a0b('0xd', 'tvLM')][a0b('0x1e3', '[egw')](location[a0b('0x1bc', 'TpDR')]);
+            }
+        }
+    } catch (fN) {}
+}
+```
+<br /><br />
+gosearch22.script.js - nodejs de-obfuscated (base64, decodeURIComponent, and RC4)
+
+```
+global.atob = require("atob");
+
+function decode_base64_to_utf8(text) {
+    return decodeURIComponent(escape(atob(text)));
+}
+
+function decode_rc4(key, text) {
+    var b = []
+    var f = 0
+    var c
+    var decrypted = "";
+    for (var h = 0; h < 256; h++) {
+        b[h] = h;
+    }
+    for (var h = 0; h < 256; h++) {
+        f = (f + b[h] + key.charCodeAt(h % key.length)) % 256;
+        c = b[h];
+        b[h] = b[f];
+        b[f] = c;
+    }
+    h = 0;
+    f = 0;
+    for (var index = 0; index < text.length; index++) {
+        h = (h + 1) % 256;
+        f = (f + b[h]) % 256;
+        c = b[h];
+        b[h] = b[f];
+        b[f] = c;
+
+        decrypted = decrypted + String.fromCharCode(text.charCodeAt(index) ^ b[(b[h] + b[f]) % 256]);
+    }
+    return decrypted;
+}
+```
+<br /><br />
+gosearch22.script.js - de-obfuscated on my custom JS sandbox (it includes a module for obfuscation) with jsnice (attemp 1 with no cleanup)
 
 ```js
 'use strict';
@@ -2148,8 +2218,9 @@ function d(n) {
 }
 ;
 ```
+<br /><br />
+gosearch22.script.js - de-obfuscated on my custom JS sandbox (it includes a module for obfuscation) with jsnice (attemp 2 with cleanup)
 
-Attempt (2)
 ```js
 'use strict';
 
@@ -3765,3 +3836,10 @@ function d(n) {
     } catch (fN) {}
 };
 ```
+
+## Map
+![](https://raw.githubusercontent.com/qeeqbox/reports/main/solarwinds/files/md5file.png)
+
+
+## Resources
+- Reference & original writeup by objective-see: https://objective-see.com/blog/blog_0x62.html.
