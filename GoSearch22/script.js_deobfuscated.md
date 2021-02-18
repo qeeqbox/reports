@@ -1,4 +1,4 @@
-Obfuscated script and writeup: https://objective-see.com/blog/blog_0x62.html
+Obfuscated script and writeup: https://objective-see.com/blog/blog_0x62.html  
 Deobfuscated by QBJSSandbox + jsnice
 
 ```js
