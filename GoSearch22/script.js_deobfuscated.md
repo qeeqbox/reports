@@ -1,5 +1,5 @@
-Obfuscated script and writeup: https://objective-see.com/blog/blog_0x62.html  
-Deobfuscated by QBJSSandbox + jsnice
+Reference & original writeup: https://objective-see.com/blog/blog_0x62.html
+Deobfuscated by QBJSSandbox + jsnice (Not perfect, still need more to Deobfuscate)
 
 ```js
 'use strict';
