@@ -1,5 +1,5 @@
 Reference & original writeup: https://objective-see.com/blog/blog_0x62.html.   
-Deobfuscated by QBJSSandbox + jsnice (Not perfect, still need more to Deobfuscate)
+Deobfuscated by QBJSSandbox + jsnice (Not perfect, still needs more to Deobfuscate)
 
 ```js
 'use strict';
