@@ -49,7 +49,7 @@ tail 'script.js'
 }
 ```
 <br /><br />
-gosearch22.script.js - nodejs de-obfuscated (base64, decodeURIComponent, and RC4)
+gosearch22.script.js - nodejs de-obfuscated (base64 to utf8, and RC4)
 
 ```js
 global.atob = require("atob");
