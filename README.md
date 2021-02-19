@@ -3,7 +3,7 @@
 #
 [Solarwinds Supply Chain Attack](https://github.com/qeeqbox/reports/blob/main/solarwinds/report.md) Adversaries gained access to numerous public and private organizations by trojanized SolarWinds Orion software applications updates (This attack is large, bad and very concerning)
 
-[GoSearch22](https://github.com/qeeqbox/reports/blob/main/GoSearch22/script.js_deobfuscated.md) Small attempts to de-obfuscate the script.js in GoSearch22 adware 
+[GoSearch22](https://github.com/qeeqbox/reports/blob/main/GoSearch22/script.js_deobfuscated.md) This is a browser hijacker that was re-written to target M1 Macs. It has a file named script.js that's heavely obfuscated. Luckly, one of my custom build JS sandboxes de-obfuscated some it. I took the obfuscated ouput and passed it to jsnice to for more de-obfuscation (This writeup still in progress)
 
 ## Articles
 [kryptera](https://kryptera.se/t/solarwinds-orion/)
