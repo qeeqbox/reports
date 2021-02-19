@@ -1,5 +1,5 @@
 ## GoSearch22
-This is a browser hijacker that was re-written to target M1 Macs. It has a file named `script.js` that's heavely obfuscated. Luckly, one of my custom build JS sandboxes de-obfuscated some it. I took the obfuscated ouput and passed it to jsnice to for more de-obfuscation (This writeup still in progress)
+This is a browser hijacker that was re-written to target M1 Macs. It has a file named `script.js` that's heavely obfuscated. Luckly, one of my custom build JS sandboxes de-obfuscated some it. The obfuscated ouput then passed it to jsnice to for more de-obfuscation (This writeup still in progress)
 
 <br /><br />
 gosearch22.script.js - info
@@ -119,7 +119,7 @@ function decode_rc4(key, text) {
 }
 ```
 <br /><br />
-gosearch22.script.js - de-obfuscated on my custom JS sandbox (it includes a module for obfuscation) with jsnice (attemp 1 with no cleanup)
+gosearch22.script.js - de-obfuscated on the custom JS sandbox and applied jsnice for more cleanup (attempt 1)
 
 ```js
 'use strict';
@@ -1433,7 +1433,7 @@ function d(n) {
 ;
 ```
 <br /><br />
-gosearch22.script.js - de-obfuscated on my custom JS sandbox (it includes a module for obfuscation) with jsnice (attemp 2 with cleanup)
+gosearch22.script.js - de-obfuscated on the custom JS sandbox and applied more cleanup (attempt 2)
 
 ```js
 'use strict';
@@ -2740,7 +2740,7 @@ function d(n) {
 };
 ```
 <br /><br />
-gosearch22.script.js - de-obfuscated on my custom JS sandbox (it includes a module for obfuscation) with manual checking (attemp 3 with cleanup)
+gosearch22.script.js - de-obfuscated on the custom JS sandbox, nested cleanup modules and manual check (attempt 3)
 
 ```js
 'use strict';
