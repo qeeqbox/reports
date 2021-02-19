@@ -33,20 +33,20 @@ $ tail 'script.js'
 }
 ```
 <br /><br />
-gosearch22.script.js (after) - T1027 Obfuscated Files or Information
+gosearch22.script.js (after 3 attempt) - T1027 Obfuscated Files or Information
 
 ```bash
 $ tail 'script.js' 
-                options.bDFeq(update, 0);
+                render(0);
             } else {
                 var body = document.body;
-                if (body && options.VJQoM(options.UAcwT, body.style.display)) {
+                if (body && "none" === body.style.display) {
                     window.location.replace(location.href);
                 }
             }
         }
     } catch (fN) {}
-}
+};
 ```
 <br /><br />
 gosearch22.script.js - nodejs de-obfuscated (base64 to utf8, and RC4)
@@ -3852,6 +3852,8 @@ function d(n) {
     } catch (fN) {}
 };
 ```
+<br /><br />
+gosearch22.script.js - de-obfuscated on my custom JS sandbox (it includes a module for obfuscation) with manual checking (attemp 3 with cleanup)
 
 ```js
 'use strict';
