@@ -33,7 +33,39 @@ $ tail 'script.js'
 }
 ```
 <br /><br />
-gosearch22.script.js (after 3 attempt) - T1027 Obfuscated Files or Information
+gosearch22.script.js (after 1 attempt)
+
+```bash
+$ tail 'script.js' 
+      } else {
+        var body = document["body"];
+        if (body && options["VJQoM"](options["UAcwT"], body["style"]["display"])) {
+          window["location"]["replace"](location["href"]);
+        }
+      }
+    }
+  } catch (fN) {
+  }
+}
+```
+<br /><br />
+gosearch22.script.js (after 2 attempts)
+
+```bash
+$ tail 'script.js' 
+                render(0);
+            } else {
+                var body = document.body;
+                if (body && "none" === body.style.display) {
+                    window.location.replace(location.href);
+                }
+            }
+        }
+    } catch (fN) {}
+};
+```
+<br /><br />
+gosearch22.script.js (after 3 attempts)
 
 ```bash
 $ tail 'script.js' 
