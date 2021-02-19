@@ -36,7 +36,7 @@ $ tail 'script.js'
 gosearch22.script.js (after) - T1027 Obfuscated Files or Information
 
 ```bash
-tail 'script.js' 
+$ tail 'script.js' 
                 options.bDFeq(update, 0);
             } else {
                 var body = document.body;
