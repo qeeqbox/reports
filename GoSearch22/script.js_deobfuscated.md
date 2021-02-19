@@ -53,10 +53,10 @@ gosearch22.script.js (after 2 attempts)
 
 ```bash
 $ tail 'script.js' 
-                render(0);
+                options.bDFeq(update, 0);
             } else {
                 var body = document.body;
-                if (body && "none" === body.style.display) {
+                if (body && options.VJQoM(options.UAcwT, body.style.display)) {
                     window.location.replace(location.href);
                 }
             }
@@ -65,7 +65,7 @@ $ tail 'script.js'
 };
 ```
 <br /><br />
-gosearch22.script.js (after 3 attempts)
+gosearch22.script.js (after 3 attempts) 👏👏👏
 
 ```bash
 $ tail 'script.js' 
