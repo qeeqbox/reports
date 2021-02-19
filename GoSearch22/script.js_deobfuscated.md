@@ -1,5 +1,5 @@
 ## GoSearch22
-Some attempts to decrypt the script.js file, this file is heavely obfuscated but one of my custom build JS sandboxes de-obfuscated some it (I also used jsnice to for more de-obfuscation)..
+This is a browser hijacker that was re-weritten to target M1 Macs. It has a file named `script.js` that's heavely obfuscated. Luckly, one of my custom build JS sandboxes de-obfuscated some it. I took the obfuscated ouput and passed it to jsnice to for more de-obfuscation (This writeup still in progress)
 
 <br /><br />
 gosearch22.script.js - info
