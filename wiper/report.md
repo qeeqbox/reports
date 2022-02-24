@@ -74,6 +74,12 @@ Hermetica Digital Ltd - is company that was registered in Cyprus on 16/03/2021
 
 ![](https://raw.githubusercontent.com/qeeqbox/reports/main/wiper/files/company.png)
 
+## Websites status
+- kremlin.ru is down
+- government.ru is down
+- mil.ru is down
+- gov.ru is down
+
 ##  References
 - [ESET](https://twitter.com/ESETresearch/status/1496581903205511181)
 - [Threat Intelligence](https://twitter.com/threatintel/status/1496578746014437376)
