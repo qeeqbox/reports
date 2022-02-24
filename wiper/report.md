@@ -1,6 +1,3 @@
-2/23/2022 New wiper sample is used in the recent attack on Ukraine Ref: [Threat Intelligence](https://twitter.com/threatintel/status/1496578746014437376)
-
-<br /><br />
 1bc44eef75779e3ca1eefb8ff5a64807dbc942b1e4a2672d77b9f6928d292591 - metadata
 
 ```json
