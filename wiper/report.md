@@ -317,7 +317,41 @@ Check if process is 64bit
       IsWow64Process(v4, &v40);
     }
   }
- ```
+```
+<br /><br />
+Checking windwos version
+
+```c
+  memset(&VersionInformation, 0, sizeof(VersionInformation));
+  VersionInformation.dwOSVersionInfoSize = 284;
+  VersionInformation.dwMajorVersion = 6;
+  VersionInformation.dwMinorVersion = 0;
+  v5 = VerSetConditionMask(0i64, 2u, 3u);
+  v6 = VerSetConditionMask(v5, 1u, 3u);
+```
+<br /><br />
+Based on the checking, load the sys driver
+
+```c
+  if ( VerifyVersionInfoW(&VersionInformation, 3u, v6) )
+  {
+    if ( v40 )
+      v7 = FindResourceW(hModule, L"DRV_X64", L"RCDATA");
+    else
+      v7 = FindResourceW(hModule, L"DRV_X86", L"RCDATA");
+  }
+  else
+  {
+    if ( GetLastError() != 1150 )
+      return 0;
+    v35 = 1;
+    if ( v40 )
+      v7 = FindResourceW(hModule, L"DRV_XP_X64", L"RCDATA");
+    else
+      v7 = FindResourceW(hModule, L"DRV_XP_X86", L"RCDATA");
+  }
+```
+
 
 ## Websites status
 - kremlin.ru is down
