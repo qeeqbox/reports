@@ -295,6 +295,29 @@ int __thiscall sub_4029D0(void *this)
   return result;
 }
 ```
+<br /><br />
+dynamically get Wow64DisableWow64FsRedirection from kernel32.dll (will be used to disable Windows file system redirection)
+
+```c
+  v2 = GetModuleHandleW(L"kernel32.dll");
+  v38 = wnsprintfW(pszDest, 260, L"\\??\\");
+  if ( v2 )
+  {
+    Wow64DisableWow64FsRedirection = (BOOL (__stdcall *)(PVOID *))GetProcAddress(v2, "Wow64DisableWow64FsRedirection");
+    GetProcAddress(v2, "Wow64RevertWow64FsRedirection");
+```
+<br /><br />
+Check if process is 64bit
+
+```c
+    IsWow64Process = (BOOL (__stdcall *)(HANDLE, PBOOL))GetProcAddress(v2, "IsWow64Process");
+    if ( IsWow64Process )
+    {
+      v4 = GetCurrentProcess();
+      IsWow64Process(v4, &v40);
+    }
+  }
+ ```
 
 ## Websites status
 - kremlin.ru is down
