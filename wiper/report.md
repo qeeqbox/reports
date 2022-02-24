@@ -20,3 +20,5 @@
     },
 ```
 
+Hermetica Digital Ltd - is company that was registered in Cyprus on 16/03/2021
+![](https://raw.githubusercontent.com/qeeqbox/reports/main/wiper/files/company.png)
