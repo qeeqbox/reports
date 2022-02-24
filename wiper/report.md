@@ -361,6 +361,74 @@ Now, disable Windows file system redirection
   phkResult = 0;
 ```
 
+## Dumped 
+```
+FATNTFS
+\\.\PhysicalDrive%u
+\\.\EPMNTDRV\%u
+\\.\
+%s%.2s
+$Bitmap
+$LogFile
+\??\
+\\?\
+ntuser
+.sys
+AppData
+My Documents
+Desktop
+\\?\C:\Documents and Settings
+\\?\C:\Windows\System32\winevt\Logs
+kernel32.dll
+Wow64DisableWow64FsRedirection
+Wow64RevertWow64FsRedirection
+IsWow64Process
+RCDATA
+DRV_X64
+DRV_X86
+DRV_XP_X64
+DRV_XP_X86
+Drivers
+drv
+System32
+SYSTEM\CurrentControlSet\services\
+%s%s
+Windows
+Program Files
+Program Files(x86)
+PerfLogs
+Boot
+System Volume Information
+%ws%.2ws
+%ws%ws
+\*
+.
+..
+SeLoadDriverPrivilege
+ServicesActive
+c*
+SeBackupPrivilege
+C:\Windows\SYSVOL
+C:\System Volume Information
+Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+ShowCompColor
+ShowInfoTip
+SYSTEM\CurrentControlSet\Control\CrashControl
+CrashDumpEnabled
+$ATTRIBUTE_LIST
+$EA
+$EA_INFORMATION
+$SECURITY_DESCRIPTOR
+$DATA
+$INDEX_ROOT
+$INDEX_ALLOCATION
+$BITMAP
+$REPARSE_POINT
+$LOGGED_UTILITY_STREAM
+$I30
+$INDEX_ALLOCATION
+```
+
 ## Websites status
 - kremlin.ru is down
 - government.ru is down
