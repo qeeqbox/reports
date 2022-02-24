@@ -296,7 +296,7 @@ int __thiscall sub_4029D0(void *this)
 }
 ```
 <br /><br />
-dynamically get Wow64DisableWow64FsRedirection from kernel32.dll (will be used to disable Windows file system redirection)
+dynamically get Wow64DisableWow64FsRedirection from kernel32.dll
 
 ```c
   v2 = GetModuleHandleW(L"kernel32.dll");
@@ -351,7 +351,15 @@ Based on the checking, load the sys driver
       v7 = FindResourceW(hModule, L"DRV_XP_X86", L"RCDATA");
   }
 ```
+<br /><br />
+Now, disable Windows file system redirection
 
+```c
+  nNumberOfBytesToWrite = SizeofResource(hModule, v8);
+  if ( v40 && Wow64DisableWow64FsRedirection )
+    Wow64DisableWow64FsRedirection((PVOID *)&v31);
+  phkResult = 0;
+```
 
 ## Websites status
 - kremlin.ru is down
