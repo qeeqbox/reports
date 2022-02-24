@@ -437,7 +437,7 @@ Create random file with in the system32\drivers (interesting)
       }
 ```
 <br /><br />
-The dropped random file name (will be the driver.sys)
+Random file will be dropped (Contains the data\driver from resources)
 
 ```sh
 $ file dbdr
