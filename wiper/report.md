@@ -444,13 +444,6 @@ $ file dbdr
 dbdr: MS Compress archive data, SZDD variant, original size: 17480 bytes
 ```
 <br /><br />
-The dropped random file name (will be the driver.sys)
-
-```sh
-$ file dbdr
-dbdr: MS Compress archive data, SZDD variant, original size: 17480 bytes
-```
-<br /><br />
 expand it on windows
 
 ```sh
