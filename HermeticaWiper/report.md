@@ -136,7 +136,7 @@ Based on the checking, load the sys driver
   }
 ```
 <br /><br />
-Now, disable Windows file system redirection
+Now, disable Windows file system redirection (Do not use C:\Windows\syswow64, use system32 instead)
 
 ```c
   nNumberOfBytesToWrite = SizeofResource(hModule, v8);
