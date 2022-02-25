@@ -269,7 +269,7 @@ Active SeLoadDriverPrivilege, whihch allowes an account to load system driver (A
       {
 ```
 <br /><br />
-Use the privilege to load a driver
+Use the privilege to load the .sys driver (passed to this function)
 
 ```sh
         v7 = OpenSCManagerW(0, L"ServicesActive", 3u);
