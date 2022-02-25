@@ -269,7 +269,7 @@ Assign the SeLoadDriverPrivilege privilege (This privilege is assigned to Admini
       {
 ```
 <br /><br />
-Use that to load the .sys driver (passed to this function)
+Use that to load the .sys driver (the driver name is passed to this function)
 
 ```sh
         v7 = OpenSCManagerW(0, L"ServicesActive", 3u);
