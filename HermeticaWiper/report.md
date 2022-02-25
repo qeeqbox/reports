@@ -384,17 +384,13 @@ Delete the entry from services
       }
 ```
 <br /><br />
-Random file will be dropped (Contains the data\driver from resources)
+Random file will be dropped (Contains the data\driver from resources) + extracting it with `expand`
 
 ```sh
 $ file dbdr
 dbdr: MS Compress archive data, SZDD variant, original size: 17480 bytes
-```
-<br /><br />
-expand it on windows
-
-```sh
 $ expand dbdr driver
+driver: PE32+ executable (native) x86-64, for MS Windows
 ```
 <br /><br />
 driver is legit 
