@@ -5,7 +5,7 @@
 
 [GoSearch22](https://github.com/qeeqbox/reports/blob/main/GoSearch22/script.js_deobfuscated.md) This is a browser hijacker that was re-written to target M1 Macs. It has a file named `script.js` that's heavely obfuscated. A custom build JS sandboxes de-obfuscated some it. The obfuscated ouput then passed it to jsnice to for more de-obfuscation (This writeup still in progress)
 
-[Wiper](https://github.com/qeeqbox/reports/tree/main/wiper) The new wiper samples used in the recent attacks on Ukraine.
+[HermeticaWiper](https://github.com/qeeqbox/reports/tree/main/HermeticaWiper) The new wiper samples used in the recent attacks on Ukraine, very interesting and quite different that the regular wiper sample
 
 ## Articles
 [kryptera](https://kryptera.se/t/solarwinds-orion/)
