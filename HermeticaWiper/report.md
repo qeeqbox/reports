@@ -245,7 +245,7 @@ Setup the driver
             v33 = sub_403930(v23, Destination);
 ```
 <br /><br />
-Assign the SeLoadDriverPrivilege privilege (This privilege is assigned to Administrator and Print Operators by default)
+Explicitly enable the SeLoadDriverPrivilege privilege (This is one of the privileges that is disabled by default)
 
 ```sh
   v3 = GetProcessHeap();
@@ -269,7 +269,7 @@ Assign the SeLoadDriverPrivilege privilege (This privilege is assigned to Admini
       {
 ```
 <br /><br />
-Use that to load the .sys driver (the driver name is passed to this function)
+Use that privilege to load the .sys driver (the driver name is passed to this function)
 
 ```sh
         v7 = OpenSCManagerW(0, L"ServicesActive", 3u);
