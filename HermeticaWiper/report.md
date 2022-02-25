@@ -91,7 +91,7 @@ dynamically get Wow64DisableWow64FsRedirection from kernel32.dll
     GetProcAddress(v2, "Wow64RevertWow64FsRedirection");
 ```
 <br /><br />
-Check if process is 64bit
+Check if process is 64bit - T1082 System Information Discovery
 
 ```c
     IsWow64Process = (BOOL (__stdcall *)(HANDLE, PBOOL))GetProcAddress(v2, "IsWow64Process");
@@ -114,7 +114,7 @@ Checking windwos version - T1082 System Information Discovery
   v6 = VerSetConditionMask(v5, 1u, 3u);
 ```
 <br /><br />
-Based on the checking, load the sys driver
+Based on the checking, load the sys driver (It's legit but used as diskwipe - T1561 Disk Wipe)
 
 ```c
   if ( VerifyVersionInfoW(&VersionInformation, 3u, v6) )
@@ -156,7 +156,7 @@ Disable Windows crash dump
   }
 ```
 <br /><br />
-Create random file with in the system32\drivers (interesting)
+Create random file with in the system32\drivers - T1036 Masquerading: Match Legitimate Name or Location
 
 ```c
   wnsprintfW(Destination, 260, L"\\\\.\\EPMNTDRV\\%u", 0);
