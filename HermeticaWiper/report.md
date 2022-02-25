@@ -540,12 +540,6 @@ $I30
 $INDEX_ALLOCATION
 ```
 
-## Websites status
-- kremlin.ru is down
-- government.ru is down
-- mil.ru is down
-- gov.ru is down
-
 ##  References
 - [ESET](https://twitter.com/ESETresearch/status/1496581903205511181)
 - [Threat Intelligence](https://twitter.com/threatintel/status/1496578746014437376)
