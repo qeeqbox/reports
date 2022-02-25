@@ -365,7 +365,7 @@ LABEL_13:
 
 ```
 <br /><br />
-Delete the entry from services
+Delete the entry from services - T1490 Inhibit System Recovery
 
 ```sh
             if ( v33 )
