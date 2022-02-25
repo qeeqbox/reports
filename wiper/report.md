@@ -238,7 +238,7 @@ If everything is good, create the same one but with .sys
           LZClose((INT)lpBuffer);
 ```
 <br /><br />
-If everything is good, then add .sys to the created file (This one will not be SZDD)
+Delete the entry from services
 
 ```sh
               v23 = StrStrIW(v16, L"System32");
