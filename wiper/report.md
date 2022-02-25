@@ -238,11 +238,16 @@ If everything is good, create the same one but with .sys
           LZClose((INT)lpBuffer);
 ```
 <br /><br />
-Delete the entry from services
+Setup the driver
 
 ```sh
               v23 = StrStrIW(v16, L"System32");
             v33 = sub_403930(v23, Destination);
+```
+<br /><br />
+Delete the entry from services
+
+```sh
             if ( v33 )
             {
               wsprintfW(SubKey, L"%s%s", L"SYSTEM\\CurrentControlSet\\services\\", Destination);
