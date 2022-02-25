@@ -460,6 +460,17 @@ Disable vss
           v14 = v11();
         }
 ```
+<br /><br />
+Loop through PhysicalDrive 0 to 100
+
+```c
+        SetLastError(v14);
+        if ( GetModuleFileNameW(0, Filename, 0x104u) )
+          sub_4023C0(Filename, (int)&v39);
+        for ( i = 0; i <= 100; ++i )
+          sub_401D60(i, (int)&v40, (void (__stdcall *)(void *, char *, int, int, DWORD, LONG))sub_401D10);
+
+```
 
 ## Dumped 
 ```
