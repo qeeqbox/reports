@@ -395,7 +395,7 @@ driver: PE32+ executable (native) x86-64, for MS Windows
 <br /><br />
 driver is legit 
 
-```
+```json
     "General": {
         "PE Type": "driver",
         "Entrypoint": "24584",
@@ -414,7 +414,7 @@ driver is legit
 <br /><br />
 driver sig is EaseUS
 
-```sh
+```json
     "SignatureExtracted": {
         "CERT_0": {
             "CommonName": "CHENGDU YIWO Tech Development Co., Ltd.",
