@@ -412,7 +412,7 @@ driver is legit
     },
 ```
 <br /><br />
-driver sig is EaseUS
+driver sig is EaseUS - T1553.002 Code Signing
 
 ```json
     "SignatureExtracted": {
