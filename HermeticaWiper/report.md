@@ -245,7 +245,7 @@ Setup the driver
             v33 = sub_403930(v23, Destination);
 ```
 <br /><br />
-Explicitly enable the SeLoadDriverPrivilege privilege (This is one of the privileges that is disabled by default)
+Explicitly enable the SeLoadDriverPrivilege privilege (This is one of the privileges that is disabled by default) - T1134 Access Token Manipulation
 
 ```sh
   v3 = GetProcessHeap();
@@ -269,7 +269,7 @@ Explicitly enable the SeLoadDriverPrivilege privilege (This is one of the privil
       {
 ```
 <br /><br />
-Use that privilege to load the .sys driver (the driver name is passed to this function)
+Use that privilege to load the .sys driver (the driver name is passed to this function) - T1543.003 Create or Modify System Process: Windows Service 
 
 ```sh
         v7 = OpenSCManagerW(0, L"ServicesActive", 3u);
