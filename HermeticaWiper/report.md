@@ -365,7 +365,7 @@ LABEL_13:
 
 ```
 <br /><br />
-Delete the entry from services - T1490 Inhibit System Recovery
+Delete the entry from services - T1070 Indicator Removal on Host 
 
 ```sh
             if ( v33 )
@@ -431,7 +431,7 @@ driver sig is EaseUS
     },
 ```
 <br /><br />
-Disable vss
+Disable vss - T1490 Inhibit System Recovery
 
 ```c
         v14 = 0;
