@@ -103,7 +103,7 @@ Check if process is 64bit
   }
 ```
 <br /><br />
-Checking windwos version
+Checking windwos version - T1082 System Information Discovery 
 
 ```c
   memset(&VersionInformation, 0, sizeof(VersionInformation));
